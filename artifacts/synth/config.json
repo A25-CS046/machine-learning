@@ -1,0 +1,1 @@
+{"dataset_choice": "synth", "feature_order": ["engine_type", "air_temp", "process_temp", "rpm", "torque_nm", "tool_wear"], "cat_feat": "engine_type", "cat_mapping": {"H": 0, "L": 1, "M": 2}, "seq_len": 2, "threshold": 0.5, "max_days": 7}

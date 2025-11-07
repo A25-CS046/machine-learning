@@ -1,0 +1,3866 @@
+unit_id,proba_failure,needs_maintenance,days_to_maintenance,message
+549,0.9993242,1,1,in 1 days machine 549.0 needs maintenance
+9658,0.0001968268,0,7,
+8259,0.95917743,1,1,in 1 days machine 8259.0 needs maintenance
+4115,0.00060772395,0,7,
+4424,0.97741324,1,1,in 1 days machine 4424.0 needs maintenance
+9373,0.9048119,1,2,in 2 days machine 9373.0 needs maintenance
+685,0.0014838566,0,7,
+307,0.071101174,0,7,
+6240,0.00065384794,0,7,
+925,0.01965058,0,7,
+942,0.7381214,1,3,in 3 days machine 942.0 needs maintenance
+412,0.06290493,0,7,
+713,0.99887305,1,1,in 1 days machine 713.0 needs maintenance
+3813,0.9963987,1,1,in 1 days machine 3813.0 needs maintenance
+7794,0.998749,1,1,in 1 days machine 7794.0 needs maintenance
+6035,0.0004436128,0,7,
+7237,0.33139846,0,5,
+8975,0.0003691352,0,7,
+1,8.008968e-05,0,7,
+4980,0.00036473555,0,7,
+9488,0.031552657,0,7,
+939,0.99574006,1,1,in 1 days machine 939.0 needs maintenance
+6656,0.000146413,0,7,
+5826,0.99966466,1,1,in 1 days machine 5826.0 needs maintenance
+5567,0.0020911312,0,7,
+273,0.00019655899,0,7,
+9369,0.03410477,0,7,
+7736,0.99579936,1,1,in 1 days machine 7736.0 needs maintenance
+3835,0.0019766488,0,7,
+9985,0.00026880557,0,7,
+2335,0.9953876,1,1,in 1 days machine 2335.0 needs maintenance
+6653,0.0060595204,0,7,
+1566,0.984324,1,1,in 1 days machine 1566.0 needs maintenance
+3102,0.99706596,1,1,in 1 days machine 3102.0 needs maintenance
+6161,0.99429435,1,1,in 1 days machine 6161.0 needs maintenance
+7515,0.00026779567,0,7,
+4840,0.99073166,1,1,in 1 days machine 4840.0 needs maintenance
+2387,0.99755377,1,1,in 1 days machine 2387.0 needs maintenance
+7117,0.038646348,0,7,
+6208,0.00067006215,0,7,
+599,0.99914765,1,1,in 1 days machine 599.0 needs maintenance
+985,0.0039805872,0,7,
+6785,0.9944507,1,1,in 1 days machine 6785.0 needs maintenance
+9228,0.9906284,1,1,in 1 days machine 9228.0 needs maintenance
+8775,0.49852285,0,4,
+9914,0.9959266,1,1,in 1 days machine 9914.0 needs maintenance
+4905,0.99295956,1,1,in 1 days machine 4905.0 needs maintenance
+8587,0.9877721,1,1,in 1 days machine 8587.0 needs maintenance
+7446,0.99930656,1,1,in 1 days machine 7446.0 needs maintenance
+4917,0.009144193,0,7,
+6845,0.0009853627,0,7,
+2818,0.0010205528,0,7,
+3588,0.99895525,1,1,in 1 days machine 3588.0 needs maintenance
+8112,0.9939545,1,1,in 1 days machine 8112.0 needs maintenance
+7062,0.9995876,1,1,in 1 days machine 7062.0 needs maintenance
+8215,0.0011003923,0,7,
+5476,0.00045127643,0,7,
+7535,0.00042751813,0,7,
+860,0.99924195,1,1,in 1 days machine 860.0 needs maintenance
+8604,0.0019755692,0,7,
+540,0.0014386099,0,7,
+592,0.00054554304,0,7,
+9047,0.9958364,1,1,in 1 days machine 9047.0 needs maintenance
+1626,0.22153339,0,6,
+1483,0.0070626917,0,7,
+4076,0.98525316,1,1,in 1 days machine 4076.0 needs maintenance
+4071,0.00048163644,0,7,
+2816,0.007832787,0,7,
+8653,0.0022480558,0,7,
+4738,0.9998311,1,1,in 1 days machine 4738.0 needs maintenance
+8783,0.014811479,0,7,
+7644,0.00030839158,0,7,
+914,0.019595705,0,7,
+1691,0.0002683989,0,7,
+1329,0.0033366247,0,7,
+3521,0.9952897,1,1,in 1 days machine 3521.0 needs maintenance
+3779,0.0021265794,0,7,
+6083,0.998028,1,1,in 1 days machine 6083.0 needs maintenance
+2178,0.9999534,1,1,in 1 days machine 2178.0 needs maintenance
+1270,0.9985965,1,1,in 1 days machine 1270.0 needs maintenance
+8135,0.9984817,1,1,in 1 days machine 8135.0 needs maintenance
+1556,0.9317602,1,1,in 1 days machine 1556.0 needs maintenance
+6276,0.9991743,1,1,in 1 days machine 6276.0 needs maintenance
+9303,0.025376305,0,7,
+4613,8.011497e-05,0,7,
+1361,0.0046343086,0,7,
+9437,0.9955966,1,1,in 1 days machine 9437.0 needs maintenance
+1988,0.9914903,1,1,in 1 days machine 1988.0 needs maintenance
+3265,0.0010764669,0,7,
+7179,0.00023580667,0,7,
+8933,0.02396957,0,7,
+8227,0.00022619334,0,7,
+7932,0.9969296,1,1,in 1 days machine 7932.0 needs maintenance
+545,0.0045340606,0,7,
+4853,0.0015646227,0,7,
+4503,0.09487587,0,6,
+6121,0.0001564741,0,7,
+7699,0.00590535,0,7,
+1020,0.00039983733,0,7,
+3097,0.99971217,1,1,in 1 days machine 3097.0 needs maintenance
+8145,0.00068793964,0,7,
+6415,0.0012178441,0,7,
+7938,0.0014102786,0,7,
+7324,0.9676558,1,1,in 1 days machine 7324.0 needs maintenance
+6677,0.00041516992,0,7,
+6303,0.015390135,0,7,
+9817,0.0011753355,0,7,
+918,0.6651396,1,3,in 3 days machine 918.0 needs maintenance
+1358,0.0001644587,0,7,
+9191,0.0054561454,0,7,
+4611,0.0005824316,0,7,
+3533,0.13183808,0,6,
+1339,0.98686695,1,1,in 1 days machine 1339.0 needs maintenance
+8274,0.9986627,1,1,in 1 days machine 8274.0 needs maintenance
+4937,0.023395276,0,7,
+8615,0.0011687775,0,7,
+3613,0.9655028,1,1,in 1 days machine 3613.0 needs maintenance
+9899,0.009178655,0,7,
+279,0.998066,1,1,in 1 days machine 279.0 needs maintenance
+4324,0.00033706188,0,7,
+7295,0.9935776,1,1,in 1 days machine 7295.0 needs maintenance
+2918,0.97820526,1,1,in 1 days machine 2918.0 needs maintenance
+4275,6.655575e-05,0,7,
+8276,0.99335164,1,1,in 1 days machine 8276.0 needs maintenance
+2639,0.0002979735,0,7,
+404,0.00041570174,0,7,
+5407,0.00091733574,0,7,
+24,0.9945452,1,1,in 1 days machine 24.0 needs maintenance
+1801,0.9987129,1,1,in 1 days machine 1801.0 needs maintenance
+2378,0.9679588,1,1,in 1 days machine 2378.0 needs maintenance
+3052,0.9969879,1,1,in 1 days machine 3052.0 needs maintenance
+2081,0.005850934,0,7,
+508,0.0004047706,0,7,
+9431,0.8771064,1,2,in 2 days machine 9431.0 needs maintenance
+1665,0.8117231,1,2,in 2 days machine 1665.0 needs maintenance
+56,0.0023870764,0,7,
+6684,0.99941444,1,1,in 1 days machine 6684.0 needs maintenance
+7810,0.9993568,1,1,in 1 days machine 7810.0 needs maintenance
+8526,0.9975158,1,1,in 1 days machine 8526.0 needs maintenance
+4262,0.9448483,1,1,in 1 days machine 4262.0 needs maintenance
+7648,0.0005897361,0,7,
+4665,0.9966794,1,1,in 1 days machine 4665.0 needs maintenance
+9415,0.78652716,1,2,in 2 days machine 9415.0 needs maintenance
+9194,0.00018981006,0,7,
+8136,0.0010624187,0,7,
+7165,0.99540424,1,1,in 1 days machine 7165.0 needs maintenance
+9838,0.00025087444,0,7,
+2754,0.9393189,1,1,in 1 days machine 2754.0 needs maintenance
+6795,0.9071793,1,2,in 2 days machine 6795.0 needs maintenance
+9364,0.00024363787,0,7,
+70,0.99025375,1,1,in 1 days machine 70.0 needs maintenance
+6434,0.9883542,1,1,in 1 days machine 6434.0 needs maintenance
+8786,0.993206,1,1,in 1 days machine 8786.0 needs maintenance
+6612,0.0280746,0,7,
+9348,0.9881124,1,1,in 1 days machine 9348.0 needs maintenance
+1994,0.9394569,1,1,in 1 days machine 1994.0 needs maintenance
+2246,0.995738,1,1,in 1 days machine 2246.0 needs maintenance
+1533,0.95275754,1,1,in 1 days machine 1533.0 needs maintenance
+9642,0.99662966,1,1,in 1 days machine 9642.0 needs maintenance
+8218,0.006660846,0,7,
+2341,0.00024585632,0,7,
+1116,8.3355066e-05,0,7,
+7927,0.03164301,0,7,
+5455,0.89602077,1,2,in 2 days machine 5455.0 needs maintenance
+4561,0.0005815263,0,7,
+203,0.0009787384,0,7,
+4444,0.99955994,1,1,in 1 days machine 4444.0 needs maintenance
+2582,0.9989813,1,1,in 1 days machine 2582.0 needs maintenance
+8831,0.038515877,0,7,
+2545,0.00024893068,0,7,
+2840,0.99036247,1,1,in 1 days machine 2840.0 needs maintenance
+6481,0.59767467,1,3,in 3 days machine 6481.0 needs maintenance
+76,0.9999137,1,1,in 1 days machine 76.0 needs maintenance
+4019,0.14558555,0,6,
+7852,0.9976979,1,1,in 1 days machine 7852.0 needs maintenance
+2158,0.97596985,1,1,in 1 days machine 2158.0 needs maintenance
+990,0.13786395,0,6,
+5567,0.9914402,1,1,in 1 days machine 5567.0 needs maintenance
+3634,0.99522156,1,1,in 1 days machine 3634.0 needs maintenance
+9569,0.99995923,1,1,in 1 days machine 9569.0 needs maintenance
+2216,0.00022373762,0,7,
+6645,0.9874679,1,1,in 1 days machine 6645.0 needs maintenance
+8556,0.0022367886,0,7,
+1754,0.9763873,1,1,in 1 days machine 1754.0 needs maintenance
+1351,0.0067810654,0,7,
+2895,0.99441093,1,1,in 1 days machine 2895.0 needs maintenance
+84,0.9881186,1,1,in 1 days machine 84.0 needs maintenance
+8665,0.98234624,1,1,in 1 days machine 8665.0 needs maintenance
+4930,0.01146229,0,7,
+798,0.0009431069,0,7,
+9975,0.99964845,1,1,in 1 days machine 9975.0 needs maintenance
+5472,0.79316294,1,2,in 2 days machine 5472.0 needs maintenance
+913,0.998911,1,1,in 1 days machine 913.0 needs maintenance
+6465,0.9965702,1,1,in 1 days machine 6465.0 needs maintenance
+1802,0.98518234,1,1,in 1 days machine 1802.0 needs maintenance
+7903,0.9980501,1,1,in 1 days machine 7903.0 needs maintenance
+4655,0.99923074,1,1,in 1 days machine 4655.0 needs maintenance
+8805,0.9813549,1,1,in 1 days machine 8805.0 needs maintenance
+3199,0.00034621664,0,7,
+9979,0.99494153,1,1,in 1 days machine 9979.0 needs maintenance
+4595,0.9989335,1,1,in 1 days machine 4595.0 needs maintenance
+9862,0.998691,1,1,in 1 days machine 9862.0 needs maintenance
+7220,0.9893839,1,1,in 1 days machine 7220.0 needs maintenance
+5319,0.0007336026,0,7,
+345,0.00039693734,0,7,
+1383,0.9473378,1,1,in 1 days machine 1383.0 needs maintenance
+7302,0.0015974302,0,7,
+9782,8.264882e-05,0,7,
+7282,0.020114228,0,7,
+2829,0.92174673,1,1,in 1 days machine 2829.0 needs maintenance
+7800,0.009525594,0,7,
+5339,0.0004881723,0,7,
+2646,0.99734396,1,1,in 1 days machine 2646.0 needs maintenance
+454,0.9669293,1,1,in 1 days machine 454.0 needs maintenance
+2883,0.0016847148,0,7,
+8798,0.0020369096,0,7,
+5244,0.0003283275,0,7,
+8748,0.9992686,1,1,in 1 days machine 8748.0 needs maintenance
+5845,0.0004893368,0,7,
+9816,0.8025592,1,2,in 2 days machine 9816.0 needs maintenance
+6930,0.18011485,0,6,
+9685,0.9960253,1,1,in 1 days machine 9685.0 needs maintenance
+5017,0.025303436,0,7,
+5312,0.95995873,1,1,in 1 days machine 5312.0 needs maintenance
+3704,0.00039957062,0,7,
+2830,0.89684266,1,2,in 2 days machine 2830.0 needs maintenance
+8075,0.0040008863,0,7,
+7326,0.9926448,1,1,in 1 days machine 7326.0 needs maintenance
+3007,0.0005715172,0,7,
+4418,0.0022162516,0,7,
+5545,0.001464002,0,7,
+5567,0.00031879058,0,7,
+9440,0.99596834,1,1,in 1 days machine 9440.0 needs maintenance
+9552,9.699509e-05,0,7,
+6366,0.9920614,1,1,in 1 days machine 6366.0 needs maintenance
+3464,0.76521385,1,2,in 2 days machine 3464.0 needs maintenance
+9725,0.9899843,1,1,in 1 days machine 9725.0 needs maintenance
+7799,0.00028629726,0,7,
+2729,0.00062999816,0,7,
+4255,0.0020011552,0,7,
+3899,0.026973918,0,7,
+2137,0.0013671063,0,7,
+4105,0.24457881,0,6,
+1714,0.0003427854,0,7,
+2482,0.9963599,1,1,in 1 days machine 2482.0 needs maintenance
+4407,0.99788946,1,1,in 1 days machine 4407.0 needs maintenance
+4474,0.9996629,1,1,in 1 days machine 4474.0 needs maintenance
+5965,0.99935037,1,1,in 1 days machine 5965.0 needs maintenance
+6967,0.008825605,0,7,
+9897,0.0006780877,0,7,
+4712,0.998478,1,1,in 1 days machine 4712.0 needs maintenance
+7979,0.88153523,1,2,in 2 days machine 7979.0 needs maintenance
+7484,0.9614772,1,1,in 1 days machine 7484.0 needs maintenance
+6054,0.9968221,1,1,in 1 days machine 6054.0 needs maintenance
+2614,0.9977017,1,1,in 1 days machine 2614.0 needs maintenance
+5191,0.96329725,1,1,in 1 days machine 5191.0 needs maintenance
+1366,0.9963309,1,1,in 1 days machine 1366.0 needs maintenance
+3560,0.9982311,1,1,in 1 days machine 3560.0 needs maintenance
+3561,0.90433836,1,2,in 2 days machine 3561.0 needs maintenance
+5790,0.9992029,1,1,in 1 days machine 5790.0 needs maintenance
+3898,0.99787056,1,1,in 1 days machine 3898.0 needs maintenance
+1202,0.98494947,1,1,in 1 days machine 1202.0 needs maintenance
+4661,0.9763873,1,1,in 1 days machine 4661.0 needs maintenance
+8052,0.0015604292,0,7,
+9743,0.9641143,1,1,in 1 days machine 9743.0 needs maintenance
+3522,0.53896743,1,4,in 4 days machine 3522.0 needs maintenance
+8345,0.9941521,1,1,in 1 days machine 8345.0 needs maintenance
+1682,0.9604807,1,1,in 1 days machine 1682.0 needs maintenance
+2662,0.99388087,1,1,in 1 days machine 2662.0 needs maintenance
+1614,0.11470204,0,6,
+3684,0.9949361,1,1,in 1 days machine 3684.0 needs maintenance
+7407,0.9999093,1,1,in 1 days machine 7407.0 needs maintenance
+8218,0.9988751,1,1,in 1 days machine 8218.0 needs maintenance
+4583,0.9967597,1,1,in 1 days machine 4583.0 needs maintenance
+7621,0.0008938726,0,7,
+9487,0.0006439046,0,7,
+6154,0.037821304,0,7,
+9699,0.9960543,1,1,in 1 days machine 9699.0 needs maintenance
+2608,0.999054,1,1,in 1 days machine 2608.0 needs maintenance
+4098,0.9992663,1,1,in 1 days machine 4098.0 needs maintenance
+687,0.99664104,1,1,in 1 days machine 687.0 needs maintenance
+9155,0.9635753,1,1,in 1 days machine 9155.0 needs maintenance
+6042,0.9884151,1,1,in 1 days machine 6042.0 needs maintenance
+6258,0.14010876,0,6,
+4888,0.9933646,1,1,in 1 days machine 4888.0 needs maintenance
+2695,0.5360203,1,4,in 4 days machine 2695.0 needs maintenance
+8469,0.0038625472,0,7,
+9716,0.996527,1,1,in 1 days machine 9716.0 needs maintenance
+6095,0.99427164,1,1,in 1 days machine 6095.0 needs maintenance
+4714,0.13143787,0,6,
+9757,0.89163005,1,2,in 2 days machine 9757.0 needs maintenance
+9605,0.9999045,1,1,in 1 days machine 9605.0 needs maintenance
+7438,0.9961987,1,1,in 1 days machine 7438.0 needs maintenance
+4514,0.00786637,0,7,
+4731,0.96355414,1,1,in 1 days machine 4731.0 needs maintenance
+9702,0.99445903,1,1,in 1 days machine 9702.0 needs maintenance
+2448,0.9956435,1,1,in 1 days machine 2448.0 needs maintenance
+158,0.98523027,1,1,in 1 days machine 158.0 needs maintenance
+1338,0.93436295,1,1,in 1 days machine 1338.0 needs maintenance
+5980,0.001849843,0,7,
+1774,0.99516475,1,1,in 1 days machine 1774.0 needs maintenance
+5148,0.99709857,1,1,in 1 days machine 5148.0 needs maintenance
+3163,0.0041853413,0,7,
+3423,0.00082439726,0,7,
+9776,0.9996934,1,1,in 1 days machine 9776.0 needs maintenance
+6929,0.9489261,1,1,in 1 days machine 6929.0 needs maintenance
+2393,0.9530238,1,1,in 1 days machine 2393.0 needs maintenance
+773,0.9907851,1,1,in 1 days machine 773.0 needs maintenance
+1807,0.9991849,1,1,in 1 days machine 1807.0 needs maintenance
+7256,0.0006179629,0,7,
+9810,0.00951785,0,7,
+4338,0.00021079983,0,7,
+5529,0.0001095418,0,7,
+9253,0.9991026,1,1,in 1 days machine 9253.0 needs maintenance
+6728,6.7822366e-05,0,7,
+584,0.99566287,1,1,in 1 days machine 584.0 needs maintenance
+2286,0.00041046803,0,7,
+5852,0.99918467,1,1,in 1 days machine 5852.0 needs maintenance
+3044,0.99538475,1,1,in 1 days machine 3044.0 needs maintenance
+9215,0.0386766,0,7,
+3052,0.9973871,1,1,in 1 days machine 3052.0 needs maintenance
+5563,0.99657816,1,1,in 1 days machine 5563.0 needs maintenance
+6958,0.9994474,1,1,in 1 days machine 6958.0 needs maintenance
+453,0.8109052,1,2,in 2 days machine 453.0 needs maintenance
+7037,0.0026221403,0,7,
+7590,7.5191754e-05,0,7,
+4066,0.0014517881,0,7,
+5436,0.9950883,1,1,in 1 days machine 5436.0 needs maintenance
+9516,0.87470734,1,2,in 2 days machine 9516.0 needs maintenance
+5302,0.94049525,1,1,in 1 days machine 5302.0 needs maintenance
+3819,0.9984238,1,1,in 1 days machine 3819.0 needs maintenance
+821,0.9689835,1,1,in 1 days machine 821.0 needs maintenance
+6332,0.9964373,1,1,in 1 days machine 6332.0 needs maintenance
+296,0.010391374,0,7,
+6175,0.029164579,0,7,
+8716,0.9951084,1,1,in 1 days machine 8716.0 needs maintenance
+651,0.0011904525,0,7,
+8263,0.99277145,1,1,in 1 days machine 8263.0 needs maintenance
+8299,0.97279423,1,1,in 1 days machine 8299.0 needs maintenance
+3629,0.9946883,1,1,in 1 days machine 3629.0 needs maintenance
+8762,0.99651474,1,1,in 1 days machine 8762.0 needs maintenance
+7689,0.9988826,1,1,in 1 days machine 7689.0 needs maintenance
+8367,0.03469838,0,7,
+7124,0.9945539,1,1,in 1 days machine 7124.0 needs maintenance
+5857,0.9970921,1,1,in 1 days machine 5857.0 needs maintenance
+8744,0.6831924,1,3,in 3 days machine 8744.0 needs maintenance
+8517,0.9915917,1,1,in 1 days machine 8517.0 needs maintenance
+7186,0.00023865794,0,7,
+1460,0.9994879,1,1,in 1 days machine 1460.0 needs maintenance
+1081,0.00044403973,0,7,
+9821,0.0009626298,0,7,
+8751,0.9896483,1,1,in 1 days machine 8751.0 needs maintenance
+9648,0.99696004,1,1,in 1 days machine 9648.0 needs maintenance
+8500,0.99817455,1,1,in 1 days machine 8500.0 needs maintenance
+6747,0.99797434,1,1,in 1 days machine 6747.0 needs maintenance
+1418,0.00014364287,0,7,
+5653,0.00018600606,0,7,
+972,4.265003e-05,0,7,
+1464,0.8997186,1,2,in 2 days machine 1464.0 needs maintenance
+6180,0.0022744646,0,7,
+6018,0.9839399,1,1,in 1 days machine 6018.0 needs maintenance
+1198,0.9991404,1,1,in 1 days machine 1198.0 needs maintenance
+8116,0.9916664,1,1,in 1 days machine 8116.0 needs maintenance
+6515,0.9991326,1,1,in 1 days machine 6515.0 needs maintenance
+2280,0.9965515,1,1,in 1 days machine 2280.0 needs maintenance
+6291,0.99863476,1,1,in 1 days machine 6291.0 needs maintenance
+644,0.9954769,1,1,in 1 days machine 644.0 needs maintenance
+7301,0.00053181575,0,7,
+35,0.8256182,1,2,in 2 days machine 35.0 needs maintenance
+734,0.97722363,1,1,in 1 days machine 734.0 needs maintenance
+7662,0.0035751078,0,7,
+5910,0.99659735,1,1,in 1 days machine 5910.0 needs maintenance
+1363,0.94844437,1,1,in 1 days machine 1363.0 needs maintenance
+4243,0.9927626,1,1,in 1 days machine 4243.0 needs maintenance
+5368,0.010758096,0,7,
+8405,0.002926896,0,7,
+7015,0.016825302,0,7,
+2463,0.9984837,1,1,in 1 days machine 2463.0 needs maintenance
+9405,0.9994136,1,1,in 1 days machine 9405.0 needs maintenance
+572,0.85464734,1,2,in 2 days machine 572.0 needs maintenance
+539,0.9955551,1,1,in 1 days machine 539.0 needs maintenance
+1954,0.9990901,1,1,in 1 days machine 1954.0 needs maintenance
+1969,0.99943036,1,1,in 1 days machine 1969.0 needs maintenance
+6218,0.9008104,1,2,in 2 days machine 6218.0 needs maintenance
+7255,0.99118876,1,1,in 1 days machine 7255.0 needs maintenance
+3275,0.0012407599,0,7,
+3499,0.9951499,1,1,in 1 days machine 3499.0 needs maintenance
+5021,0.996296,1,1,in 1 days machine 5021.0 needs maintenance
+9980,0.0009707943,0,7,
+9748,0.001030702,0,7,
+6091,0.04246274,0,7,
+9091,0.0011669853,0,7,
+6572,0.9964144,1,1,in 1 days machine 6572.0 needs maintenance
+958,0.95849127,1,1,in 1 days machine 958.0 needs maintenance
+7815,0.010570429,0,7,
+3235,0.21702912,0,6,
+8247,0.9993994,1,1,in 1 days machine 8247.0 needs maintenance
+7072,0.0001468278,0,7,
+2947,0.00037038888,0,7,
+5044,0.99786276,1,1,in 1 days machine 5044.0 needs maintenance
+8045,0.9996891,1,1,in 1 days machine 8045.0 needs maintenance
+4447,0.005772357,0,7,
+2933,0.015963212,0,7,
+8258,0.008796936,0,7,
+900,0.6500493,1,3,in 3 days machine 900.0 needs maintenance
+5863,0.00081557734,0,7,
+7511,0.00012006833,0,7,
+3521,0.99819285,1,1,in 1 days machine 3521.0 needs maintenance
+8840,0.00084572274,0,7,
+8331,0.75201106,1,2,in 2 days machine 8331.0 needs maintenance
+4546,0.0009289056,0,7,
+5418,0.0032859691,0,7,
+8241,0.0004061348,0,7,
+1859,0.02023256,0,7,
+9446,0.9031468,1,2,in 2 days machine 9446.0 needs maintenance
+6541,0.9965243,1,1,in 1 days machine 6541.0 needs maintenance
+920,0.0017119591,0,7,
+3918,0.998323,1,1,in 1 days machine 3918.0 needs maintenance
+8208,0.9899828,1,1,in 1 days machine 8208.0 needs maintenance
+9488,0.00030477744,0,7,
+9658,0.000572826,0,7,
+249,0.984124,1,1,in 1 days machine 249.0 needs maintenance
+8983,0.94213873,1,1,in 1 days machine 8983.0 needs maintenance
+1068,0.00013910118,0,7,
+9659,0.9905289,1,1,in 1 days machine 9659.0 needs maintenance
+6474,0.101542845,0,6,
+2715,0.998483,1,1,in 1 days machine 2715.0 needs maintenance
+2666,0.0001433573,0,7,
+297,0.99703383,1,1,in 1 days machine 297.0 needs maintenance
+7297,0.9965766,1,1,in 1 days machine 7297.0 needs maintenance
+4806,0.0005469694,0,7,
+6121,0.99886155,1,1,in 1 days machine 6121.0 needs maintenance
+6423,0.0027038509,0,7,
+5194,0.003077334,0,7,
+8047,0.99974114,1,1,in 1 days machine 8047.0 needs maintenance
+1170,0.0008307224,0,7,
+786,0.04896724,0,7,
+9203,0.99873894,1,1,in 1 days machine 9203.0 needs maintenance
+2512,0.0044304514,0,7,
+4499,0.03382953,0,7,
+1025,0.99312276,1,1,in 1 days machine 1025.0 needs maintenance
+6287,0.0034863087,0,7,
+3810,0.0020836638,0,7,
+8016,0.00032049805,0,7,
+6476,0.0017848043,0,7,
+5536,0.9968837,1,1,in 1 days machine 5536.0 needs maintenance
+9897,0.0003461805,0,7,
+8123,0.9964059,1,1,in 1 days machine 8123.0 needs maintenance
+547,0.9866572,1,1,in 1 days machine 547.0 needs maintenance
+8737,0.0015810732,0,7,
+1573,0.006207796,0,7,
+9777,0.46885893,0,4,
+3657,0.018043393,0,7,
+9568,0.0012153259,0,7,
+7405,0.0024089909,0,7,
+7125,0.003716193,0,7,
+3679,0.9969541,1,1,in 1 days machine 3679.0 needs maintenance
+9726,0.9931825,1,1,in 1 days machine 9726.0 needs maintenance
+676,0.99921656,1,1,in 1 days machine 676.0 needs maintenance
+1602,0.8901738,1,2,in 2 days machine 1602.0 needs maintenance
+7324,0.9967205,1,1,in 1 days machine 7324.0 needs maintenance
+4840,0.99862945,1,1,in 1 days machine 4840.0 needs maintenance
+4232,0.70998096,1,3,in 3 days machine 4232.0 needs maintenance
+9449,0.99581367,1,1,in 1 days machine 9449.0 needs maintenance
+7548,0.21459171,0,6,
+3845,0.0031947524,0,7,
+4724,0.9988446,1,1,in 1 days machine 4724.0 needs maintenance
+8698,0.0019415037,0,7,
+9705,0.99755716,1,1,in 1 days machine 9705.0 needs maintenance
+9141,0.99253136,1,1,in 1 days machine 9141.0 needs maintenance
+5137,0.12668885,0,6,
+6778,0.9992107,1,1,in 1 days machine 6778.0 needs maintenance
+2145,0.002997055,0,7,
+2862,0.9913203,1,1,in 1 days machine 2862.0 needs maintenance
+6965,0.98597175,1,1,in 1 days machine 6965.0 needs maintenance
+8001,0.008268273,0,7,
+6495,0.018427134,0,7,
+4337,0.9908749,1,1,in 1 days machine 4337.0 needs maintenance
+5859,0.07623784,0,7,
+1073,0.74539006,1,3,in 3 days machine 1073.0 needs maintenance
+6599,0.9999707,1,1,in 1 days machine 6599.0 needs maintenance
+68,0.9819989,1,1,in 1 days machine 68.0 needs maintenance
+4502,0.36916557,0,5,
+4569,0.0023275907,0,7,
+3321,0.9990277,1,1,in 1 days machine 3321.0 needs maintenance
+8991,0.80077016,1,2,in 2 days machine 8991.0 needs maintenance
+3671,0.0011389918,0,7,
+5862,0.9934303,1,1,in 1 days machine 5862.0 needs maintenance
+5790,0.0010914603,0,7,
+1804,0.9948201,1,1,in 1 days machine 1804.0 needs maintenance
+6866,0.9992859,1,1,in 1 days machine 6866.0 needs maintenance
+7354,0.99744236,1,1,in 1 days machine 7354.0 needs maintenance
+7949,0.99793845,1,1,in 1 days machine 7949.0 needs maintenance
+8542,0.996167,1,1,in 1 days machine 8542.0 needs maintenance
+2483,0.00017019635,0,7,
+3570,0.13308859,0,6,
+2470,0.99917966,1,1,in 1 days machine 2470.0 needs maintenance
+291,0.9989022,1,1,in 1 days machine 291.0 needs maintenance
+6011,0.022845495,0,7,
+5281,0.00022187793,0,7,
+221,0.99776495,1,1,in 1 days machine 221.0 needs maintenance
+3557,0.00026317433,0,7,
+3804,0.9971806,1,1,in 1 days machine 3804.0 needs maintenance
+4405,7.4993826e-05,0,7,
+326,0.9970951,1,1,in 1 days machine 326.0 needs maintenance
+9088,0.8941699,1,2,in 2 days machine 9088.0 needs maintenance
+8689,0.0025395234,0,7,
+3937,0.99537116,1,1,in 1 days machine 3937.0 needs maintenance
+7671,0.9971214,1,1,in 1 days machine 7671.0 needs maintenance
+5737,0.0075577595,0,7,
+9999,0.0006781262,0,7,
+248,0.00051663874,0,7,
+6701,0.96910906,1,1,in 1 days machine 6701.0 needs maintenance
+784,0.0024903633,0,7,
+3146,0.9976718,1,1,in 1 days machine 3146.0 needs maintenance
+6532,0.9906657,1,1,in 1 days machine 6532.0 needs maintenance
+4460,0.010439119,0,7,
+5948,3.782571e-05,0,7,
+9320,0.0026211767,0,7,
+7509,0.0017816407,0,7,
+1859,0.98390967,1,1,in 1 days machine 1859.0 needs maintenance
+3148,0.99921155,1,1,in 1 days machine 3148.0 needs maintenance
+3632,0.00010701423,0,7,
+1278,0.998885,1,1,in 1 days machine 1278.0 needs maintenance
+4030,0.9674883,1,1,in 1 days machine 4030.0 needs maintenance
+7242,0.006980173,0,7,
+3593,0.98530453,1,1,in 1 days machine 3593.0 needs maintenance
+4733,0.994981,1,1,in 1 days machine 4733.0 needs maintenance
+2700,0.946179,1,1,in 1 days machine 2700.0 needs maintenance
+1266,0.016432347,0,7,
+2348,0.4390657,0,4,
+2790,0.0024707573,0,7,
+3890,0.0001896174,0,7,
+1456,0.17871548,0,6,
+451,0.9927638,1,1,in 1 days machine 451.0 needs maintenance
+2923,0.9999726,1,1,in 1 days machine 2923.0 needs maintenance
+5933,3.9186893e-05,0,7,
+1029,0.98500025,1,1,in 1 days machine 1029.0 needs maintenance
+4636,0.98839337,1,1,in 1 days machine 4636.0 needs maintenance
+7172,0.9999399,1,1,in 1 days machine 7172.0 needs maintenance
+3808,0.9990808,1,1,in 1 days machine 3808.0 needs maintenance
+4954,0.00056719535,0,7,
+3141,0.0017515902,0,7,
+6127,0.00054913154,0,7,
+6174,0.99767166,1,1,in 1 days machine 6174.0 needs maintenance
+6556,0.0234949,0,7,
+8558,0.001394225,0,7,
+5475,0.0063662995,0,7,
+9490,0.99738985,1,1,in 1 days machine 9490.0 needs maintenance
+7397,0.0017472517,0,7,
+6456,0.02085257,0,7,
+8049,0.005907265,0,7,
+5210,0.002288562,0,7,
+5061,0.00058188057,0,7,
+737,0.0012779282,0,7,
+4888,0.99469924,1,1,in 1 days machine 4888.0 needs maintenance
+8065,0.9947352,1,1,in 1 days machine 8065.0 needs maintenance
+5957,0.9864631,1,1,in 1 days machine 5957.0 needs maintenance
+9883,0.99140376,1,1,in 1 days machine 9883.0 needs maintenance
+7318,0.0008669111,0,7,
+3084,0.0016022972,0,7,
+4216,0.0002986914,0,7,
+100,0.99743736,1,1,in 1 days machine 100.0 needs maintenance
+7932,0.00034505792,0,7,
+4299,0.058538016,0,7,
+1893,0.0024308527,0,7,
+5961,0.9984256,1,1,in 1 days machine 5961.0 needs maintenance
+7426,0.017732063,0,7,
+5586,0.008520261,0,7,
+1237,0.0002715937,0,7,
+6330,0.9963851,1,1,in 1 days machine 6330.0 needs maintenance
+3311,0.00048897846,0,7,
+5516,4.9828446e-05,0,7,
+8391,0.00042446295,0,7,
+8651,0.0017972987,0,7,
+1056,0.0029703688,0,7,
+489,0.0005041314,0,7,
+9866,0.0013948227,0,7,
+5536,0.9981645,1,1,in 1 days machine 5536.0 needs maintenance
+6900,7.258292e-05,0,7,
+4393,0.016706482,0,7,
+6778,0.0027689557,0,7,
+7165,0.9905069,1,1,in 1 days machine 7165.0 needs maintenance
+8031,0.9910823,1,1,in 1 days machine 8031.0 needs maintenance
+1830,0.9992459,1,1,in 1 days machine 1830.0 needs maintenance
+9017,0.0014875096,0,7,
+3673,0.0006716909,0,7,
+2583,0.009817518,0,7,
+8299,0.0016600167,0,7,
+7343,0.99434364,1,1,in 1 days machine 7343.0 needs maintenance
+1778,0.0010740842,0,7,
+9251,0.99711144,1,1,in 1 days machine 9251.0 needs maintenance
+1710,0.99836963,1,1,in 1 days machine 1710.0 needs maintenance
+5244,0.00023948835,0,7,
+4525,0.13309097,0,6,
+6957,0.8877622,1,2,in 2 days machine 6957.0 needs maintenance
+6807,0.99587846,1,1,in 1 days machine 6807.0 needs maintenance
+5732,0.0002107082,0,7,
+3427,0.00067434827,0,7,
+2351,0.0029729684,0,7,
+3663,0.0001762349,0,7,
+2357,0.9990251,1,1,in 1 days machine 2357.0 needs maintenance
+1051,0.006143246,0,7,
+9169,0.041666362,0,7,
+8331,0.99836856,1,1,in 1 days machine 8331.0 needs maintenance
+1947,0.0014428075,0,7,
+9476,0.8408154,1,2,in 2 days machine 9476.0 needs maintenance
+8222,0.0009220028,0,7,
+408,0.00017017654,0,7,
+8083,0.99358493,1,1,in 1 days machine 8083.0 needs maintenance
+1447,0.9915217,1,1,in 1 days machine 1447.0 needs maintenance
+2485,0.0025883683,0,7,
+8414,0.9958675,1,1,in 1 days machine 8414.0 needs maintenance
+2487,0.99183136,1,1,in 1 days machine 2487.0 needs maintenance
+3366,0.9982687,1,1,in 1 days machine 3366.0 needs maintenance
+9593,0.0004054864,0,7,
+3889,7.9778154e-05,0,7,
+2804,0.99755436,1,1,in 1 days machine 2804.0 needs maintenance
+5926,0.9986083,1,1,in 1 days machine 5926.0 needs maintenance
+2671,0.9960496,1,1,in 1 days machine 2671.0 needs maintenance
+7045,0.0032861566,0,7,
+4861,0.0012309245,0,7,
+4833,0.9590359,1,1,in 1 days machine 4833.0 needs maintenance
+4770,0.9997991,1,1,in 1 days machine 4770.0 needs maintenance
+4387,0.99579155,1,1,in 1 days machine 4387.0 needs maintenance
+5480,0.9994936,1,1,in 1 days machine 5480.0 needs maintenance
+5808,0.0002922261,0,7,
+5910,0.99751496,1,1,in 1 days machine 5910.0 needs maintenance
+3765,0.997486,1,1,in 1 days machine 3765.0 needs maintenance
+9749,0.0015864334,0,7,
+2858,0.9984137,1,1,in 1 days machine 2858.0 needs maintenance
+4009,0.96591073,1,1,in 1 days machine 4009.0 needs maintenance
+5522,0.0026773736,0,7,
+991,0.0007819683,0,7,
+5757,0.9721114,1,1,in 1 days machine 5757.0 needs maintenance
+6371,0.9930506,1,1,in 1 days machine 6371.0 needs maintenance
+8023,7.861057e-05,0,7,
+3772,0.98318547,1,1,in 1 days machine 3772.0 needs maintenance
+1198,0.0007524951,0,7,
+4389,0.76404643,1,2,in 2 days machine 4389.0 needs maintenance
+5021,0.9952461,1,1,in 1 days machine 5021.0 needs maintenance
+599,0.9959792,1,1,in 1 days machine 599.0 needs maintenance
+4767,0.0133221205,0,7,
+4767,0.70477736,1,3,in 3 days machine 4767.0 needs maintenance
+8980,0.00032062762,0,7,
+1269,0.9993575,1,1,in 1 days machine 1269.0 needs maintenance
+7006,0.0046889028,0,7,
+6807,0.04194264,0,7,
+8122,0.00011504676,0,7,
+4289,0.0010605424,0,7,
+1898,0.0080267005,0,7,
+259,0.8508119,1,2,in 2 days machine 259.0 needs maintenance
+8192,0.0023772484,0,7,
+4336,0.9635753,1,1,in 1 days machine 4336.0 needs maintenance
+8115,0.8717174,1,2,in 2 days machine 8115.0 needs maintenance
+6680,0.99838054,1,1,in 1 days machine 6680.0 needs maintenance
+3655,0.00038782187,0,7,
+6064,5.5113447e-05,0,7,
+479,0.10439433,0,6,
+5128,0.9942849,1,1,in 1 days machine 5128.0 needs maintenance
+4495,0.9996458,1,1,in 1 days machine 4495.0 needs maintenance
+6187,0.9915393,1,1,in 1 days machine 6187.0 needs maintenance
+8456,0.0018333627,0,7,
+1110,0.99833506,1,1,in 1 days machine 1110.0 needs maintenance
+3978,0.18740033,0,6,
+4310,0.00015399804,0,7,
+7711,0.94873977,1,1,in 1 days machine 7711.0 needs maintenance
+1359,0.0025264337,0,7,
+9650,0.43994623,0,4,
+3099,0.99703383,1,1,in 1 days machine 3099.0 needs maintenance
+4697,0.0009852782,0,7,
+432,0.99929595,1,1,in 1 days machine 432.0 needs maintenance
+4684,0.9983814,1,1,in 1 days machine 4684.0 needs maintenance
+4342,0.99963164,1,1,in 1 days machine 4342.0 needs maintenance
+6755,0.0006467538,0,7,
+1371,0.99708635,1,1,in 1 days machine 1371.0 needs maintenance
+7538,0.99896395,1,1,in 1 days machine 7538.0 needs maintenance
+2842,0.076801226,0,7,
+9382,0.98401225,1,1,in 1 days machine 9382.0 needs maintenance
+5497,0.00020712058,0,7,
+2642,0.00042657854,0,7,
+6982,0.0009412698,0,7,
+830,0.0006184994,0,7,
+8094,0.0027845402,0,7,
+26,0.00027132037,0,7,
+5459,0.99939525,1,1,in 1 days machine 5459.0 needs maintenance
+5290,0.9986696,1,1,in 1 days machine 5290.0 needs maintenance
+7536,0.84389335,1,2,in 2 days machine 7536.0 needs maintenance
+9092,4.23137e-05,0,7,
+3015,0.0013094771,0,7,
+7321,0.0007681333,0,7,
+7390,0.011865565,0,7,
+8448,0.00012642358,0,7,
+24,0.99584275,1,1,in 1 days machine 24.0 needs maintenance
+3317,0.025011592,0,7,
+9006,0.9940615,1,1,in 1 days machine 9006.0 needs maintenance
+2334,0.0030853902,0,7,
+832,0.9980677,1,1,in 1 days machine 832.0 needs maintenance
+3722,0.98841196,1,1,in 1 days machine 3722.0 needs maintenance
+8966,0.0155835375,0,7,
+5719,0.004855472,0,7,
+4171,0.88358533,1,2,in 2 days machine 4171.0 needs maintenance
+98,0.99948066,1,1,in 1 days machine 98.0 needs maintenance
+5988,0.9920421,1,1,in 1 days machine 5988.0 needs maintenance
+7205,0.040888257,0,7,
+3245,0.99537224,1,1,in 1 days machine 3245.0 needs maintenance
+308,0.0011606727,0,7,
+4992,0.00038595378,0,7,
+2928,0.0059192255,0,7,
+4231,0.99881434,1,1,in 1 days machine 4231.0 needs maintenance
+872,8.8871864e-05,0,7,
+7578,0.0016315085,0,7,
+3369,0.99986434,1,1,in 1 days machine 3369.0 needs maintenance
+4312,0.0007238583,0,7,
+6326,0.046799395,0,7,
+6988,0.09746598,0,6,
+266,0.0030766595,0,7,
+3952,0.0015035506,0,7,
+5169,0.9974146,1,1,in 1 days machine 5169.0 needs maintenance
+6722,0.96128553,1,1,in 1 days machine 6722.0 needs maintenance
+1058,0.0008303563,0,7,
+6403,0.99964845,1,1,in 1 days machine 6403.0 needs maintenance
+5472,0.99694735,1,1,in 1 days machine 5472.0 needs maintenance
+5567,0.8581294,1,2,in 2 days machine 5567.0 needs maintenance
+6317,0.99921525,1,1,in 1 days machine 6317.0 needs maintenance
+7211,0.99637824,1,1,in 1 days machine 7211.0 needs maintenance
+8096,0.99280167,1,1,in 1 days machine 8096.0 needs maintenance
+9613,0.9983925,1,1,in 1 days machine 9613.0 needs maintenance
+7478,0.012928199,0,7,
+6493,0.002582622,0,7,
+705,0.012792494,0,7,
+4090,0.22012615,0,6,
+532,0.00015097123,0,7,
+4461,0.0012889501,0,7,
+6142,0.9979691,1,1,in 1 days machine 6142.0 needs maintenance
+8394,0.9991726,1,1,in 1 days machine 8394.0 needs maintenance
+3680,0.99714965,1,1,in 1 days machine 3680.0 needs maintenance
+2984,0.00013505985,0,7,
+6410,0.00055265485,0,7,
+4566,0.8664867,1,2,in 2 days machine 4566.0 needs maintenance
+304,0.99926454,1,1,in 1 days machine 304.0 needs maintenance
+1417,0.98684233,1,1,in 1 days machine 1417.0 needs maintenance
+239,0.19208468,0,6,
+9068,0.96910906,1,1,in 1 days machine 9068.0 needs maintenance
+8301,0.005176824,0,7,
+2227,6.8279274e-05,0,7,
+2514,0.5365331,1,4,in 4 days machine 2514.0 needs maintenance
+3651,0.9931712,1,1,in 1 days machine 3651.0 needs maintenance
+5729,0.004913333,0,7,
+8409,0.028459156,0,7,
+5528,0.0014774639,0,7,
+4110,0.991803,1,1,in 1 days machine 4110.0 needs maintenance
+1088,0.0052905204,0,7,
+4418,0.9985996,1,1,in 1 days machine 4418.0 needs maintenance
+2743,0.0020887216,0,7,
+8360,0.99866307,1,1,in 1 days machine 8360.0 needs maintenance
+5384,0.9978969,1,1,in 1 days machine 5384.0 needs maintenance
+4314,0.00076371105,0,7,
+6024,0.99688977,1,1,in 1 days machine 6024.0 needs maintenance
+1039,0.0009793988,0,7,
+3816,0.95757335,1,1,in 1 days machine 3816.0 needs maintenance
+6517,0.0025752138,0,7,
+2627,0.00076305267,0,7,
+5117,0.99841,1,1,in 1 days machine 5117.0 needs maintenance
+504,0.99876773,1,1,in 1 days machine 504.0 needs maintenance
+631,0.9647275,1,1,in 1 days machine 631.0 needs maintenance
+8935,0.9947461,1,1,in 1 days machine 8935.0 needs maintenance
+8361,4.908362e-05,0,7,
+2077,0.0028662235,0,7,
+2992,0.9993007,1,1,in 1 days machine 2992.0 needs maintenance
+9867,0.006070864,0,7,
+8550,0.9975313,1,1,in 1 days machine 8550.0 needs maintenance
+557,0.0039099013,0,7,
+206,0.16842687,0,6,
+6125,0.99945873,1,1,in 1 days machine 6125.0 needs maintenance
+3203,0.98564076,1,1,in 1 days machine 3203.0 needs maintenance
+6880,0.99830997,1,1,in 1 days machine 6880.0 needs maintenance
+5445,0.001202984,0,7,
+3992,0.99629825,1,1,in 1 days machine 3992.0 needs maintenance
+8439,0.99596834,1,1,in 1 days machine 8439.0 needs maintenance
+7981,0.992516,1,1,in 1 days machine 7981.0 needs maintenance
+8334,0.9989221,1,1,in 1 days machine 8334.0 needs maintenance
+9592,0.99769175,1,1,in 1 days machine 9592.0 needs maintenance
+3351,0.9912828,1,1,in 1 days machine 3351.0 needs maintenance
+1068,0.0025844616,0,7,
+144,0.0008310965,0,7,
+2935,0.99823844,1,1,in 1 days machine 2935.0 needs maintenance
+5006,0.00026525938,0,7,
+284,0.1937603,0,6,
+9656,0.023721442,0,7,
+7640,0.99941576,1,1,in 1 days machine 7640.0 needs maintenance
+2029,0.0005823644,0,7,
+2221,0.0020680272,0,7,
+6487,0.0005022549,0,7,
+7496,0.0008952351,0,7,
+1290,0.9986922,1,1,in 1 days machine 1290.0 needs maintenance
+9128,0.99877256,1,1,in 1 days machine 9128.0 needs maintenance
+2347,0.99503386,1,1,in 1 days machine 2347.0 needs maintenance
+7692,0.9991007,1,1,in 1 days machine 7692.0 needs maintenance
+722,0.8215312,1,2,in 2 days machine 722.0 needs maintenance
+2329,0.00019647767,0,7,
+4022,0.17839347,0,6,
+2365,0.9990779,1,1,in 1 days machine 2365.0 needs maintenance
+6460,0.037485216,0,7,
+6901,0.00036252284,0,7,
+6044,0.9489232,1,1,in 1 days machine 6044.0 needs maintenance
+7382,0.99873024,1,1,in 1 days machine 7382.0 needs maintenance
+2123,0.99005497,1,1,in 1 days machine 2123.0 needs maintenance
+2521,0.003384711,0,7,
+1753,0.9995129,1,1,in 1 days machine 1753.0 needs maintenance
+9891,0.94431895,1,1,in 1 days machine 9891.0 needs maintenance
+2053,0.99532264,1,1,in 1 days machine 2053.0 needs maintenance
+616,0.9965133,1,1,in 1 days machine 616.0 needs maintenance
+2163,0.00056662725,0,7,
+2512,0.0037992694,0,7,
+6525,0.99678385,1,1,in 1 days machine 6525.0 needs maintenance
+2191,0.99630594,1,1,in 1 days machine 2191.0 needs maintenance
+8454,0.9930341,1,1,in 1 days machine 8454.0 needs maintenance
+2808,0.002214428,0,7,
+958,0.013673,0,7,
+4943,0.03788066,0,7,
+8510,0.001983585,0,7,
+2104,0.99977845,1,1,in 1 days machine 2104.0 needs maintenance
+5420,0.9941052,1,1,in 1 days machine 5420.0 needs maintenance
+3108,0.9758145,1,1,in 1 days machine 3108.0 needs maintenance
+7669,0.0015358742,0,7,
+879,0.0008632553,0,7,
+6,0.99939525,1,1,in 1 days machine 6.0 needs maintenance
+1452,0.9930895,1,1,in 1 days machine 1452.0 needs maintenance
+5598,0.013074002,0,7,
+8917,0.0046471125,0,7,
+5044,0.011836851,0,7,
+9966,0.9988649,1,1,in 1 days machine 9966.0 needs maintenance
+239,0.9955686,1,1,in 1 days machine 239.0 needs maintenance
+3092,0.99965227,1,1,in 1 days machine 3092.0 needs maintenance
+3205,0.9997824,1,1,in 1 days machine 3205.0 needs maintenance
+6845,0.0011586364,0,7,
+9571,0.7851786,1,2,in 2 days machine 9571.0 needs maintenance
+680,0.0028094652,0,7,
+671,0.9966073,1,1,in 1 days machine 671.0 needs maintenance
+9376,0.000107592954,0,7,
+1455,0.9978969,1,1,in 1 days machine 1455.0 needs maintenance
+4665,0.99842143,1,1,in 1 days machine 4665.0 needs maintenance
+9901,0.001122778,0,7,
+3590,0.010833195,0,7,
+6622,0.99664104,1,1,in 1 days machine 6622.0 needs maintenance
+1242,0.32867914,0,5,
+1831,0.9929858,1,1,in 1 days machine 1831.0 needs maintenance
+6142,0.0018516796,0,7,
+695,0.99866307,1,1,in 1 days machine 695.0 needs maintenance
+8596,0.00032732487,0,7,
+2004,0.00020691137,0,7,
+6883,0.75681067,1,2,in 2 days machine 6883.0 needs maintenance
+4931,0.008862266,0,7,
+6589,0.99783856,1,1,in 1 days machine 6589.0 needs maintenance
+5649,0.9992694,1,1,in 1 days machine 5649.0 needs maintenance
+817,0.99372923,1,1,in 1 days machine 817.0 needs maintenance
+4852,0.99840456,1,1,in 1 days machine 4852.0 needs maintenance
+7126,0.998681,1,1,in 1 days machine 7126.0 needs maintenance
+5192,0.0010564156,0,7,
+4076,0.00044047125,0,7,
+1121,0.9806652,1,1,in 1 days machine 1121.0 needs maintenance
+4162,0.9281613,1,1,in 1 days machine 4162.0 needs maintenance
+9454,0.001286695,0,7,
+4933,0.9853688,1,1,in 1 days machine 4933.0 needs maintenance
+4588,0.72368413,1,3,in 3 days machine 4588.0 needs maintenance
+835,0.0002447622,0,7,
+6300,0.6539077,1,3,in 3 days machine 6300.0 needs maintenance
+1102,0.00028439373,0,7,
+3140,0.10488763,0,6,
+21,0.9950531,1,1,in 1 days machine 21.0 needs maintenance
+5878,0.00040867302,0,7,
+6939,0.9962543,1,1,in 1 days machine 6939.0 needs maintenance
+8619,0.010330692,0,7,
+4341,0.32417947,0,5,
+2493,0.00022002489,0,7,
+3662,0.0015192009,0,7,
+6132,0.00038375924,0,7,
+4735,0.00073152216,0,7,
+4213,0.00034038458,0,7,
+9632,0.0019275757,0,7,
+9200,0.0034062122,0,7,
+6184,0.99948704,1,1,in 1 days machine 6184.0 needs maintenance
+4366,0.9993788,1,1,in 1 days machine 4366.0 needs maintenance
+570,0.9983852,1,1,in 1 days machine 570.0 needs maintenance
+6974,0.9972723,1,1,in 1 days machine 6974.0 needs maintenance
+7658,0.9819095,1,1,in 1 days machine 7658.0 needs maintenance
+4410,0.9950046,1,1,in 1 days machine 4410.0 needs maintenance
+9672,0.9978606,1,1,in 1 days machine 9672.0 needs maintenance
+6666,0.0013937291,0,7,
+1899,0.005542069,0,7,
+2468,0.1151512,0,6,
+9317,0.97517323,1,1,in 1 days machine 9317.0 needs maintenance
+5373,0.0021604523,0,7,
+2457,0.99696904,1,1,in 1 days machine 2457.0 needs maintenance
+2498,0.000705457,0,7,
+298,0.9860015,1,1,in 1 days machine 298.0 needs maintenance
+9281,0.96453077,1,1,in 1 days machine 9281.0 needs maintenance
+4844,0.9953406,1,1,in 1 days machine 4844.0 needs maintenance
+6287,0.99243236,1,1,in 1 days machine 6287.0 needs maintenance
+8213,0.0034481613,0,7,
+7944,0.99509805,1,1,in 1 days machine 7944.0 needs maintenance
+9290,0.99679416,1,1,in 1 days machine 9290.0 needs maintenance
+4940,0.99741626,1,1,in 1 days machine 4940.0 needs maintenance
+2106,0.99514717,1,1,in 1 days machine 2106.0 needs maintenance
+8649,0.9999747,1,1,in 1 days machine 8649.0 needs maintenance
+8408,0.21437506,0,6,
+9880,0.00095396925,0,7,
+5951,0.9963529,1,1,in 1 days machine 5951.0 needs maintenance
+3453,0.999627,1,1,in 1 days machine 3453.0 needs maintenance
+6811,0.011522598,0,7,
+3502,0.00019751904,0,7,
+3469,9.9107354e-05,0,7,
+7124,0.00046555977,0,7,
+2657,0.015006499,0,7,
+34,0.995837,1,1,in 1 days machine 34.0 needs maintenance
+2722,0.017243303,0,7,
+3879,0.9960233,1,1,in 1 days machine 3879.0 needs maintenance
+4924,0.9982408,1,1,in 1 days machine 4924.0 needs maintenance
+8367,0.9652714,1,1,in 1 days machine 8367.0 needs maintenance
+2809,0.11061558,0,6,
+272,0.9969887,1,1,in 1 days machine 272.0 needs maintenance
+7575,0.9866421,1,1,in 1 days machine 7575.0 needs maintenance
+6333,0.9989748,1,1,in 1 days machine 6333.0 needs maintenance
+8073,0.0041386094,0,7,
+3866,0.9981693,1,1,in 1 days machine 3866.0 needs maintenance
+4912,0.00048919616,0,7,
+232,0.0010831553,0,7,
+3770,0.9564247,1,1,in 1 days machine 3770.0 needs maintenance
+5310,0.0036332067,0,7,
+9672,0.00011451723,0,7,
+2919,0.9426254,1,1,in 1 days machine 2919.0 needs maintenance
+162,0.9965407,1,1,in 1 days machine 162.0 needs maintenance
+9684,0.0006956443,0,7,
+7221,0.00071887946,0,7,
+2079,0.0001460254,0,7,
+2525,0.9902458,1,1,in 1 days machine 2525.0 needs maintenance
+7962,0.00046996822,0,7,
+4904,0.9980501,1,1,in 1 days machine 4904.0 needs maintenance
+6158,0.0018642109,0,7,
+3941,0.0036157314,0,7,
+9477,0.9988256,1,1,in 1 days machine 9477.0 needs maintenance
+7756,0.7298426,1,3,in 3 days machine 7756.0 needs maintenance
+4512,0.9972481,1,1,in 1 days machine 4512.0 needs maintenance
+6578,0.99895763,1,1,in 1 days machine 6578.0 needs maintenance
+9630,0.9969543,1,1,in 1 days machine 9630.0 needs maintenance
+2662,0.0003636339,0,7,
+6682,0.9992409,1,1,in 1 days machine 6682.0 needs maintenance
+2788,0.8933132,1,2,in 2 days machine 2788.0 needs maintenance
+5083,0.9751302,1,1,in 1 days machine 5083.0 needs maintenance
+4665,0.99606735,1,1,in 1 days machine 4665.0 needs maintenance
+3350,0.000998979,0,7,
+2895,0.00082757155,0,7,
+6069,0.99932146,1,1,in 1 days machine 6069.0 needs maintenance
+7637,0.9948331,1,1,in 1 days machine 7637.0 needs maintenance
+4340,0.9811508,1,1,in 1 days machine 4340.0 needs maintenance
+9345,0.023528058,0,7,
+8506,0.0051164734,0,7,
+7367,0.9703856,1,1,in 1 days machine 7367.0 needs maintenance
+2545,0.97972804,1,1,in 1 days machine 2545.0 needs maintenance
+4134,0.9976307,1,1,in 1 days machine 4134.0 needs maintenance
+3253,0.99368405,1,1,in 1 days machine 3253.0 needs maintenance
+2858,0.008261781,0,7,
+1602,0.9060021,1,2,in 2 days machine 1602.0 needs maintenance
+4252,0.98598415,1,1,in 1 days machine 4252.0 needs maintenance
+8919,0.9963492,1,1,in 1 days machine 8919.0 needs maintenance
+5172,0.00027596997,0,7,
+9700,0.9970289,1,1,in 1 days machine 9700.0 needs maintenance
+2178,0.004015473,0,7,
+2469,0.00055870996,0,7,
+3265,0.01096756,0,7,
+5940,0.9991335,1,1,in 1 days machine 5940.0 needs maintenance
+9273,0.0014070221,0,7,
+6673,0.00222974,0,7,
+2401,0.99823475,1,1,in 1 days machine 2401.0 needs maintenance
+1144,0.9969541,1,1,in 1 days machine 1144.0 needs maintenance
+8463,0.0020041505,0,7,
+4395,0.99610496,1,1,in 1 days machine 4395.0 needs maintenance
+5226,0.98945975,1,1,in 1 days machine 5226.0 needs maintenance
+4617,0.0021208136,0,7,
+3263,0.9983814,1,1,in 1 days machine 3263.0 needs maintenance
+3707,0.9792965,1,1,in 1 days machine 3707.0 needs maintenance
+572,0.99676394,1,1,in 1 days machine 572.0 needs maintenance
+2377,0.9988533,1,1,in 1 days machine 2377.0 needs maintenance
+5425,0.015737908,0,7,
+4756,0.004730443,0,7,
+1004,0.0017968256,0,7,
+9509,0.013643142,0,7,
+2314,0.99990857,1,1,in 1 days machine 2314.0 needs maintenance
+5184,0.99906343,1,1,in 1 days machine 5184.0 needs maintenance
+8755,0.9876101,1,1,in 1 days machine 8755.0 needs maintenance
+9969,0.99992466,1,1,in 1 days machine 9969.0 needs maintenance
+6258,0.00070062093,0,7,
+7298,0.9985936,1,1,in 1 days machine 7298.0 needs maintenance
+956,0.014053733,0,7,
+969,0.99782014,1,1,in 1 days machine 969.0 needs maintenance
+9081,0.003295951,0,7,
+9492,0.0069397683,0,7,
+9095,0.99873656,1,1,in 1 days machine 9095.0 needs maintenance
+3220,0.9975715,1,1,in 1 days machine 3220.0 needs maintenance
+3593,0.002213262,0,7,
+3491,0.9991498,1,1,in 1 days machine 3491.0 needs maintenance
+6353,0.9988148,1,1,in 1 days machine 6353.0 needs maintenance
+9980,0.9923185,1,1,in 1 days machine 9980.0 needs maintenance
+1551,0.99669904,1,1,in 1 days machine 1551.0 needs maintenance
+5993,0.030497251,0,7,
+5773,0.99321544,1,1,in 1 days machine 5773.0 needs maintenance
+1859,0.0003978843,0,7,
+1730,0.0006167949,0,7,
+609,0.99469537,1,1,in 1 days machine 609.0 needs maintenance
+9981,0.98380613,1,1,in 1 days machine 9981.0 needs maintenance
+4719,0.004725101,0,7,
+3196,4.7327117e-05,0,7,
+8775,0.0001929271,0,7,
+1795,0.9786159,1,1,in 1 days machine 1795.0 needs maintenance
+5907,0.9755602,1,1,in 1 days machine 5907.0 needs maintenance
+9178,0.99981016,1,1,in 1 days machine 9178.0 needs maintenance
+4502,0.9966408,1,1,in 1 days machine 4502.0 needs maintenance
+7792,0.0011788893,0,7,
+2315,0.999793,1,1,in 1 days machine 2315.0 needs maintenance
+9760,0.9951212,1,1,in 1 days machine 9760.0 needs maintenance
+5438,0.00046372873,0,7,
+4004,0.997974,1,1,in 1 days machine 4004.0 needs maintenance
+3678,0.00013614222,0,7,
+3263,0.0005457012,0,7,
+761,0.99500483,1,1,in 1 days machine 761.0 needs maintenance
+3843,0.99921155,1,1,in 1 days machine 3843.0 needs maintenance
+7103,0.99921036,1,1,in 1 days machine 7103.0 needs maintenance
+9251,0.00022389083,0,7,
+729,0.89641714,1,2,in 2 days machine 729.0 needs maintenance
+690,0.0027569945,0,7,
+8988,0.00025898684,0,7,
+8653,0.9732169,1,1,in 1 days machine 8653.0 needs maintenance
+1167,0.9923537,1,1,in 1 days machine 1167.0 needs maintenance
+5060,0.00030246546,0,7,
+4667,0.00090983545,0,7,
+4750,0.003409587,0,7,
+514,0.9947568,1,1,in 1 days machine 514.0 needs maintenance
+4381,0.0002723433,0,7,
+3239,0.00015558902,0,7,
+1547,0.9959312,1,1,in 1 days machine 1547.0 needs maintenance
+2921,0.9996331,1,1,in 1 days machine 2921.0 needs maintenance
+6801,0.0007719061,0,7,
+5102,0.014531953,0,7,
+7592,0.0007788754,0,7,
+3533,0.00088146416,0,7,
+6269,0.0066169975,0,7,
+8328,0.00044577132,0,7,
+3577,0.003418413,0,7,
+8872,0.999949,1,1,in 1 days machine 8872.0 needs maintenance
+2535,0.08125497,0,7,
+260,0.9978763,1,1,in 1 days machine 260.0 needs maintenance
+8521,0.00031095627,0,7,
+6427,0.00051490875,0,7,
+1667,0.0006795064,0,7,
+9414,0.32426727,0,5,
+7712,0.000272117,0,7,
+2935,0.0021765346,0,7,
+1713,0.00092778885,0,7,
+677,0.9858511,1,1,in 1 days machine 677.0 needs maintenance
+6808,0.9948066,1,1,in 1 days machine 6808.0 needs maintenance
+7510,0.9958346,1,1,in 1 days machine 7510.0 needs maintenance
+2534,0.99836606,1,1,in 1 days machine 2534.0 needs maintenance
+4368,0.0024501954,0,7,
+6021,0.0006080061,0,7,
+3943,0.99745744,1,1,in 1 days machine 3943.0 needs maintenance
+7939,0.98967886,1,1,in 1 days machine 7939.0 needs maintenance
+6532,0.0006651192,0,7,
+4006,0.0013950579,0,7,
+92,0.9992756,1,1,in 1 days machine 92.0 needs maintenance
+1334,0.0036838287,0,7,
+4909,0.00032012886,0,7,
+8210,0.95028174,1,1,in 1 days machine 8210.0 needs maintenance
+8433,0.9963329,1,1,in 1 days machine 8433.0 needs maintenance
+6940,0.0019482028,0,7,
+4400,0.9958482,1,1,in 1 days machine 4400.0 needs maintenance
+539,0.9976737,1,1,in 1 days machine 539.0 needs maintenance
+1296,0.9982514,1,1,in 1 days machine 1296.0 needs maintenance
+3232,0.99684143,1,1,in 1 days machine 3232.0 needs maintenance
+5310,8.275094e-05,0,7,
+680,0.9976682,1,1,in 1 days machine 680.0 needs maintenance
+5149,0.99918276,1,1,in 1 days machine 5149.0 needs maintenance
+5740,0.07157009,0,7,
+3149,0.99640524,1,1,in 1 days machine 3149.0 needs maintenance
+3097,0.00049582415,0,7,
+9709,0.00049321365,0,7,
+2781,0.99785596,1,1,in 1 days machine 2781.0 needs maintenance
+7139,0.0004821814,0,7,
+3214,0.032049138,0,7,
+9373,0.9958456,1,1,in 1 days machine 9373.0 needs maintenance
+4175,0.00023186077,0,7,
+9441,0.9516312,1,1,in 1 days machine 9441.0 needs maintenance
+7973,0.00031861317,0,7,
+6173,0.92756176,1,1,in 1 days machine 6173.0 needs maintenance
+2903,0.0018538921,0,7,
+6722,0.0065618707,0,7,
+1552,0.756529,1,2,in 2 days machine 1552.0 needs maintenance
+4985,0.0028242802,0,7,
+6086,0.9923307,1,1,in 1 days machine 6086.0 needs maintenance
+4490,0.99990726,1,1,in 1 days machine 4490.0 needs maintenance
+9701,0.98065776,1,1,in 1 days machine 9701.0 needs maintenance
+6807,0.004717805,0,7,
+8883,0.009938803,0,7,
+7313,0.9943878,1,1,in 1 days machine 7313.0 needs maintenance
+4612,0.002830249,0,7,
+3693,0.9977036,1,1,in 1 days machine 3693.0 needs maintenance
+716,0.0020387045,0,7,
+5623,0.9981706,1,1,in 1 days machine 5623.0 needs maintenance
+6467,0.00020484492,0,7,
+8638,0.00069844,0,7,
+3659,0.98017144,1,1,in 1 days machine 3659.0 needs maintenance
+678,0.99536985,1,1,in 1 days machine 678.0 needs maintenance
+9576,0.99692255,1,1,in 1 days machine 9576.0 needs maintenance
+8188,0.9999182,1,1,in 1 days machine 8188.0 needs maintenance
+5076,0.9989335,1,1,in 1 days machine 5076.0 needs maintenance
+7672,0.0047760834,0,7,
+7928,0.00038667503,0,7,
+1047,0.4682654,0,4,
+964,0.0008096587,0,7,
+7654,0.97184104,1,1,in 1 days machine 7654.0 needs maintenance
+9535,0.020699447,0,7,
+6443,0.89929736,1,2,in 2 days machine 6443.0 needs maintenance
+8255,0.00023887218,0,7,
+2548,0.04233192,0,7,
+7021,0.00045391917,0,7,
+5429,0.004989014,0,7,
+3101,0.99237895,1,1,in 1 days machine 3101.0 needs maintenance
+2704,0.0031150337,0,7,
+2036,0.9979291,1,1,in 1 days machine 2036.0 needs maintenance
+9257,0.9964307,1,1,in 1 days machine 9257.0 needs maintenance
+1142,0.9994936,1,1,in 1 days machine 1142.0 needs maintenance
+7318,0.011032602,0,7,
+9865,0.9994223,1,1,in 1 days machine 9865.0 needs maintenance
+9831,0.61912715,1,3,in 3 days machine 9831.0 needs maintenance
+105,0.00025130823,0,7,
+2154,0.9973979,1,1,in 1 days machine 2154.0 needs maintenance
+793,0.9913898,1,1,in 1 days machine 793.0 needs maintenance
+3413,0.99276155,1,1,in 1 days machine 3413.0 needs maintenance
+6400,0.97702855,1,1,in 1 days machine 6400.0 needs maintenance
+1459,0.00018257243,0,7,
+7550,0.9989962,1,1,in 1 days machine 7550.0 needs maintenance
+5469,0.99629265,1,1,in 1 days machine 5469.0 needs maintenance
+8757,0.9879347,1,1,in 1 days machine 8757.0 needs maintenance
+6787,0.00036082286,0,7,
+5644,0.019315252,0,7,
+7291,0.9993318,1,1,in 1 days machine 7291.0 needs maintenance
+8980,0.9950723,1,1,in 1 days machine 8980.0 needs maintenance
+3873,0.9965056,1,1,in 1 days machine 3873.0 needs maintenance
+102,0.0002391267,0,7,
+7089,0.0057600685,0,7,
+1672,0.015753921,0,7,
+194,0.92992634,1,1,in 1 days machine 194.0 needs maintenance
+7920,0.98678684,1,1,in 1 days machine 7920.0 needs maintenance
+9309,3.8195114e-05,0,7,
+1666,0.999206,1,1,in 1 days machine 1666.0 needs maintenance
+6166,0.9929636,1,1,in 1 days machine 6166.0 needs maintenance
+2176,0.3940191,0,5,
+9044,0.995263,1,1,in 1 days machine 9044.0 needs maintenance
+9225,0.9978885,1,1,in 1 days machine 9225.0 needs maintenance
+5239,0.0006654365,0,7,
+260,0.0013812884,0,7,
+3418,0.91863316,1,1,in 1 days machine 3418.0 needs maintenance
+7627,0.0017623929,0,7,
+3332,0.00042540944,0,7,
+6329,0.9980323,1,1,in 1 days machine 6329.0 needs maintenance
+5068,0.9969668,1,1,in 1 days machine 5068.0 needs maintenance
+9873,0.99165654,1,1,in 1 days machine 9873.0 needs maintenance
+7107,5.3929718e-05,0,7,
+3843,0.99783856,1,1,in 1 days machine 3843.0 needs maintenance
+7607,0.0014174195,0,7,
+3023,0.00013407017,0,7,
+4979,0.015386588,0,7,
+5043,0.00114399,0,7,
+8317,0.0026234465,0,7,
+4962,0.0014418962,0,7,
+6113,0.99584097,1,1,in 1 days machine 6113.0 needs maintenance
+8798,0.99729174,1,1,in 1 days machine 8798.0 needs maintenance
+9199,0.007716449,0,7,
+4665,0.96915096,1,1,in 1 days machine 4665.0 needs maintenance
+6827,0.00086447306,0,7,
+5775,0.10658596,0,6,
+5661,0.999366,1,1,in 1 days machine 5661.0 needs maintenance
+1082,0.00028916667,0,7,
+3560,0.00016270817,0,7,
+1856,0.9967925,1,1,in 1 days machine 1856.0 needs maintenance
+2789,0.011379263,0,7,
+6199,0.99733645,1,1,in 1 days machine 6199.0 needs maintenance
+1119,0.00043389527,0,7,
+3254,8.640302e-05,0,7,
+6593,0.9952219,1,1,in 1 days machine 6593.0 needs maintenance
+1005,0.9996086,1,1,in 1 days machine 1005.0 needs maintenance
+6201,0.1676073,0,6,
+8307,0.8989519,1,2,in 2 days machine 8307.0 needs maintenance
+6734,0.9993393,1,1,in 1 days machine 6734.0 needs maintenance
+1740,0.011241582,0,7,
+4546,0.00070671126,0,7,
+8461,0.00074848573,0,7,
+9399,0.9990134,1,1,in 1 days machine 9399.0 needs maintenance
+3351,0.24463071,0,6,
+8936,0.00089052576,0,7,
+3943,0.99320155,1,1,in 1 days machine 3943.0 needs maintenance
+8404,0.0011680913,0,7,
+7538,0.0016673853,0,7,
+2592,0.9946561,1,1,in 1 days machine 2592.0 needs maintenance
+7605,0.9965385,1,1,in 1 days machine 7605.0 needs maintenance
+9394,9.074475e-05,0,7,
+9587,0.98244053,1,1,in 1 days machine 9587.0 needs maintenance
+7949,0.0011833987,0,7,
+8441,0.057854664,0,7,
+6397,0.99907047,1,1,in 1 days machine 6397.0 needs maintenance
+1075,0.0019465329,0,7,
+5560,0.00087078835,0,7,
+5998,0.9981329,1,1,in 1 days machine 5998.0 needs maintenance
+9645,0.22287324,0,6,
+4025,0.0004608492,0,7,
+2866,0.9752637,1,1,in 1 days machine 2866.0 needs maintenance
+6668,0.01695269,0,7,
+9202,0.9959407,1,1,in 1 days machine 9202.0 needs maintenance
+7519,0.00030545375,0,7,
+6196,0.0008594147,0,7,
+1655,0.998483,1,1,in 1 days machine 1655.0 needs maintenance
+7789,0.018494839,0,7,
+3112,0.0010200896,0,7,
+7689,0.99741095,1,1,in 1 days machine 7689.0 needs maintenance
+4619,0.06332816,0,7,
+2715,0.96919316,1,1,in 1 days machine 2715.0 needs maintenance
+1964,0.0029806416,0,7,
+1336,0.982209,1,1,in 1 days machine 1336.0 needs maintenance
+1991,0.0006188154,0,7,
+6829,0.00090273604,0,7,
+1993,0.9900159,1,1,in 1 days machine 1993.0 needs maintenance
+1808,0.8161399,1,2,in 2 days machine 1808.0 needs maintenance
+2860,0.0009357227,0,7,
+8377,0.951675,1,1,in 1 days machine 8377.0 needs maintenance
+5533,0.018134791,0,7,
+5082,0.9983784,1,1,in 1 days machine 5082.0 needs maintenance
+8990,0.99528027,1,1,in 1 days machine 8990.0 needs maintenance
+2408,0.014207586,0,7,
+3714,0.719049,1,3,in 3 days machine 3714.0 needs maintenance
+9712,0.99656564,1,1,in 1 days machine 9712.0 needs maintenance
+954,0.99331665,1,1,in 1 days machine 954.0 needs maintenance
+1291,0.00015969996,0,7,
+8625,0.010846514,0,7,
+5888,0.99506503,1,1,in 1 days machine 5888.0 needs maintenance
+5418,0.9975259,1,1,in 1 days machine 5418.0 needs maintenance
+4999,0.9997856,1,1,in 1 days machine 4999.0 needs maintenance
+2734,0.011455748,0,7,
+9980,0.023371294,0,7,
+7386,0.9419057,1,1,in 1 days machine 7386.0 needs maintenance
+4675,0.00028027163,0,7,
+3852,0.0003331371,0,7,
+1256,0.0002916516,0,7,
+5006,0.06094266,0,7,
+7085,0.0006548904,0,7,
+5680,0.0018750428,0,7,
+9464,0.0003858697,0,7,
+1857,5.023318e-05,0,7,
+9647,0.0006979945,0,7,
+3518,0.0071989386,0,7,
+7817,0.98838323,1,1,in 1 days machine 7817.0 needs maintenance
+5410,0.25736108,0,5,
+3926,0.032946136,0,7,
+2191,0.99453557,1,1,in 1 days machine 2191.0 needs maintenance
+4437,0.0011992143,0,7,
+5020,0.0004790097,0,7,
+8708,0.99620277,1,1,in 1 days machine 8708.0 needs maintenance
+4785,9.59603e-05,0,7,
+7274,0.99933535,1,1,in 1 days machine 7274.0 needs maintenance
+4053,9.392307e-05,0,7,
+7092,0.11627852,0,6,
+6268,0.997929,1,1,in 1 days machine 6268.0 needs maintenance
+7250,0.9479644,1,1,in 1 days machine 7250.0 needs maintenance
+437,0.003663089,0,7,
+7349,0.99186873,1,1,in 1 days machine 7349.0 needs maintenance
+3649,0.00080397143,0,7,
+3820,0.0015445902,0,7,
+7440,0.0035874236,0,7,
+6558,0.000109144545,0,7,
+1328,0.005342506,0,7,
+1919,0.99967456,1,1,in 1 days machine 1919.0 needs maintenance
+3747,0.00011262595,0,7,
+5255,0.9983882,1,1,in 1 days machine 5255.0 needs maintenance
+1428,0.9964128,1,1,in 1 days machine 1428.0 needs maintenance
+2087,0.01787528,0,7,
+6246,0.9912145,1,1,in 1 days machine 6246.0 needs maintenance
+3252,0.012933567,0,7,
+1492,0.34180564,0,5,
+748,0.93544024,1,1,in 1 days machine 748.0 needs maintenance
+5018,0.9991874,1,1,in 1 days machine 5018.0 needs maintenance
+1644,0.9999726,1,1,in 1 days machine 1644.0 needs maintenance
+1464,0.0015629492,0,7,
+4987,0.5820835,1,4,in 4 days machine 4987.0 needs maintenance
+9084,0.97935826,1,1,in 1 days machine 9084.0 needs maintenance
+978,0.99399084,1,1,in 1 days machine 978.0 needs maintenance
+2598,0.9930341,1,1,in 1 days machine 2598.0 needs maintenance
+7696,0.90307707,1,2,in 2 days machine 7696.0 needs maintenance
+3134,0.0032333664,0,7,
+1226,0.9971373,1,1,in 1 days machine 1226.0 needs maintenance
+4909,0.99002457,1,1,in 1 days machine 4909.0 needs maintenance
+8652,0.00057465,0,7,
+5697,0.59767467,1,3,in 3 days machine 5697.0 needs maintenance
+5005,0.9960439,1,1,in 1 days machine 5005.0 needs maintenance
+6002,0.9697308,1,1,in 1 days machine 6002.0 needs maintenance
+3286,0.99876404,1,1,in 1 days machine 3286.0 needs maintenance
+9090,0.9988996,1,1,in 1 days machine 9090.0 needs maintenance
+5238,0.0012056184,0,7,
+7363,7.645709e-05,0,7,
+3099,0.0022386527,0,7,
+9558,0.00047096467,0,7,
+9251,0.03787968,0,7,
+2553,0.0012937062,0,7,
+5681,0.0016451534,0,7,
+3990,0.1845055,0,6,
+360,0.99794656,1,1,in 1 days machine 360.0 needs maintenance
+6873,0.98883635,1,1,in 1 days machine 6873.0 needs maintenance
+849,0.00086167,0,7,
+8794,0.98838425,1,1,in 1 days machine 8794.0 needs maintenance
+3828,0.001679717,0,7,
+3201,0.9993206,1,1,in 1 days machine 3201.0 needs maintenance
+4207,0.0028326563,0,7,
+4168,0.9971885,1,1,in 1 days machine 4168.0 needs maintenance
+3947,0.9947633,1,1,in 1 days machine 3947.0 needs maintenance
+39,0.7670587,1,2,in 2 days machine 39.0 needs maintenance
+1303,0.01643479,0,7,
+2589,0.053922135,0,7,
+2823,0.0027269712,0,7,
+6471,0.00067881675,0,7,
+5613,0.9980458,1,1,in 1 days machine 5613.0 needs maintenance
+5503,0.9955258,1,1,in 1 days machine 5503.0 needs maintenance
+881,0.07182952,0,7,
+9876,0.98718613,1,1,in 1 days machine 9876.0 needs maintenance
+2161,0.0002592445,0,7,
+2848,0.8820309,1,2,in 2 days machine 2848.0 needs maintenance
+2158,0.00023238042,0,7,
+6045,0.99922025,1,1,in 1 days machine 6045.0 needs maintenance
+8209,0.0044243266,0,7,
+9814,0.9968233,1,1,in 1 days machine 9814.0 needs maintenance
+6653,0.8209396,1,2,in 2 days machine 6653.0 needs maintenance
+8433,0.99554753,1,1,in 1 days machine 8433.0 needs maintenance
+4862,0.0021589736,0,7,
+165,0.0012544994,0,7,
+5311,0.019626567,0,7,
+8893,0.00018893775,0,7,
+1736,0.98835224,1,1,in 1 days machine 1736.0 needs maintenance
+1087,0.9927626,1,1,in 1 days machine 1087.0 needs maintenance
+2368,0.0022458108,0,7,
+8154,0.99866617,1,1,in 1 days machine 8154.0 needs maintenance
+3324,0.0018846833,0,7,
+6730,0.00042842136,0,7,
+416,0.93432814,1,1,in 1 days machine 416.0 needs maintenance
+1502,0.9919492,1,1,in 1 days machine 1502.0 needs maintenance
+371,0.9959559,1,1,in 1 days machine 371.0 needs maintenance
+8144,0.9964174,1,1,in 1 days machine 8144.0 needs maintenance
+6887,0.00015388546,0,7,
+5379,0.0010862009,0,7,
+257,0.0002382151,0,7,
+1480,0.000697779,0,7,
+2843,0.99665254,1,1,in 1 days machine 2843.0 needs maintenance
+6163,0.004033213,0,7,
+5916,1.2163119e-05,0,7,
+5509,0.00043836344,0,7,
+8350,0.99032146,1,1,in 1 days machine 8350.0 needs maintenance
+5301,0.0024537353,0,7,
+9641,0.0014720542,0,7,
+4301,0.99935967,1,1,in 1 days machine 4301.0 needs maintenance
+8117,0.03622147,0,7,
+8019,0.8648844,1,2,in 2 days machine 8019.0 needs maintenance
+4861,0.00057807605,0,7,
+5166,0.995144,1,1,in 1 days machine 5166.0 needs maintenance
+9338,0.9994455,1,1,in 1 days machine 9338.0 needs maintenance
+8102,0.82111436,1,2,in 2 days machine 8102.0 needs maintenance
+3333,0.98636556,1,1,in 1 days machine 3333.0 needs maintenance
+2098,0.98340815,1,1,in 1 days machine 2098.0 needs maintenance
+7251,0.9974833,1,1,in 1 days machine 7251.0 needs maintenance
+9353,0.0019100714,0,7,
+1548,0.004093824,0,7,
+4760,0.00046508448,0,7,
+9148,0.03454323,0,7,
+2281,0.9690104,1,1,in 1 days machine 2281.0 needs maintenance
+1199,0.0005978132,0,7,
+6172,0.014430319,0,7,
+8229,0.00021484819,0,7,
+578,0.9635141,1,1,in 1 days machine 578.0 needs maintenance
+1805,0.003798497,0,7,
+3763,0.0015404322,0,7,
+9370,0.99140376,1,1,in 1 days machine 9370.0 needs maintenance
+2320,0.00052476063,0,7,
+6866,0.76246554,1,2,in 2 days machine 6866.0 needs maintenance
+2350,0.992856,1,1,in 1 days machine 2350.0 needs maintenance
+8063,0.99476874,1,1,in 1 days machine 8063.0 needs maintenance
+4455,0.9990526,1,1,in 1 days machine 4455.0 needs maintenance
+8829,0.9982223,1,1,in 1 days machine 8829.0 needs maintenance
+303,0.018475322,0,7,
+388,0.96673924,1,1,in 1 days machine 388.0 needs maintenance
+3144,0.9983046,1,1,in 1 days machine 3144.0 needs maintenance
+6271,0.9983784,1,1,in 1 days machine 6271.0 needs maintenance
+4334,0.9979056,1,1,in 1 days machine 4334.0 needs maintenance
+4835,0.9954972,1,1,in 1 days machine 4835.0 needs maintenance
+606,0.99140376,1,1,in 1 days machine 606.0 needs maintenance
+9766,0.00077105843,0,7,
+4718,0.9946361,1,1,in 1 days machine 4718.0 needs maintenance
+9676,0.9788159,1,1,in 1 days machine 9676.0 needs maintenance
+9672,0.0004806208,0,7,
+6326,0.9981679,1,1,in 1 days machine 6326.0 needs maintenance
+7956,0.000586376,0,7,
+1656,0.0010441338,0,7,
+4434,0.0007847535,0,7,
+4218,0.99526924,1,1,in 1 days machine 4218.0 needs maintenance
+8760,0.0027274224,0,7,
+4168,0.99817526,1,1,in 1 days machine 4168.0 needs maintenance
+1786,0.9990025,1,1,in 1 days machine 1786.0 needs maintenance
+4207,0.035030685,0,7,
+7740,0.0023098323,0,7,
+4052,0.0048296186,0,7,
+2086,7.380795e-05,0,7,
+3616,0.98863107,1,1,in 1 days machine 3616.0 needs maintenance
+1589,0.99907553,1,1,in 1 days machine 1589.0 needs maintenance
+810,0.12640989,0,6,
+384,0.9974361,1,1,in 1 days machine 384.0 needs maintenance
+8993,5.6752644e-05,0,7,
+6863,0.016725173,0,7,
+3464,0.00016122496,0,7,
+5013,0.042855665,0,7,
+7670,0.99843305,1,1,in 1 days machine 7670.0 needs maintenance
+2215,0.0006587649,0,7,
+8498,0.0061792736,0,7,
+3063,0.0007297223,0,7,
+1707,0.5979341,1,3,in 3 days machine 1707.0 needs maintenance
+9351,0.0060359794,0,7,
+3171,0.00014594117,0,7,
+5986,0.014026967,0,7,
+9811,0.99987566,1,1,in 1 days machine 9811.0 needs maintenance
+582,0.010673538,0,7,
+2079,0.9977654,1,1,in 1 days machine 2079.0 needs maintenance
+3808,0.00084016565,0,7,
+3278,0.99088573,1,1,in 1 days machine 3278.0 needs maintenance
+4666,0.2437996,0,6,
+8689,0.00084305066,0,7,
+4617,0.9778295,1,1,in 1 days machine 4617.0 needs maintenance
+3769,0.009752079,0,7,
+7222,0.0008319137,0,7,
+2413,0.9937191,1,1,in 1 days machine 2413.0 needs maintenance
+44,0.00086069806,0,7,
+9240,0.9993326,1,1,in 1 days machine 9240.0 needs maintenance
+7132,0.0026835622,0,7,
+2024,0.060262017,0,7,
+2835,0.17532302,0,6,
+5927,0.0011754631,0,7,
+337,0.99468094,1,1,in 1 days machine 337.0 needs maintenance
+37,0.71479076,1,3,in 3 days machine 37.0 needs maintenance
+1570,0.99374723,1,1,in 1 days machine 1570.0 needs maintenance
+1321,0.06725993,0,7,
+7848,0.0015868269,0,7,
+3482,0.010250208,0,7,
+4116,0.9658594,1,1,in 1 days machine 4116.0 needs maintenance
+9247,0.0009580778,0,7,
+766,0.9975453,1,1,in 1 days machine 766.0 needs maintenance
+9915,0.99620265,1,1,in 1 days machine 9915.0 needs maintenance
+4498,0.98334897,1,1,in 1 days machine 4498.0 needs maintenance
+5419,0.9945807,1,1,in 1 days machine 5419.0 needs maintenance
+8440,0.9903155,1,1,in 1 days machine 8440.0 needs maintenance
+4091,0.99613297,1,1,in 1 days machine 4091.0 needs maintenance
+5471,0.08960837,0,6,
+8844,0.9906034,1,1,in 1 days machine 8844.0 needs maintenance
+3696,0.0015792556,0,7,
+8995,0.010450939,0,7,
+6326,0.00041037667,0,7,
+2793,0.99367625,1,1,in 1 days machine 2793.0 needs maintenance
+8423,0.0034701265,0,7,
+6839,0.99683493,1,1,in 1 days machine 6839.0 needs maintenance
+4617,0.003375836,0,7,
+1975,5.4625936e-05,0,7,
+6439,0.9966248,1,1,in 1 days machine 6439.0 needs maintenance
+8519,0.46626484,0,4,
+2282,0.9983317,1,1,in 1 days machine 2282.0 needs maintenance
+943,0.9947543,1,1,in 1 days machine 943.0 needs maintenance
+570,0.99847287,1,1,in 1 days machine 570.0 needs maintenance
+6187,0.9963576,1,1,in 1 days machine 6187.0 needs maintenance
+4994,0.9960312,1,1,in 1 days machine 4994.0 needs maintenance
+8182,0.08701596,0,6,
+2964,0.9813695,1,1,in 1 days machine 2964.0 needs maintenance
+7529,0.9992029,1,1,in 1 days machine 7529.0 needs maintenance
+5823,0.95832306,1,1,in 1 days machine 5823.0 needs maintenance
+2608,0.00019287155,0,7,
+3146,0.0010034636,0,7,
+783,0.9908976,1,1,in 1 days machine 783.0 needs maintenance
+2213,0.9906193,1,1,in 1 days machine 2213.0 needs maintenance
+4338,0.9944465,1,1,in 1 days machine 4338.0 needs maintenance
+6666,0.0025012302,0,7,
+9518,0.0003379604,0,7,
+2537,0.0013924444,0,7,
+6712,0.007510137,0,7,
+957,0.00022251137,0,7,
+1547,0.9985806,1,1,in 1 days machine 1547.0 needs maintenance
+9161,0.9816288,1,1,in 1 days machine 9161.0 needs maintenance
+2091,0.0005191586,0,7,
+6604,0.00990407,0,7,
+6122,0.9989944,1,1,in 1 days machine 6122.0 needs maintenance
+1271,0.9951994,1,1,in 1 days machine 1271.0 needs maintenance
+9458,0.9963458,1,1,in 1 days machine 9458.0 needs maintenance
+4666,0.99433833,1,1,in 1 days machine 4666.0 needs maintenance
+7605,0.985429,1,1,in 1 days machine 7605.0 needs maintenance
+3252,0.99941707,1,1,in 1 days machine 3252.0 needs maintenance
+492,0.9973055,1,1,in 1 days machine 492.0 needs maintenance
+1925,0.007433047,0,7,
+1866,0.99884725,1,1,in 1 days machine 1866.0 needs maintenance
+9154,0.13281985,0,6,
+4762,0.000495237,0,7,
+1778,0.9996791,1,1,in 1 days machine 1778.0 needs maintenance
+1983,0.9948447,1,1,in 1 days machine 1983.0 needs maintenance
+5535,0.9943922,1,1,in 1 days machine 5535.0 needs maintenance
+1613,0.06582684,0,7,
+6752,0.99830246,1,1,in 1 days machine 6752.0 needs maintenance
+1191,0.99521244,1,1,in 1 days machine 1191.0 needs maintenance
+890,0.9949398,1,1,in 1 days machine 890.0 needs maintenance
+3006,0.005161278,0,7,
+1148,0.995027,1,1,in 1 days machine 1148.0 needs maintenance
+8289,0.9996482,1,1,in 1 days machine 8289.0 needs maintenance
+8217,0.99426913,1,1,in 1 days machine 8217.0 needs maintenance
+353,0.9981275,1,1,in 1 days machine 353.0 needs maintenance
+7418,0.0016653475,0,7,
+3898,0.9938788,1,1,in 1 days machine 3898.0 needs maintenance
+9142,8.883162e-05,0,7,
+3104,0.0012116884,0,7,
+1784,0.0035010637,0,7,
+5386,0.00086626323,0,7,
+7411,0.99703395,1,1,in 1 days machine 7411.0 needs maintenance
+678,0.006076877,0,7,
+4929,0.9518695,1,1,in 1 days machine 4929.0 needs maintenance
+6010,0.9641636,1,1,in 1 days machine 6010.0 needs maintenance
+439,0.8885597,1,2,in 2 days machine 439.0 needs maintenance
+7004,0.73920596,1,3,in 3 days machine 7004.0 needs maintenance
+7021,0.99918276,1,1,in 1 days machine 7021.0 needs maintenance
+1351,0.99852693,1,1,in 1 days machine 1351.0 needs maintenance
+7059,0.99566025,1,1,in 1 days machine 7059.0 needs maintenance
+6451,0.0075213728,0,7,
+742,0.00045824648,0,7,
+6662,0.99794716,1,1,in 1 days machine 6662.0 needs maintenance
+6631,0.0011648734,0,7,
+1377,7.250005e-05,0,7,
+9234,0.9969296,1,1,in 1 days machine 9234.0 needs maintenance
+9391,0.00086107705,0,7,
+4157,0.9964708,1,1,in 1 days machine 4157.0 needs maintenance
+7768,0.0055743293,0,7,
+5451,0.9956666,1,1,in 1 days machine 5451.0 needs maintenance
+2656,0.9585274,1,1,in 1 days machine 2656.0 needs maintenance
+6118,0.0016002504,0,7,
+3753,0.0054788305,0,7,
+3480,0.99639755,1,1,in 1 days machine 3480.0 needs maintenance
+9793,0.02628967,0,7,
+1643,0.00037384604,0,7,
+6685,0.99428904,1,1,in 1 days machine 6685.0 needs maintenance
+7519,0.9994357,1,1,in 1 days machine 7519.0 needs maintenance
+9596,0.9860881,1,1,in 1 days machine 9596.0 needs maintenance
+5290,0.0051770816,0,7,
+9363,0.99605834,1,1,in 1 days machine 9363.0 needs maintenance
+9960,0.9965037,1,1,in 1 days machine 9960.0 needs maintenance
+1142,0.00022543762,0,7,
+842,0.075060554,0,7,
+6869,0.7190176,1,3,in 3 days machine 6869.0 needs maintenance
+7115,0.9962478,1,1,in 1 days machine 7115.0 needs maintenance
+2475,0.99750745,1,1,in 1 days machine 2475.0 needs maintenance
+6157,0.0013169472,0,7,
+6952,0.99994504,1,1,in 1 days machine 6952.0 needs maintenance
+1838,0.0012508401,0,7,
+6777,0.000503272,0,7,
+8563,0.9995403,1,1,in 1 days machine 8563.0 needs maintenance
+6948,6.859744e-05,0,7,
+8810,0.99706596,1,1,in 1 days machine 8810.0 needs maintenance
+8589,0.6600005,1,3,in 3 days machine 8589.0 needs maintenance
+2945,0.0007340029,0,7,
+9373,0.97654074,1,1,in 1 days machine 9373.0 needs maintenance
+2534,0.0004748903,0,7,
+2238,0.99688196,1,1,in 1 days machine 2238.0 needs maintenance
+7414,0.00087688107,0,7,
+1057,0.9897988,1,1,in 1 days machine 1057.0 needs maintenance
+7645,0.00066545553,0,7,
+6648,0.8687029,1,2,in 2 days machine 6648.0 needs maintenance
+8573,0.0015392137,0,7,
+3813,0.00038855866,0,7,
+1336,0.9979291,1,1,in 1 days machine 1336.0 needs maintenance
+4015,0.9985133,1,1,in 1 days machine 4015.0 needs maintenance
+1723,0.0018820812,0,7,
+8044,0.99703383,1,1,in 1 days machine 8044.0 needs maintenance
+1489,0.9957022,1,1,in 1 days machine 1489.0 needs maintenance
+6243,0.9984914,1,1,in 1 days machine 6243.0 needs maintenance
+202,0.99655163,1,1,in 1 days machine 202.0 needs maintenance
+8492,0.018377513,0,7,
+645,0.0012706085,0,7,
+3611,0.99115103,1,1,in 1 days machine 3611.0 needs maintenance
+1364,0.010067284,0,7,
+1762,0.00023140252,0,7,
+1855,0.015995415,0,7,
+72,0.0007637729,0,7,
+7136,0.9958901,1,1,in 1 days machine 7136.0 needs maintenance
+7897,0.049823437,0,7,
+6332,0.00032065573,0,7,
+4329,0.00070010003,0,7,
+5384,0.27754644,0,5,
+2771,0.0002463148,0,7,
+6503,0.000120337114,0,7,
+8610,0.9929264,1,1,in 1 days machine 8610.0 needs maintenance
+8483,0.00056519866,0,7,
+4502,0.003906452,0,7,
+845,0.00022458655,0,7,
+4591,0.0013992531,0,7,
+3122,0.0077849883,0,7,
+5600,0.0039732265,0,7,
+1203,7.346639e-05,0,7,
+1087,0.0015246079,0,7,
+7547,0.99997604,1,1,in 1 days machine 7547.0 needs maintenance
+3178,0.9955883,1,1,in 1 days machine 3178.0 needs maintenance
+2471,0.0017635503,0,7,
+9769,0.5514348,1,4,in 4 days machine 9769.0 needs maintenance
+3380,0.75545424,1,2,in 2 days machine 3380.0 needs maintenance
+5691,0.00035297291,0,7,
+9232,0.23849334,0,6,
+3255,0.27707437,0,5,
+8842,0.0011989847,0,7,
+9677,0.0040564793,0,7,
+9727,0.0037781512,0,7,
+2253,0.25252584,0,5,
+4531,0.99589795,1,1,in 1 days machine 4531.0 needs maintenance
+7357,0.0007426182,0,7,
+131,0.0013928415,0,7,
+2560,8.685034e-05,0,7,
+8079,0.002352004,0,7,
+1738,0.9988329,1,1,in 1 days machine 1738.0 needs maintenance
+9296,0.006818085,0,7,
+4108,0.0008785596,0,7,
+2658,0.61170554,1,3,in 3 days machine 2658.0 needs maintenance
+2974,0.0055482117,0,7,
+5100,0.0016126329,0,7,
+1565,0.9441568,1,1,in 1 days machine 1565.0 needs maintenance
+3828,0.9498126,1,1,in 1 days machine 3828.0 needs maintenance
+5105,0.01626982,0,7,
+9465,0.9788016,1,1,in 1 days machine 9465.0 needs maintenance
+3869,0.9996153,1,1,in 1 days machine 3869.0 needs maintenance
+3393,0.9876101,1,1,in 1 days machine 3393.0 needs maintenance
+3596,0.9652714,1,1,in 1 days machine 3596.0 needs maintenance
+1935,0.00024428708,0,7,
+7493,0.9994986,1,1,in 1 days machine 7493.0 needs maintenance
+352,0.0056610275,0,7,
+4529,0.00035971485,0,7,
+2254,0.9324051,1,1,in 1 days machine 2254.0 needs maintenance
+239,0.0004569747,0,7,
+9238,0.9996623,1,1,in 1 days machine 9238.0 needs maintenance
+2231,0.010117448,0,7,
+5304,0.9828257,1,1,in 1 days machine 5304.0 needs maintenance
+28,0.035690438,0,7,
+8615,0.014860835,0,7,
+5218,0.9994961,1,1,in 1 days machine 5218.0 needs maintenance
+9652,0.9960543,1,1,in 1 days machine 9652.0 needs maintenance
+8144,0.9939374,1,1,in 1 days machine 8144.0 needs maintenance
+614,0.16026409,0,6,
+6836,0.99500483,1,1,in 1 days machine 6836.0 needs maintenance
+2343,0.99620444,1,1,in 1 days machine 2343.0 needs maintenance
+838,0.0017699071,0,7,
+2752,0.98689145,1,1,in 1 days machine 2752.0 needs maintenance
+8904,0.00030657844,0,7,
+1592,0.0009819458,0,7,
+4398,0.0035209951,0,7,
+5497,0.99729913,1,1,in 1 days machine 5497.0 needs maintenance
+1352,0.03660499,0,7,
+5562,0.97700775,1,1,in 1 days machine 5562.0 needs maintenance
+9661,0.000977148,0,7,
+7935,0.9969014,1,1,in 1 days machine 7935.0 needs maintenance
+9499,0.0009660357,0,7,
+5992,0.99259734,1,1,in 1 days machine 5992.0 needs maintenance
+6595,0.9728107,1,1,in 1 days machine 6595.0 needs maintenance
+576,0.9977036,1,1,in 1 days machine 576.0 needs maintenance
+3712,0.0002338779,0,7,
+7350,9.0431175e-05,0,7,
+5366,0.0006937158,0,7,
+1440,0.9992167,1,1,in 1 days machine 1440.0 needs maintenance
+8863,0.0035552192,0,7,
+7433,0.983556,1,1,in 1 days machine 7433.0 needs maintenance
+3933,0.00013909827,0,7,
+7153,0.998211,1,1,in 1 days machine 7153.0 needs maintenance
+3448,0.0033735968,0,7,
+2112,0.9983158,1,1,in 1 days machine 2112.0 needs maintenance
+3656,0.82222193,1,2,in 2 days machine 3656.0 needs maintenance
+5761,0.0001642813,0,7,
+4238,0.9960503,1,1,in 1 days machine 4238.0 needs maintenance
+9531,0.05312931,0,7,
+2054,0.99706596,1,1,in 1 days machine 2054.0 needs maintenance
+3218,0.9984212,1,1,in 1 days machine 3218.0 needs maintenance
+1309,0.0018427321,0,7,
+7284,0.000602948,0,7,
+93,0.8541377,1,2,in 2 days machine 93.0 needs maintenance
+1551,0.99577504,1,1,in 1 days machine 1551.0 needs maintenance
+4289,0.003336141,0,7,
+7313,0.16724153,0,6,
+7167,0.9948639,1,1,in 1 days machine 7167.0 needs maintenance
+2378,0.99782133,1,1,in 1 days machine 2378.0 needs maintenance
+8926,0.016013976,0,7,
+4288,0.022919822,0,7,
+2390,0.0009063567,0,7,
+421,0.0018069657,0,7,
+1522,0.995475,1,1,in 1 days machine 1522.0 needs maintenance
+9734,0.99841464,1,1,in 1 days machine 9734.0 needs maintenance
+3028,0.00023753493,0,7,
+3059,0.00033432417,0,7,
+5077,0.0019296738,0,7,
+1748,0.00030388986,0,7,
+839,0.8747947,1,2,in 2 days machine 839.0 needs maintenance
+5587,0.017796136,0,7,
+4656,0.003599503,0,7,
+3033,0.9933501,1,1,in 1 days machine 3033.0 needs maintenance
+8667,0.00016411096,0,7,
+8142,0.9992182,1,1,in 1 days machine 8142.0 needs maintenance
+6877,0.0014836645,0,7,
+3181,0.00047646728,0,7,
+9292,0.890524,1,2,in 2 days machine 9292.0 needs maintenance
+7323,0.0005532438,0,7,
+3164,0.992442,1,1,in 1 days machine 3164.0 needs maintenance
+4756,0.00087397033,0,7,
+3129,0.99748033,1,1,in 1 days machine 3129.0 needs maintenance
+4380,0.0004817142,0,7,
+7909,0.9919423,1,1,in 1 days machine 7909.0 needs maintenance
+2130,0.9973489,1,1,in 1 days machine 2130.0 needs maintenance
+3063,0.0047460445,0,7,
+7997,0.9996275,1,1,in 1 days machine 7997.0 needs maintenance
+9528,0.9982975,1,1,in 1 days machine 9528.0 needs maintenance
+1421,0.007298085,0,7,
+9999,0.998855,1,1,in 1 days machine 9999.0 needs maintenance
+2269,0.030064747,0,7,
+8693,0.8530812,1,2,in 2 days machine 8693.0 needs maintenance
+8615,0.99108046,1,1,in 1 days machine 8615.0 needs maintenance
+3286,0.00013161998,0,7,
+1345,0.00048629552,0,7,
+8916,0.00048431373,0,7,
+9141,0.9984957,1,1,in 1 days machine 9141.0 needs maintenance
+8496,0.99436355,1,1,in 1 days machine 8496.0 needs maintenance
+7176,0.00021800435,0,7,
+8057,0.9812727,1,1,in 1 days machine 8057.0 needs maintenance
+4943,0.9992163,1,1,in 1 days machine 4943.0 needs maintenance
+3532,0.000868244,0,7,
+1517,0.9997149,1,1,in 1 days machine 1517.0 needs maintenance
+4433,0.99657553,1,1,in 1 days machine 4433.0 needs maintenance
+2137,0.9670924,1,1,in 1 days machine 2137.0 needs maintenance
+599,0.00024889412,0,7,
+2311,0.004167558,0,7,
+7728,0.97706044,1,1,in 1 days machine 7728.0 needs maintenance
+4048,0.9996239,1,1,in 1 days machine 4048.0 needs maintenance
+7157,0.9496898,1,1,in 1 days machine 7157.0 needs maintenance
+6103,0.0007805155,0,7,
+567,0.995581,1,1,in 1 days machine 567.0 needs maintenance
+3521,0.9541874,1,1,in 1 days machine 3521.0 needs maintenance
+6236,0.0012581036,0,7,
+448,0.01997981,0,7,
+4817,0.99927574,1,1,in 1 days machine 4817.0 needs maintenance
+9780,0.9635141,1,1,in 1 days machine 9780.0 needs maintenance
+7247,0.005900255,0,7,
+2608,0.04932805,0,7,
+8887,0.002471138,0,7,
+2592,0.15783073,0,6,
+252,0.71127445,1,3,in 3 days machine 252.0 needs maintenance
+7280,0.99913067,1,1,in 1 days machine 7280.0 needs maintenance
+3040,0.0043871994,0,7,
+4062,0.9980445,1,1,in 1 days machine 4062.0 needs maintenance
+8285,0.9969404,1,1,in 1 days machine 8285.0 needs maintenance
+1298,0.6280105,1,3,in 3 days machine 1298.0 needs maintenance
+6434,0.94585955,1,1,in 1 days machine 6434.0 needs maintenance
+6768,0.99897516,1,1,in 1 days machine 6768.0 needs maintenance
+7510,0.99667823,1,1,in 1 days machine 7510.0 needs maintenance
+1619,0.007890319,0,7,
+1543,0.9978969,1,1,in 1 days machine 1543.0 needs maintenance
+1488,0.6939319,1,3,in 3 days machine 1488.0 needs maintenance
+5327,0.0012965408,0,7,
+809,0.99334407,1,1,in 1 days machine 809.0 needs maintenance
+9864,0.9942268,1,1,in 1 days machine 9864.0 needs maintenance
+2233,0.9996656,1,1,in 1 days machine 2233.0 needs maintenance
+9417,0.99613637,1,1,in 1 days machine 9417.0 needs maintenance
+5872,0.008167826,0,7,
+840,0.99691904,1,1,in 1 days machine 840.0 needs maintenance
+1263,0.00024769036,0,7,
+8138,0.01793789,0,7,
+6732,0.003860201,0,7,
+4923,0.9910908,1,1,in 1 days machine 4923.0 needs maintenance
+8015,0.00064414035,0,7,
+9782,0.8533903,1,2,in 2 days machine 9782.0 needs maintenance
+9954,0.006583837,0,7,
+6637,0.015520149,0,7,
+4679,0.00052546716,0,7,
+6351,0.9116885,1,2,in 2 days machine 6351.0 needs maintenance
+4832,0.0007218692,0,7,
+9944,0.7863309,1,2,in 2 days machine 9944.0 needs maintenance
+8596,0.99918693,1,1,in 1 days machine 8596.0 needs maintenance
+8157,0.9642485,1,1,in 1 days machine 8157.0 needs maintenance
+8833,0.00067133957,0,7,
+6521,0.9982248,1,1,in 1 days machine 6521.0 needs maintenance
+1355,0.0007753814,0,7,
+1190,0.9236503,1,1,in 1 days machine 1190.0 needs maintenance
+3326,0.00031301845,0,7,
+3268,0.00015983495,0,7,
+5756,0.9969212,1,1,in 1 days machine 5756.0 needs maintenance
+2968,0.00066277414,0,7,
+6730,0.0001565632,0,7,
+838,0.004633262,0,7,
+3937,0.002708535,0,7,
+5513,0.004842419,0,7,
+1548,0.957209,1,1,in 1 days machine 1548.0 needs maintenance
+4678,0.99976224,1,1,in 1 days machine 4678.0 needs maintenance
+5420,0.0009607057,0,7,
+1572,0.9455655,1,1,in 1 days machine 1572.0 needs maintenance
+4559,0.9688402,1,1,in 1 days machine 4559.0 needs maintenance
+7619,0.008426326,0,7,
+9618,0.9986265,1,1,in 1 days machine 9618.0 needs maintenance
+5672,0.99778396,1,1,in 1 days machine 5672.0 needs maintenance
+1405,0.99428374,1,1,in 1 days machine 1405.0 needs maintenance
+3144,0.0008014709,0,7,
+1242,0.0019716055,0,7,
+7395,0.6992022,1,3,in 3 days machine 7395.0 needs maintenance
+8697,0.00094940345,0,7,
+9817,0.0016700061,0,7,
+4689,0.573144,1,4,in 4 days machine 4689.0 needs maintenance
+9191,0.00060610025,0,7,
+7026,0.001185717,0,7,
+5383,0.99713767,1,1,in 1 days machine 5383.0 needs maintenance
+1635,0.97512984,1,1,in 1 days machine 1635.0 needs maintenance
+9948,0.00010817481,0,7,
+7212,0.9933094,1,1,in 1 days machine 7212.0 needs maintenance
+360,0.0019128424,0,7,
+383,0.00010642085,0,7,
+8705,0.0007773071,0,7,
+7553,0.99491864,1,1,in 1 days machine 7553.0 needs maintenance
+2488,0.00024797604,0,7,
+595,0.99797016,1,1,in 1 days machine 595.0 needs maintenance
+5614,0.99987924,1,1,in 1 days machine 5614.0 needs maintenance
+7685,0.9968863,1,1,in 1 days machine 7685.0 needs maintenance
+6835,0.00059911597,0,7,
+4344,0.99957377,1,1,in 1 days machine 4344.0 needs maintenance
+5336,0.0015387221,0,7,
+2020,0.9961027,1,1,in 1 days machine 2020.0 needs maintenance
+8648,0.9304493,1,1,in 1 days machine 8648.0 needs maintenance
+6412,0.99391335,1,1,in 1 days machine 6412.0 needs maintenance
+8166,0.9992093,1,1,in 1 days machine 8166.0 needs maintenance
+3262,0.9996848,1,1,in 1 days machine 3262.0 needs maintenance
+5945,0.9933855,1,1,in 1 days machine 5945.0 needs maintenance
+669,0.9945446,1,1,in 1 days machine 669.0 needs maintenance
+6990,0.007408128,0,7,
+778,0.0057027703,0,7,
+1753,0.0056579364,0,7,
+1183,0.0019500119,0,7,
+842,0.9990121,1,1,in 1 days machine 842.0 needs maintenance
+6761,0.99466926,1,1,in 1 days machine 6761.0 needs maintenance
+3275,0.99320436,1,1,in 1 days machine 3275.0 needs maintenance
+3984,0.9961281,1,1,in 1 days machine 3984.0 needs maintenance
+5252,0.7452961,1,3,in 3 days machine 5252.0 needs maintenance
+4724,0.0035067694,0,7,
+3746,0.00047257752,0,7,
+7240,0.9989466,1,1,in 1 days machine 7240.0 needs maintenance
+1792,0.9997445,1,1,in 1 days machine 1792.0 needs maintenance
+3889,0.00074556237,0,7,
+2911,0.0005906524,0,7,
+4495,0.98822135,1,1,in 1 days machine 4495.0 needs maintenance
+8922,0.028212843,0,7,
+3080,0.0012583373,0,7,
+4205,0.9982828,1,1,in 1 days machine 4205.0 needs maintenance
+8903,0.9954645,1,1,in 1 days machine 8903.0 needs maintenance
+1515,0.99541277,1,1,in 1 days machine 1515.0 needs maintenance
+6985,0.99518186,1,1,in 1 days machine 6985.0 needs maintenance
+1335,0.0007277903,0,7,
+6759,0.9998022,1,1,in 1 days machine 6759.0 needs maintenance
+63,0.0071378904,0,7,
+6011,0.9991842,1,1,in 1 days machine 6011.0 needs maintenance
+9069,0.003932954,0,7,
+8131,0.99726045,1,1,in 1 days machine 8131.0 needs maintenance
+9246,0.93170935,1,1,in 1 days machine 9246.0 needs maintenance
+9672,0.99924505,1,1,in 1 days machine 9672.0 needs maintenance
+9639,0.99499327,1,1,in 1 days machine 9639.0 needs maintenance
+8341,0.999746,1,1,in 1 days machine 8341.0 needs maintenance
+6059,0.001101534,0,7,
+4671,0.9988279,1,1,in 1 days machine 4671.0 needs maintenance
+1807,0.0018905723,0,7,
+6580,0.9899143,1,1,in 1 days machine 6580.0 needs maintenance
+501,0.007866454,0,7,
+7560,0.0011207034,0,7,
+5097,0.9971181,1,1,in 1 days machine 5097.0 needs maintenance
+7949,0.002632152,0,7,
+912,0.9944364,1,1,in 1 days machine 912.0 needs maintenance
+93,0.0020752205,0,7,
+5906,0.00021542849,0,7,
+1395,0.00027042322,0,7,
+6135,0.99565303,1,1,in 1 days machine 6135.0 needs maintenance
+725,0.99951124,1,1,in 1 days machine 725.0 needs maintenance
+9534,0.00022211247,0,7,
+6387,0.0020988078,0,7,
+117,0.9188654,1,1,in 1 days machine 117.0 needs maintenance
+9891,0.009326934,0,7,
+9606,0.9916324,1,1,in 1 days machine 9606.0 needs maintenance
+9604,0.000983738,0,7,
+3748,0.9638224,1,1,in 1 days machine 3748.0 needs maintenance
+121,0.004602528,0,7,
+6612,0.73637134,1,3,in 3 days machine 6612.0 needs maintenance
+747,0.99682593,1,1,in 1 days machine 747.0 needs maintenance
+566,0.015086247,0,7,
+4649,0.58495176,1,3,in 3 days machine 4649.0 needs maintenance
+5676,0.9965127,1,1,in 1 days machine 5676.0 needs maintenance
+4797,0.99830085,1,1,in 1 days machine 4797.0 needs maintenance
+5210,0.5515016,1,4,in 4 days machine 5210.0 needs maintenance
+3013,0.00065142685,0,7,
+6185,0.0006151631,0,7,
+4881,0.9960304,1,1,in 1 days machine 4881.0 needs maintenance
+8486,0.9996333,1,1,in 1 days machine 8486.0 needs maintenance
+2172,0.9910063,1,1,in 1 days machine 2172.0 needs maintenance
+4883,0.9970481,1,1,in 1 days machine 4883.0 needs maintenance
+1016,0.00048451807,0,7,
+8249,0.97634774,1,1,in 1 days machine 8249.0 needs maintenance
+8062,0.87570786,1,2,in 2 days machine 8062.0 needs maintenance
+5761,0.9537756,1,1,in 1 days machine 5761.0 needs maintenance
+1180,0.9997571,1,1,in 1 days machine 1180.0 needs maintenance
+135,0.0016293592,0,7,
+3775,0.9716259,1,1,in 1 days machine 3775.0 needs maintenance
+6353,0.19789167,0,6,
+3127,0.99790764,1,1,in 1 days machine 3127.0 needs maintenance
+4232,0.99864703,1,1,in 1 days machine 4232.0 needs maintenance
+4052,0.99724376,1,1,in 1 days machine 4052.0 needs maintenance
+8805,0.93908095,1,1,in 1 days machine 8805.0 needs maintenance
+4724,0.0014763394,0,7,
+2188,0.86146945,1,2,in 2 days machine 2188.0 needs maintenance
+9982,0.9987684,1,1,in 1 days machine 9982.0 needs maintenance
+3321,0.9287216,1,1,in 1 days machine 3321.0 needs maintenance
+4314,0.0027983044,0,7,
+630,0.067044504,0,7,
+3596,0.06743783,0,7,
+6301,0.99651957,1,1,in 1 days machine 6301.0 needs maintenance
+2800,0.9967982,1,1,in 1 days machine 2800.0 needs maintenance
+4929,0.99992096,1,1,in 1 days machine 4929.0 needs maintenance
+5640,0.00015590028,0,7,
+6062,0.00055057753,0,7,
+33,0.0039015883,0,7,
+6556,0.9989028,1,1,in 1 days machine 6556.0 needs maintenance
+7026,0.4770316,0,4,
+9642,0.99299955,1,1,in 1 days machine 9642.0 needs maintenance
+1863,0.9830499,1,1,in 1 days machine 1863.0 needs maintenance
+6278,0.0003406696,0,7,
+4373,0.9994041,1,1,in 1 days machine 4373.0 needs maintenance
+839,0.0019417874,0,7,
+7464,0.9984137,1,1,in 1 days machine 7464.0 needs maintenance
+5333,0.99582493,1,1,in 1 days machine 5333.0 needs maintenance
+5287,0.92544407,1,1,in 1 days machine 5287.0 needs maintenance
+6806,0.0067126895,0,7,
+4239,0.0008124689,0,7,
+9325,0.9921887,1,1,in 1 days machine 9325.0 needs maintenance
+161,0.0038607938,0,7,
+5230,0.9998369,1,1,in 1 days machine 5230.0 needs maintenance
+6582,0.9969043,1,1,in 1 days machine 6582.0 needs maintenance
+3199,0.99887484,1,1,in 1 days machine 3199.0 needs maintenance
+9741,0.0012933366,0,7,
+3479,0.0023343062,0,7,
+1383,0.0011875045,0,7,
+4668,0.9974873,1,1,in 1 days machine 4668.0 needs maintenance
+3332,0.0007800069,0,7,
+6083,0.0020959927,0,7,
+358,0.9997991,1,1,in 1 days machine 358.0 needs maintenance
+7966,0.00015886403,0,7,
+5569,0.0023900284,0,7,
+8574,0.0035435506,0,7,
+2501,0.00014114838,0,7,
+3762,0.00031842335,0,7,
+3831,0.9977048,1,1,in 1 days machine 3831.0 needs maintenance
+1993,0.9788584,1,1,in 1 days machine 1993.0 needs maintenance
+1826,0.99894804,1,1,in 1 days machine 1826.0 needs maintenance
+6133,0.0017102837,0,7,
+7411,0.9984848,1,1,in 1 days machine 7411.0 needs maintenance
+7575,0.9064574,1,2,in 2 days machine 7575.0 needs maintenance
+4719,0.9949024,1,1,in 1 days machine 4719.0 needs maintenance
+1098,0.09122449,0,6,
+7770,7.6007396e-05,0,7,
+3239,0.9977349,1,1,in 1 days machine 3239.0 needs maintenance
+4221,0.96591073,1,1,in 1 days machine 4221.0 needs maintenance
+3341,9.8562894e-05,0,7,
+5148,0.996241,1,1,in 1 days machine 5148.0 needs maintenance
+1113,0.99575377,1,1,in 1 days machine 1113.0 needs maintenance
+3422,0.008976703,0,7,
+9777,0.9994709,1,1,in 1 days machine 9777.0 needs maintenance
+7320,0.0005884021,0,7,
+2087,0.0017602744,0,7,
+3844,0.999348,1,1,in 1 days machine 3844.0 needs maintenance
+9122,0.0010464401,0,7,
+3502,0.0006980577,0,7,
+6525,0.99822134,1,1,in 1 days machine 6525.0 needs maintenance
+1339,0.9994197,1,1,in 1 days machine 1339.0 needs maintenance
+224,0.0014518048,0,7,
+2877,0.0008875567,0,7,
+1766,0.00036359718,0,7,
+7045,0.0024110475,0,7,
+1747,0.99855965,1,1,in 1 days machine 1747.0 needs maintenance
+651,0.00079597754,0,7,
+7938,0.9496231,1,1,in 1 days machine 7938.0 needs maintenance
+5710,0.00014990914,0,7,
+3410,0.99445915,1,1,in 1 days machine 3410.0 needs maintenance
+3795,0.8249639,1,2,in 2 days machine 3795.0 needs maintenance
+3809,0.8241696,1,2,in 2 days machine 3809.0 needs maintenance
+5109,0.9922214,1,1,in 1 days machine 5109.0 needs maintenance
+9043,0.99761593,1,1,in 1 days machine 9043.0 needs maintenance
+4346,0.0012566682,0,7,
+4798,0.011246825,0,7,
+1665,0.0032616358,0,7,
+3967,0.9955966,1,1,in 1 days machine 3967.0 needs maintenance
+5262,0.045734935,0,7,
+6950,0.00069713296,0,7,
+9054,0.9814342,1,1,in 1 days machine 9054.0 needs maintenance
+5943,0.00032990793,0,7,
+6273,0.72218263,1,3,in 3 days machine 6273.0 needs maintenance
+3500,0.00012187428,0,7,
+5099,0.0005189506,0,7,
+2336,0.0045935563,0,7,
+4924,0.004339272,0,7,
+3429,0.09505138,0,6,
+5308,0.999605,1,1,in 1 days machine 5308.0 needs maintenance
+5414,0.0030566698,0,7,
+3794,0.9970969,1,1,in 1 days machine 3794.0 needs maintenance
+7081,0.0026029835,0,7,
+2664,0.9951155,1,1,in 1 days machine 2664.0 needs maintenance
+8931,0.03356887,0,7,
+6378,0.99930274,1,1,in 1 days machine 6378.0 needs maintenance
+1774,0.016423617,0,7,
+8804,0.99323905,1,1,in 1 days machine 8804.0 needs maintenance
+127,0.004205418,0,7,
+4562,0.99781054,1,1,in 1 days machine 4562.0 needs maintenance
+5478,0.9872749,1,1,in 1 days machine 5478.0 needs maintenance
+4455,0.01649478,0,7,
+4255,0.0012454073,0,7,
+8525,0.037536725,0,7,
+7872,0.9973591,1,1,in 1 days machine 7872.0 needs maintenance
+8052,0.000113211594,0,7,
+6347,0.9915923,1,1,in 1 days machine 6347.0 needs maintenance
+4510,0.99745995,1,1,in 1 days machine 4510.0 needs maintenance
+4518,0.99955183,1,1,in 1 days machine 4518.0 needs maintenance
+5905,0.13213727,0,6,
+7791,0.0015276341,0,7,
+3052,0.37087703,0,5,
+9993,0.9869646,1,1,in 1 days machine 9993.0 needs maintenance
+1257,0.20141649,0,6,
+8883,0.0006988814,0,7,
+8153,0.012695156,0,7,
+7677,0.9973003,1,1,in 1 days machine 7677.0 needs maintenance
+3795,0.06711729,0,7,
+9573,0.9997445,1,1,in 1 days machine 9573.0 needs maintenance
+25,0.00022018522,0,7,
+3933,0.9441568,1,1,in 1 days machine 3933.0 needs maintenance
+419,0.00039956492,0,7,
+8584,0.010518758,0,7,
+9969,0.0023275132,0,7,
+2909,0.000364101,0,7,
+8293,0.0009735842,0,7,
+6278,0.98085874,1,1,in 1 days machine 6278.0 needs maintenance
+3375,0.9986474,1,1,in 1 days machine 3375.0 needs maintenance
+9027,0.009622708,0,7,
+1492,0.9986934,1,1,in 1 days machine 1492.0 needs maintenance
+5605,0.0006877168,0,7,
+7924,0.9752367,1,1,in 1 days machine 7924.0 needs maintenance
+6309,0.99651414,1,1,in 1 days machine 6309.0 needs maintenance
+4098,0.0010231633,0,7,
+7005,0.00020889584,0,7,
+7878,0.00015274707,0,7,
+4991,0.99720335,1,1,in 1 days machine 4991.0 needs maintenance
+9376,0.9944465,1,1,in 1 days machine 9376.0 needs maintenance
+4839,0.99830294,1,1,in 1 days machine 4839.0 needs maintenance
+6831,0.99941385,1,1,in 1 days machine 6831.0 needs maintenance
+5182,0.029741794,0,7,
+3537,0.0002707431,0,7,
+6411,0.00029153595,0,7,
+7431,0.955406,1,1,in 1 days machine 7431.0 needs maintenance
+119,0.9935679,1,1,in 1 days machine 119.0 needs maintenance
+8721,0.99701166,1,1,in 1 days machine 8721.0 needs maintenance
+5671,0.00025552846,0,7,
+1136,0.9987985,1,1,in 1 days machine 1136.0 needs maintenance
+6178,0.0002568536,0,7,
+7795,0.007842643,0,7,
+4099,0.99814,1,1,in 1 days machine 4099.0 needs maintenance
+6420,0.00041099702,0,7,
+7057,0.013380354,0,7,
+4374,0.99563617,1,1,in 1 days machine 4374.0 needs maintenance
+662,0.003701797,0,7,
+7451,0.9948414,1,1,in 1 days machine 7451.0 needs maintenance
+898,0.0018512302,0,7,
+5679,0.001072483,0,7,
+9253,0.00044040303,0,7,
+5076,0.0009906995,0,7,
+73,0.989693,1,1,in 1 days machine 73.0 needs maintenance
+5305,0.99907434,1,1,in 1 days machine 5305.0 needs maintenance
+5738,0.0017721991,0,7,
+8771,0.99540114,1,1,in 1 days machine 8771.0 needs maintenance
+3603,0.0013306881,0,7,
+1725,0.0029098294,0,7,
+7497,0.98375964,1,1,in 1 days machine 7497.0 needs maintenance
+708,0.043583453,0,7,
+5234,0.9980008,1,1,in 1 days machine 5234.0 needs maintenance
+2805,0.0028787053,0,7,
+9608,0.00050826865,0,7,
+4346,0.1666989,0,6,
+120,0.001318933,0,7,
+6001,0.0007115269,0,7,
+1693,0.014823931,0,7,
+9643,0.13866545,0,6,
+8245,0.00043153134,0,7,
+9661,0.9732887,1,1,in 1 days machine 9661.0 needs maintenance
+5461,0.99938405,1,1,in 1 days machine 5461.0 needs maintenance
+6145,0.99140376,1,1,in 1 days machine 6145.0 needs maintenance
+2808,0.0002920807,0,7,
+4260,0.000509746,0,7,
+6282,0.9978103,1,1,in 1 days machine 6282.0 needs maintenance
+2520,0.99933124,1,1,in 1 days machine 2520.0 needs maintenance
+198,0.011959588,0,7,
+9800,0.98112744,1,1,in 1 days machine 9800.0 needs maintenance
+5911,0.0011849417,0,7,
+1725,0.9926502,1,1,in 1 days machine 1725.0 needs maintenance
+5798,0.9526081,1,1,in 1 days machine 5798.0 needs maintenance
+3538,0.9949877,1,1,in 1 days machine 3538.0 needs maintenance
+1043,0.0026943344,0,7,
+7932,0.013034518,0,7,
+1959,0.9984414,1,1,in 1 days machine 1959.0 needs maintenance
+577,0.99756455,1,1,in 1 days machine 577.0 needs maintenance
+7218,0.00041343234,0,7,
+2692,0.99431664,1,1,in 1 days machine 2692.0 needs maintenance
+5424,0.0012816851,0,7,
+6376,0.99766505,1,1,in 1 days machine 6376.0 needs maintenance
+4675,0.001606723,0,7,
+2659,0.9880293,1,1,in 1 days machine 2659.0 needs maintenance
+60,0.061630983,0,7,
+7545,0.996666,1,1,in 1 days machine 7545.0 needs maintenance
+5778,0.024720466,0,7,
+2324,0.9776379,1,1,in 1 days machine 2324.0 needs maintenance
+3896,0.95014524,1,1,in 1 days machine 3896.0 needs maintenance
+6982,0.99014014,1,1,in 1 days machine 6982.0 needs maintenance
+1965,0.00091259455,0,7,
+2146,0.00020840325,0,7,
+4948,0.9992029,1,1,in 1 days machine 4948.0 needs maintenance
+9702,0.8329589,1,2,in 2 days machine 9702.0 needs maintenance
+3869,0.0060637784,0,7,
+8874,0.00063709286,0,7,
+8581,0.0002493295,0,7,
+2547,0.00493859,0,7,
+1367,0.9985618,1,1,in 1 days machine 1367.0 needs maintenance
+1295,0.011987839,0,7,
+8602,0.0074569047,0,7,
+1281,0.99810576,1,1,in 1 days machine 1281.0 needs maintenance
+1322,0.0004747966,0,7,
+7031,0.72238994,1,3,in 3 days machine 7031.0 needs maintenance
+7677,0.9999318,1,1,in 1 days machine 7677.0 needs maintenance
+7631,0.57458276,1,4,in 4 days machine 7631.0 needs maintenance
+5058,0.0012204981,0,7,
+6474,0.00027077718,0,7,
+9612,0.99438983,1,1,in 1 days machine 9612.0 needs maintenance
+220,0.9964534,1,1,in 1 days machine 220.0 needs maintenance
+6723,0.99935514,1,1,in 1 days machine 6723.0 needs maintenance
+896,0.00043685437,0,7,
+9771,0.96282387,1,1,in 1 days machine 9771.0 needs maintenance
+8750,0.00067596947,0,7,
+4565,0.99682164,1,1,in 1 days machine 4565.0 needs maintenance
+10,0.9689349,1,1,in 1 days machine 10.0 needs maintenance
+3849,0.002086522,0,7,
+3160,0.016787127,0,7,
+5085,0.9972445,1,1,in 1 days machine 5085.0 needs maintenance
+8153,0.9952226,1,1,in 1 days machine 8153.0 needs maintenance
+238,0.99622655,1,1,in 1 days machine 238.0 needs maintenance
+5084,0.9912547,1,1,in 1 days machine 5084.0 needs maintenance
+5083,0.9995177,1,1,in 1 days machine 5083.0 needs maintenance
+4033,0.9957567,1,1,in 1 days machine 4033.0 needs maintenance
+3388,0.012495141,0,7,
+4571,0.016188413,0,7,
+6845,0.005450257,0,7,
+4535,0.9991885,1,1,in 1 days machine 4535.0 needs maintenance
+5261,8.813223e-05,0,7,
+2780,0.9667259,1,1,in 1 days machine 2780.0 needs maintenance
+3352,0.99478096,1,1,in 1 days machine 3352.0 needs maintenance
+4298,0.01387465,0,7,
+2805,0.0012722131,0,7,
+4283,0.00029504235,0,7,
+6687,0.9980445,1,1,in 1 days machine 6687.0 needs maintenance
+1723,0.06365028,0,7,
+1376,0.00025027743,0,7,
+9630,0.008491243,0,7,
+1251,0.0012705396,0,7,
+6483,0.998747,1,1,in 1 days machine 6483.0 needs maintenance
+9970,0.99074394,1,1,in 1 days machine 9970.0 needs maintenance
+350,0.9961098,1,1,in 1 days machine 350.0 needs maintenance
+5479,0.9991891,1,1,in 1 days machine 5479.0 needs maintenance
+5246,0.8209825,1,2,in 2 days machine 5246.0 needs maintenance
+3922,0.00010910583,0,7,
+4105,0.99925226,1,1,in 1 days machine 4105.0 needs maintenance
+8718,0.9986442,1,1,in 1 days machine 8718.0 needs maintenance
+574,0.99809414,1,1,in 1 days machine 574.0 needs maintenance
+3095,0.00067888986,0,7,
+8257,0.9985287,1,1,in 1 days machine 8257.0 needs maintenance
+2922,0.003907482,0,7,
+5459,0.0004810675,0,7,
+4683,0.9987122,1,1,in 1 days machine 4683.0 needs maintenance
+4028,0.00081023906,0,7,
+7555,0.955947,1,1,in 1 days machine 7555.0 needs maintenance
+9598,0.9940796,1,1,in 1 days machine 9598.0 needs maintenance
+1827,0.9966738,1,1,in 1 days machine 1827.0 needs maintenance
+6149,0.95269185,1,1,in 1 days machine 6149.0 needs maintenance
+6907,0.9977962,1,1,in 1 days machine 6907.0 needs maintenance
+4927,0.0025815265,0,7,
+4019,0.98957413,1,1,in 1 days machine 4019.0 needs maintenance
+9658,0.8889181,1,2,in 2 days machine 9658.0 needs maintenance
+200,0.0015925954,0,7,
+55,0.010851529,0,7,
+9665,0.9985524,1,1,in 1 days machine 9665.0 needs maintenance
+1875,0.9992944,1,1,in 1 days machine 1875.0 needs maintenance
+3471,0.00022396236,0,7,
+2069,0.9995821,1,1,in 1 days machine 2069.0 needs maintenance
+2832,0.00038841882,0,7,
+3081,0.000115596915,0,7,
+6763,0.0015783581,0,7,
+5562,0.918488,1,1,in 1 days machine 5562.0 needs maintenance
+4107,0.00076141214,0,7,
+9626,0.99795437,1,1,in 1 days machine 9626.0 needs maintenance
+978,0.98915637,1,1,in 1 days machine 978.0 needs maintenance
+5690,0.00064509263,0,7,
+9023,0.048376016,0,7,
+428,0.00013635113,0,7,
+6539,0.0003657929,0,7,
+7387,0.084468596,0,6,
+3044,0.00015026105,0,7,
+5113,3.78989e-05,0,7,
+2582,0.9959156,1,1,in 1 days machine 2582.0 needs maintenance
+7716,0.00021409485,0,7,
+8137,0.012625306,0,7,
+1818,0.98431534,1,1,in 1 days machine 1818.0 needs maintenance
+301,0.0041105207,0,7,
+5373,0.0010732741,0,7,
+6518,0.9999008,1,1,in 1 days machine 6518.0 needs maintenance
+4932,0.00042963662,0,7,
+209,0.016882014,0,7,
+8049,0.9622274,1,1,in 1 days machine 8049.0 needs maintenance
+3178,0.99342865,1,1,in 1 days machine 3178.0 needs maintenance
+9586,0.0018535587,0,7,
+4069,0.81003237,1,2,in 2 days machine 4069.0 needs maintenance
+9760,0.08379647,0,6,
+2222,0.0016049907,0,7,
+1714,0.003564976,0,7,
+276,0.0006877735,0,7,
+7420,0.99453187,1,1,in 1 days machine 7420.0 needs maintenance
+1970,0.00091934775,0,7,
+8816,0.010982913,0,7,
+2440,0.9980205,1,1,in 1 days machine 2440.0 needs maintenance
+4353,0.0023445974,0,7,
+239,0.99847,1,1,in 1 days machine 239.0 needs maintenance
+6835,0.00030219508,0,7,
+5724,0.9999509,1,1,in 1 days machine 5724.0 needs maintenance
+9021,0.00051178545,0,7,
+1462,0.95864874,1,1,in 1 days machine 1462.0 needs maintenance
+1030,0.99691534,1,1,in 1 days machine 1030.0 needs maintenance
+6206,0.9567527,1,1,in 1 days machine 6206.0 needs maintenance
+1961,0.99971443,1,1,in 1 days machine 1961.0 needs maintenance
+3239,0.85858285,1,2,in 2 days machine 3239.0 needs maintenance
+5178,0.003551277,0,7,
+6596,0.9964102,1,1,in 1 days machine 6596.0 needs maintenance
+9097,0.050636165,0,7,
+88,0.00033439204,0,7,
+678,0.5096918,1,4,in 4 days machine 678.0 needs maintenance
+3959,0.0025526492,0,7,
+5198,0.17717749,0,6,
+8972,0.0024619575,0,7,
+3748,0.0010081845,0,7,
+6862,0.0017124001,0,7,
+7029,0.9881123,1,1,in 1 days machine 7029.0 needs maintenance
+3207,0.9463298,1,1,in 1 days machine 3207.0 needs maintenance
+6432,0.7252045,1,3,in 3 days machine 6432.0 needs maintenance
+2425,7.273085e-05,0,7,
+4496,0.9937034,1,1,in 1 days machine 4496.0 needs maintenance
+9180,0.98693734,1,1,in 1 days machine 9180.0 needs maintenance
+3443,0.99173534,1,1,in 1 days machine 3443.0 needs maintenance
+2820,0.025920058,0,7,
+8653,6.9225134e-05,0,7,
+5649,0.08746529,0,6,
+6982,0.998777,1,1,in 1 days machine 6982.0 needs maintenance
+9034,0.010986306,0,7,
+2179,0.0007708043,0,7,
+8979,0.99701166,1,1,in 1 days machine 8979.0 needs maintenance
+2675,0.99469674,1,1,in 1 days machine 2675.0 needs maintenance
+5645,0.9881672,1,1,in 1 days machine 5645.0 needs maintenance
+8448,0.65106755,1,3,in 3 days machine 8448.0 needs maintenance
+3524,0.00016528185,0,7,
+6701,0.9486223,1,1,in 1 days machine 6701.0 needs maintenance
+6084,0.008379625,0,7,
+5318,0.6984494,1,3,in 3 days machine 5318.0 needs maintenance
+4440,0.9956312,1,1,in 1 days machine 4440.0 needs maintenance
+9132,0.99259126,1,1,in 1 days machine 9132.0 needs maintenance
+4150,0.00042425728,0,7,
+6720,0.9985292,1,1,in 1 days machine 6720.0 needs maintenance
+6453,0.0002324015,0,7,
+2635,8.928146e-05,0,7,
+8990,0.66914266,1,3,in 3 days machine 8990.0 needs maintenance
+762,0.99748564,1,1,in 1 days machine 762.0 needs maintenance
+6681,0.00029628092,0,7,
+1887,0.99885356,1,1,in 1 days machine 1887.0 needs maintenance
+3914,0.9972209,1,1,in 1 days machine 3914.0 needs maintenance
+4978,0.0014340564,0,7,
+786,0.002660285,0,7,
+7455,0.0077874227,0,7,
+1769,0.99966335,1,1,in 1 days machine 1769.0 needs maintenance
+8553,0.00047030073,0,7,
+8496,0.0023664797,0,7,
+2883,0.99481285,1,1,in 1 days machine 2883.0 needs maintenance
+4302,0.9920074,1,1,in 1 days machine 4302.0 needs maintenance
+3148,0.9982893,1,1,in 1 days machine 3148.0 needs maintenance
+4063,0.9980471,1,1,in 1 days machine 4063.0 needs maintenance
+8468,0.97152644,1,1,in 1 days machine 8468.0 needs maintenance
+6996,0.00069890445,0,7,
+9476,0.00018708449,0,7,
+572,0.00173033,0,7,
+4987,0.9696646,1,1,in 1 days machine 4987.0 needs maintenance
+8232,0.5784252,1,4,in 4 days machine 8232.0 needs maintenance
+6323,0.0011064622,0,7,
+2961,0.9981522,1,1,in 1 days machine 2961.0 needs maintenance
+9003,0.99577385,1,1,in 1 days machine 9003.0 needs maintenance
+9943,0.0019904466,0,7,
+6766,0.0009711606,0,7,
+9808,0.0009514676,0,7,
+6805,0.9954146,1,1,in 1 days machine 6805.0 needs maintenance
+4632,0.998254,1,1,in 1 days machine 4632.0 needs maintenance
+7886,0.00084323186,0,7,
+3756,0.9967439,1,1,in 1 days machine 3756.0 needs maintenance
+865,0.0005681712,0,7,
+9453,0.021402078,0,7,
+3927,0.004639139,0,7,
+9868,0.0008913585,0,7,
+2939,0.001991664,0,7,
+6860,0.0007618234,0,7,
+3501,0.0003953183,0,7,
+9300,0.76663476,1,2,in 2 days machine 9300.0 needs maintenance
+4067,0.014201389,0,7,
+6899,0.9999633,1,1,in 1 days machine 6899.0 needs maintenance
+319,0.0027594524,0,7,
+7538,0.9982345,1,1,in 1 days machine 7538.0 needs maintenance
+936,0.99536324,1,1,in 1 days machine 936.0 needs maintenance
+194,0.92954665,1,1,in 1 days machine 194.0 needs maintenance
+8186,0.00018224127,0,7,
+7698,0.99362034,1,1,in 1 days machine 7698.0 needs maintenance
+4808,0.9995191,1,1,in 1 days machine 4808.0 needs maintenance
+5855,0.0006037468,0,7,
+549,0.008244758,0,7,
+7509,0.63504934,1,3,in 3 days machine 7509.0 needs maintenance
+7722,0.9976809,1,1,in 1 days machine 7722.0 needs maintenance
+2676,0.9952226,1,1,in 1 days machine 2676.0 needs maintenance
+8549,0.005636879,0,7,
+2250,0.99995506,1,1,in 1 days machine 2250.0 needs maintenance
+5604,0.99428624,1,1,in 1 days machine 5604.0 needs maintenance
+7431,0.00045516988,0,7,
+6437,0.0010495846,0,7,
+2172,0.008192434,0,7,
+5695,0.9998266,1,1,in 1 days machine 5695.0 needs maintenance
+2249,0.014077175,0,7,
+7926,0.001681394,0,7,
+464,0.0009539952,0,7,
+1555,0.0002760992,0,7,
+6771,0.8833613,1,2,in 2 days machine 6771.0 needs maintenance
+7710,0.99469215,1,1,in 1 days machine 7710.0 needs maintenance
+4768,0.99282223,1,1,in 1 days machine 4768.0 needs maintenance
+2024,0.0027693796,0,7,
+5591,0.038023982,0,7,
+7476,0.9968605,1,1,in 1 days machine 7476.0 needs maintenance
+1916,0.99538535,1,1,in 1 days machine 1916.0 needs maintenance
+6559,0.014100761,0,7,
+998,0.0132125905,0,7,
+6627,9.456834e-05,0,7,
+8049,0.2538468,0,5,
+3391,0.00024948,0,7,
+4886,0.0004804568,0,7,
+2801,0.99632096,1,1,in 1 days machine 2801.0 needs maintenance
+6573,0.9995203,1,1,in 1 days machine 6573.0 needs maintenance
+1033,0.94591254,1,1,in 1 days machine 1033.0 needs maintenance
+652,0.0077370754,0,7,
+2963,0.00013599938,0,7,
+7138,0.009288606,0,7,
+6372,0.000302883,0,7,
+8556,0.99827063,1,1,in 1 days machine 8556.0 needs maintenance
+1940,0.9920061,1,1,in 1 days machine 1940.0 needs maintenance
+6106,0.9966395,1,1,in 1 days machine 6106.0 needs maintenance
+9435,0.00071056164,0,7,
+1277,0.0024055338,0,7,
+6116,0.7869604,1,2,in 2 days machine 6116.0 needs maintenance
+7431,0.00060634466,0,7,
+3712,0.0008994679,0,7,
+6058,0.9990969,1,1,in 1 days machine 6058.0 needs maintenance
+2185,0.0015587824,0,7,
+7696,0.99541533,1,1,in 1 days machine 7696.0 needs maintenance
+9261,0.10877861,0,6,
+7918,0.14604646,0,6,
+810,0.99865985,1,1,in 1 days machine 810.0 needs maintenance
+5372,0.0014678487,0,7,
+8610,0.9962681,1,1,in 1 days machine 8610.0 needs maintenance
+745,0.9483475,1,1,in 1 days machine 745.0 needs maintenance
+3721,0.006353264,0,7,
+9093,0.00080155145,0,7,
+3066,0.99867624,1,1,in 1 days machine 3066.0 needs maintenance
+1007,0.0027184582,0,7,
+6174,0.8558289,1,2,in 2 days machine 6174.0 needs maintenance
+1235,0.99572045,1,1,in 1 days machine 1235.0 needs maintenance
+4994,0.023720564,0,7,
+6959,0.9762941,1,1,in 1 days machine 6959.0 needs maintenance
+723,0.06267452,0,7,
+7735,0.0604922,0,7,
+8572,0.8430988,1,2,in 2 days machine 8572.0 needs maintenance
+441,0.00012629261,0,7,
+122,0.99836975,1,1,in 1 days machine 122.0 needs maintenance
+4512,0.9950277,1,1,in 1 days machine 4512.0 needs maintenance
+7170,0.0021479905,0,7,
+4910,0.00047987804,0,7,
+225,0.13077372,0,6,
+3111,0.99807715,1,1,in 1 days machine 3111.0 needs maintenance
+9533,0.9950033,1,1,in 1 days machine 9533.0 needs maintenance
+1972,0.9959449,1,1,in 1 days machine 1972.0 needs maintenance
+1012,0.99395716,1,1,in 1 days machine 1012.0 needs maintenance
+5292,0.00023929047,0,7,
+6944,0.99970776,1,1,in 1 days machine 6944.0 needs maintenance
+7798,0.21967627,0,6,
+9769,0.9986505,1,1,in 1 days machine 9769.0 needs maintenance
+6974,0.9995875,1,1,in 1 days machine 6974.0 needs maintenance
+8232,0.7749977,1,2,in 2 days machine 8232.0 needs maintenance
+4692,0.0006358142,0,7,
+1694,0.99770206,1,1,in 1 days machine 1694.0 needs maintenance
+1974,0.9946819,1,1,in 1 days machine 1974.0 needs maintenance
+7287,9.633676e-05,0,7,
+7314,0.9998264,1,1,in 1 days machine 7314.0 needs maintenance
+4114,0.9971053,1,1,in 1 days machine 4114.0 needs maintenance
+689,0.99726677,1,1,in 1 days machine 689.0 needs maintenance
+5701,0.0006976643,0,7,
+8419,0.0009967985,0,7,
+2419,0.0023625384,0,7,
+4086,0.0013463437,0,7,
+8415,0.9956564,1,1,in 1 days machine 8415.0 needs maintenance
+1805,0.48913783,0,4,
+6685,0.0005563754,0,7,
+9336,0.9969663,1,1,in 1 days machine 9336.0 needs maintenance
+74,0.001466682,0,7,
+884,0.9938844,1,1,in 1 days machine 884.0 needs maintenance
+6907,0.0051795435,0,7,
+1845,0.99094486,1,1,in 1 days machine 1845.0 needs maintenance
+8733,0.0006512564,0,7,
+1023,0.00022928254,0,7,
+9975,0.0001920053,0,7,
+7566,0.9966539,1,1,in 1 days machine 7566.0 needs maintenance
+1333,0.99972075,1,1,in 1 days machine 1333.0 needs maintenance
+9543,0.007474137,0,7,
+8506,0.12838918,0,6,
+2395,0.9992273,1,1,in 1 days machine 2395.0 needs maintenance
+7502,0.011003951,0,7,
+793,0.00042365934,0,7,
+2670,0.99937767,1,1,in 1 days machine 2670.0 needs maintenance
+4745,0.82930005,1,2,in 2 days machine 4745.0 needs maintenance
+7923,0.008073977,0,7,
+3322,0.002354497,0,7,
+6640,0.98674446,1,1,in 1 days machine 6640.0 needs maintenance
+2154,0.00027370863,0,7,
+4227,0.99088013,1,1,in 1 days machine 4227.0 needs maintenance
+2385,0.9915981,1,1,in 1 days machine 2385.0 needs maintenance
+9469,0.00010189096,0,7,
+955,0.0006960127,0,7,
+5100,0.0052724686,0,7,
+3769,0.0013840965,0,7,
+4074,0.00044811098,0,7,
+3596,0.96487004,1,1,in 1 days machine 3596.0 needs maintenance
+5607,0.9990901,1,1,in 1 days machine 5607.0 needs maintenance
+1803,0.2913456,0,5,
+6414,0.00040255912,0,7,
+5169,0.00036449832,0,7,
+6721,0.00039755992,0,7,
+5913,0.00044753935,0,7,
+729,0.0017298029,0,7,
+1986,0.9620225,1,1,in 1 days machine 1986.0 needs maintenance
+2935,0.99743974,1,1,in 1 days machine 2935.0 needs maintenance
+3574,0.00012988571,0,7,
+7860,0.0011283358,0,7,
+2474,0.0009543252,0,7,
+2035,0.002289563,0,7,
+9557,0.00022495001,0,7,
+8087,0.00042547108,0,7,
+7264,0.012789243,0,7,
+4793,0.9970092,1,1,in 1 days machine 4793.0 needs maintenance
+6306,0.99924505,1,1,in 1 days machine 6306.0 needs maintenance
+9908,0.00015906699,0,7,
+2915,0.0005524534,0,7,
+6948,0.0011036851,0,7,
+5606,0.0006179632,0,7,
+1868,0.9991824,1,1,in 1 days machine 1868.0 needs maintenance
+6447,0.0011911023,0,7,
+1596,0.9897376,1,1,in 1 days machine 1596.0 needs maintenance
+8051,0.9990324,1,1,in 1 days machine 8051.0 needs maintenance
+2019,0.01410092,0,7,
+3774,0.98420066,1,1,in 1 days machine 3774.0 needs maintenance
+5319,0.99440753,1,1,in 1 days machine 5319.0 needs maintenance
+7711,0.00010083249,0,7,
+1879,0.9913406,1,1,in 1 days machine 1879.0 needs maintenance
+444,0.98228836,1,1,in 1 days machine 444.0 needs maintenance
+7777,0.021456512,0,7,
+3639,0.0010187087,0,7,
+419,0.99902666,1,1,in 1 days machine 419.0 needs maintenance
+4055,0.008060394,0,7,
+7048,0.9554208,1,1,in 1 days machine 7048.0 needs maintenance
+3848,0.9988857,1,1,in 1 days machine 3848.0 needs maintenance
+3090,0.8537482,1,2,in 2 days machine 3090.0 needs maintenance
+9630,0.0010998186,0,7,
+5470,0.00011521285,0,7,
+9249,0.014359493,0,7,
+4257,0.000101349666,0,7,
+6715,0.946179,1,1,in 1 days machine 6715.0 needs maintenance
+4026,0.00039150624,0,7,
+8247,0.99562293,1,1,in 1 days machine 8247.0 needs maintenance
+2736,0.0002675096,0,7,
+1457,0.9999565,1,1,in 1 days machine 1457.0 needs maintenance
+1445,0.0013847392,0,7,
+8109,0.0005500918,0,7,
+8127,0.99979514,1,1,in 1 days machine 8127.0 needs maintenance
+3187,5.191839e-05,0,7,
+5042,0.98318547,1,1,in 1 days machine 5042.0 needs maintenance
+9690,0.99568814,1,1,in 1 days machine 9690.0 needs maintenance
+2773,0.99844295,1,1,in 1 days machine 2773.0 needs maintenance
+7103,0.0020493944,0,7,
+7606,0.99776006,1,1,in 1 days machine 7606.0 needs maintenance
+8259,0.9853527,1,1,in 1 days machine 8259.0 needs maintenance
+2273,0.9856096,1,1,in 1 days machine 2273.0 needs maintenance
+4491,0.0027000536,0,7,
+1576,0.00014087261,0,7,
+684,0.00017790978,0,7,
+9523,0.9997918,1,1,in 1 days machine 9523.0 needs maintenance
+1101,0.9984378,1,1,in 1 days machine 1101.0 needs maintenance
+8535,0.00071088644,0,7,
+729,0.995908,1,1,in 1 days machine 729.0 needs maintenance
+1372,0.9644986,1,1,in 1 days machine 1372.0 needs maintenance
+7578,0.9953525,1,1,in 1 days machine 7578.0 needs maintenance
+8689,0.07383325,0,7,
+6858,0.9892517,1,1,in 1 days machine 6858.0 needs maintenance
+5701,0.026635459,0,7,
+5352,0.9996581,1,1,in 1 days machine 5352.0 needs maintenance
+162,0.9604552,1,1,in 1 days machine 162.0 needs maintenance
+8945,0.0022300761,0,7,
+7217,0.000961506,0,7,
+790,0.0009493184,0,7,
+2260,0.9712424,1,1,in 1 days machine 2260.0 needs maintenance
+8053,0.00040390296,0,7,
+7156,0.00044051342,0,7,
+9536,0.9929349,1,1,in 1 days machine 9536.0 needs maintenance
+9679,0.99865156,1,1,in 1 days machine 9679.0 needs maintenance
+541,0.004314993,0,7,
+9291,0.022407917,0,7,
+3963,0.5300931,1,4,in 4 days machine 3963.0 needs maintenance
+1720,0.0014233245,0,7,
+8430,0.000100931764,0,7,
+4972,0.050386127,0,7,
+8477,0.9936799,1,1,in 1 days machine 8477.0 needs maintenance
+7170,0.023625184,0,7,
+5356,0.058717266,0,7,
+3117,0.99709535,1,1,in 1 days machine 3117.0 needs maintenance
+2181,0.9836068,1,1,in 1 days machine 2181.0 needs maintenance
+268,0.9975254,1,1,in 1 days machine 268.0 needs maintenance
+5515,0.0028264564,0,7,
+5109,0.9994041,1,1,in 1 days machine 5109.0 needs maintenance
+1093,0.25748608,0,5,
+6610,0.9969438,1,1,in 1 days machine 6610.0 needs maintenance
+6641,0.0011069783,0,7,
+1109,0.051794354,0,7,
+3126,0.9968221,1,1,in 1 days machine 3126.0 needs maintenance
+2760,0.9980287,1,1,in 1 days machine 2760.0 needs maintenance
+2561,0.99842644,1,1,in 1 days machine 2561.0 needs maintenance
+5953,0.96727175,1,1,in 1 days machine 5953.0 needs maintenance
+525,0.004413282,0,7,
+3470,0.004853086,0,7,
+6229,0.0006078928,0,7,
+800,0.9985273,1,1,in 1 days machine 800.0 needs maintenance
+7982,0.99706024,1,1,in 1 days machine 7982.0 needs maintenance
+9563,0.99641293,1,1,in 1 days machine 9563.0 needs maintenance
+5253,0.00032362,0,7,
+5446,0.9922801,1,1,in 1 days machine 5446.0 needs maintenance
+8388,0.00010988987,0,7,
+8834,0.99831545,1,1,in 1 days machine 8834.0 needs maintenance
+7910,0.0036126543,0,7,
+4427,0.9957704,1,1,in 1 days machine 4427.0 needs maintenance
+1349,0.99465203,1,1,in 1 days machine 1349.0 needs maintenance
+4419,0.0060043954,0,7,
+2259,3.159355e-05,0,7,
+6086,0.9991387,1,1,in 1 days machine 6086.0 needs maintenance
+3156,0.99891627,1,1,in 1 days machine 3156.0 needs maintenance
+1227,0.10219998,0,6,
+332,0.99753964,1,1,in 1 days machine 332.0 needs maintenance
+4100,0.9879005,1,1,in 1 days machine 4100.0 needs maintenance
+957,0.0004710439,0,7,
+465,0.9970962,1,1,in 1 days machine 465.0 needs maintenance
+5962,0.99822956,1,1,in 1 days machine 5962.0 needs maintenance
+7507,0.00018426763,0,7,
+7462,0.30146876,0,5,
+7421,0.0016327477,0,7,
+706,0.9947377,1,1,in 1 days machine 706.0 needs maintenance
+9735,0.0001587665,0,7,
+13,0.15609996,0,6,
+6257,0.079815134,0,7,
+4228,0.0014269277,0,7,
+7937,0.995622,1,1,in 1 days machine 7937.0 needs maintenance
+151,0.00073170516,0,7,
+806,0.9871531,1,1,in 1 days machine 806.0 needs maintenance
+2164,0.00075652014,0,7,
+1797,0.87379605,1,2,in 2 days machine 1797.0 needs maintenance
+9514,0.9918441,1,1,in 1 days machine 9514.0 needs maintenance
+5221,0.0006570043,0,7,
+7567,0.0002163971,0,7,
+3617,0.005338871,0,7,
+9366,0.004878866,0,7,
+4546,0.9984415,1,1,in 1 days machine 4546.0 needs maintenance
+5936,0.9946666,1,1,in 1 days machine 5936.0 needs maintenance
+4003,0.0013050896,0,7,
+1629,0.0028979243,0,7,
+9333,0.9966169,1,1,in 1 days machine 9333.0 needs maintenance
+3428,0.0002590461,0,7,
+1371,0.0030367782,0,7,
+8785,0.00024322636,0,7,
+8303,0.00084551563,0,7,
+8313,0.0005969728,0,7,
+3217,0.9952182,1,1,in 1 days machine 3217.0 needs maintenance
+1945,0.00895609,0,7,
+6467,0.0026273758,0,7,
+9020,0.0011530399,0,7,
+6951,0.9991511,1,1,in 1 days machine 6951.0 needs maintenance
+4967,0.05520941,0,7,
+7766,0.00048045107,0,7,
+11,0.99912804,1,1,in 1 days machine 11.0 needs maintenance
+6275,0.99592113,1,1,in 1 days machine 6275.0 needs maintenance
+3006,0.6016004,1,3,in 3 days machine 3006.0 needs maintenance
+3485,0.99309444,1,1,in 1 days machine 3485.0 needs maintenance
+7846,0.9972102,1,1,in 1 days machine 7846.0 needs maintenance
+8674,0.037753947,0,7,
+1995,0.99773717,1,1,in 1 days machine 1995.0 needs maintenance
+3535,0.9989766,1,1,in 1 days machine 3535.0 needs maintenance
+8843,0.99959594,1,1,in 1 days machine 8843.0 needs maintenance
+5261,0.9811949,1,1,in 1 days machine 5261.0 needs maintenance
+8105,0.3392125,0,5,
+4709,0.03217736,0,7,
+8144,0.0013215338,0,7,
+7735,0.99575055,1,1,in 1 days machine 7735.0 needs maintenance
+6308,0.9834504,1,1,in 1 days machine 6308.0 needs maintenance
+3954,0.010722379,0,7,
+8964,0.9270218,1,1,in 1 days machine 8964.0 needs maintenance
+9735,0.98870414,1,1,in 1 days machine 9735.0 needs maintenance
+8934,0.99729913,1,1,in 1 days machine 8934.0 needs maintenance
+6253,0.00014782719,0,7,
+2989,0.99542123,1,1,in 1 days machine 2989.0 needs maintenance
+2987,0.006847739,0,7,
+1343,0.9974546,1,1,in 1 days machine 1343.0 needs maintenance
+2543,0.002071978,0,7,
+9728,0.9933275,1,1,in 1 days machine 9728.0 needs maintenance
+7549,0.9894588,1,1,in 1 days machine 7549.0 needs maintenance
+5648,0.0021441826,0,7,
+6486,0.0010214939,0,7,
+4102,0.0013500687,0,7,
+4191,0.00024443454,0,7,
+8412,0.756529,1,2,in 2 days machine 8412.0 needs maintenance
+8009,0.96273327,1,1,in 1 days machine 8009.0 needs maintenance
+3421,0.99940455,1,1,in 1 days machine 3421.0 needs maintenance
+5317,0.9978078,1,1,in 1 days machine 5317.0 needs maintenance
+5186,0.9965153,1,1,in 1 days machine 5186.0 needs maintenance
+6587,0.00015791226,0,7,
+2819,0.992761,1,1,in 1 days machine 2819.0 needs maintenance
+317,0.9814998,1,1,in 1 days machine 317.0 needs maintenance
+3339,0.998588,1,1,in 1 days machine 3339.0 needs maintenance
+1592,0.9946307,1,1,in 1 days machine 1592.0 needs maintenance
+3316,0.0014577376,0,7,
+3457,0.031910926,0,7,
+1460,0.0021611936,0,7,
+4419,0.9914737,1,1,in 1 days machine 4419.0 needs maintenance
+209,0.00030307597,0,7,
+5906,0.0026769433,0,7,
+2484,0.9803908,1,1,in 1 days machine 2484.0 needs maintenance
+3470,0.055001482,0,7,
+7200,0.04772054,0,7,
+9950,0.9994715,1,1,in 1 days machine 9950.0 needs maintenance
+9907,0.9986155,1,1,in 1 days machine 9907.0 needs maintenance
+9556,7.9383084e-05,0,7,
+4480,0.0008910635,0,7,
+8695,0.9940253,1,1,in 1 days machine 8695.0 needs maintenance
+2317,0.99835205,1,1,in 1 days machine 2317.0 needs maintenance
+2608,0.001619352,0,7,
+5186,0.9987037,1,1,in 1 days machine 5186.0 needs maintenance
+1120,0.8885597,1,2,in 2 days machine 1120.0 needs maintenance
+3956,0.00017216461,0,7,
+4884,0.88397723,1,2,in 2 days machine 4884.0 needs maintenance
+4132,0.9963862,1,1,in 1 days machine 4132.0 needs maintenance
+763,0.002235816,0,7,
+4149,0.9966787,1,1,in 1 days machine 4149.0 needs maintenance
+3973,0.0049773506,0,7,
+2940,0.0016474592,0,7,
+7130,0.0014938868,0,7,
+5194,0.99372995,1,1,in 1 days machine 5194.0 needs maintenance
+2193,0.0009693234,0,7,
+980,0.9720557,1,1,in 1 days machine 980.0 needs maintenance
+3076,0.9893344,1,1,in 1 days machine 3076.0 needs maintenance
+6999,0.56696534,1,4,in 4 days machine 6999.0 needs maintenance
+9120,0.00020751296,0,7,
+8291,0.00040612745,0,7,
+1899,0.0055981847,0,7,
+4688,0.0009683611,0,7,
+2257,0.44110125,0,4,
+7362,0.97181255,1,1,in 1 days machine 7362.0 needs maintenance
+128,0.022415474,0,7,
+2279,0.00011955809,0,7,
+6562,0.9968411,1,1,in 1 days machine 6562.0 needs maintenance
+7186,0.9984297,1,1,in 1 days machine 7186.0 needs maintenance
+9402,0.994416,1,1,in 1 days machine 9402.0 needs maintenance
+505,0.9910908,1,1,in 1 days machine 505.0 needs maintenance
+9508,0.16851653,0,6,
+9259,0.020479092,0,7,
+2481,0.9831271,1,1,in 1 days machine 2481.0 needs maintenance
+3950,0.9997528,1,1,in 1 days machine 3950.0 needs maintenance
+5339,0.0113890525,0,7,
+3908,0.99794286,1,1,in 1 days machine 3908.0 needs maintenance
+4553,0.0011566486,0,7,
+8055,0.8635487,1,2,in 2 days machine 8055.0 needs maintenance
+2429,0.9789725,1,1,in 1 days machine 2429.0 needs maintenance
+1140,0.9909078,1,1,in 1 days machine 1140.0 needs maintenance
+4310,0.002651763,0,7,
+7329,0.00034806362,0,7,
+1367,0.99551326,1,1,in 1 days machine 1367.0 needs maintenance
+1289,0.0025209577,0,7,
+4646,0.9927141,1,1,in 1 days machine 4646.0 needs maintenance
+2909,0.9966787,1,1,in 1 days machine 2909.0 needs maintenance
+8397,0.9958775,1,1,in 1 days machine 8397.0 needs maintenance
+981,0.7249754,1,3,in 3 days machine 981.0 needs maintenance
+7088,3.286293e-05,0,7,
+1117,0.9997801,1,1,in 1 days machine 1117.0 needs maintenance
+8103,0.00055520365,0,7,
+4847,0.984511,1,1,in 1 days machine 4847.0 needs maintenance
+5895,0.9984798,1,1,in 1 days machine 5895.0 needs maintenance
+3506,0.995918,1,1,in 1 days machine 3506.0 needs maintenance
+590,0.9986786,1,1,in 1 days machine 590.0 needs maintenance
+2184,0.0003301656,0,7,
+8260,0.00068690523,0,7,
+3076,0.0027186403,0,7,
+2798,0.012143177,0,7,
+5407,0.002232695,0,7,
+4536,0.002304191,0,7,
+2262,0.06389075,0,7,
+2028,0.22876728,0,6,
+7750,0.00910527,0,7,
+4834,0.93908095,1,1,in 1 days machine 4834.0 needs maintenance
+7741,0.0017860135,0,7,
+1003,0.24969858,0,6,
+9845,0.00025557843,0,7,
+270,0.00071523443,0,7,
+5982,0.9964856,1,1,in 1 days machine 5982.0 needs maintenance
+2586,0.9997408,1,1,in 1 days machine 2586.0 needs maintenance
+6380,0.99913955,1,1,in 1 days machine 6380.0 needs maintenance
+790,0.9970169,1,1,in 1 days machine 790.0 needs maintenance
+3097,0.9986237,1,1,in 1 days machine 3097.0 needs maintenance
+4951,0.99546957,1,1,in 1 days machine 4951.0 needs maintenance
+1982,0.9939405,1,1,in 1 days machine 1982.0 needs maintenance
+9106,0.0004272376,0,7,
+4670,0.037263595,0,7,
+806,0.00030906737,0,7,
+3476,0.0013055445,0,7,
+2761,0.99743974,1,1,in 1 days machine 2761.0 needs maintenance
+9578,0.99177516,1,1,in 1 days machine 9578.0 needs maintenance
+5761,0.00036846282,0,7,
+4181,0.9943547,1,1,in 1 days machine 4181.0 needs maintenance
+7497,0.99832314,1,1,in 1 days machine 7497.0 needs maintenance
+7015,0.0005522118,0,7,
+8214,0.20038311,0,6,
+3677,0.9942889,1,1,in 1 days machine 3677.0 needs maintenance
+7113,0.9969656,1,1,in 1 days machine 7113.0 needs maintenance
+11,0.00021436959,0,7,
+8793,0.99688405,1,1,in 1 days machine 8793.0 needs maintenance
+7443,0.011678404,0,7,
+306,0.99863213,1,1,in 1 days machine 306.0 needs maintenance
+5168,0.95839673,1,1,in 1 days machine 5168.0 needs maintenance
+2328,0.00035411952,0,7,
+6427,0.8097598,1,2,in 2 days machine 6427.0 needs maintenance
+9003,0.0008055765,0,7,
+5441,0.0029018936,0,7,
+2452,0.010617024,0,7,
+3576,0.928827,1,1,in 1 days machine 3576.0 needs maintenance
+8311,0.0067624347,0,7,
+4185,0.005021817,0,7,
+5179,0.00032526307,0,7,
+4548,0.9896605,1,1,in 1 days machine 4548.0 needs maintenance
+569,0.8747835,1,2,in 2 days machine 569.0 needs maintenance
+7045,0.91946524,1,1,in 1 days machine 7045.0 needs maintenance
+1325,0.9997918,1,1,in 1 days machine 1325.0 needs maintenance
+6805,0.0010246255,0,7,
+4293,0.00012417798,0,7,
+7010,0.73927003,1,3,in 3 days machine 7010.0 needs maintenance
+3519,0.9596047,1,1,in 1 days machine 3519.0 needs maintenance
+5509,0.9671911,1,1,in 1 days machine 5509.0 needs maintenance
+3764,0.99896514,1,1,in 1 days machine 3764.0 needs maintenance
+596,0.010796289,0,7,
+2341,0.0009254739,0,7,
+1914,0.000862482,0,7,
+6064,0.0011679456,0,7,
+5253,0.9992902,1,1,in 1 days machine 5253.0 needs maintenance
+587,0.7772759,1,2,in 2 days machine 587.0 needs maintenance
+7212,0.00015111988,0,7,
+4582,0.9999707,1,1,in 1 days machine 4582.0 needs maintenance
+8624,0.9921653,1,1,in 1 days machine 8624.0 needs maintenance
+5699,0.003559301,0,7,
+7339,0.9858743,1,1,in 1 days machine 7339.0 needs maintenance
+1217,0.07949367,0,7,
+4922,0.9115188,1,2,in 2 days machine 4922.0 needs maintenance
+8947,0.8880845,1,2,in 2 days machine 8947.0 needs maintenance
+9335,0.00072897517,0,7,
+7246,0.00019717205,0,7,
+7466,0.002088614,0,7,
+3996,0.00050917035,0,7,
+9950,0.00012960908,0,7,
+951,0.98650867,1,1,in 1 days machine 951.0 needs maintenance
+1498,0.9986519,1,1,in 1 days machine 1498.0 needs maintenance
+1261,0.0008444496,0,7,
+8226,0.99816823,1,1,in 1 days machine 8226.0 needs maintenance
+2114,0.99714893,1,1,in 1 days machine 2114.0 needs maintenance
+260,0.98683214,1,1,in 1 days machine 260.0 needs maintenance
+7996,0.0020054586,0,7,
+6055,0.00024889296,0,7,
+6471,0.9714784,1,1,in 1 days machine 6471.0 needs maintenance
+8796,0.00083161966,0,7,
+4909,0.9895783,1,1,in 1 days machine 4909.0 needs maintenance
+3642,0.9988381,1,1,in 1 days machine 3642.0 needs maintenance
+5889,0.00016724097,0,7,
+3019,0.9973712,1,1,in 1 days machine 3019.0 needs maintenance
+5730,0.00016876296,0,7,
+3073,0.0005983984,0,7,
+7633,0.99344724,1,1,in 1 days machine 7633.0 needs maintenance
+8177,0.9808142,1,1,in 1 days machine 8177.0 needs maintenance
+7197,0.053607088,0,7,
+942,0.99465203,1,1,in 1 days machine 942.0 needs maintenance
+6869,0.91366345,1,2,in 2 days machine 6869.0 needs maintenance
+747,0.9969472,1,1,in 1 days machine 747.0 needs maintenance
+8079,0.000853244,0,7,
+4906,0.039769705,0,7,
+820,0.5280593,1,4,in 4 days machine 820.0 needs maintenance
+6997,0.022500215,0,7,
+7797,0.99790525,1,1,in 1 days machine 7797.0 needs maintenance
+7665,4.6786874e-05,0,7,
+2640,0.00071475445,0,7,
+5999,0.9911795,1,1,in 1 days machine 5999.0 needs maintenance
+1216,0.014255167,0,7,
+3892,0.006038005,0,7,
+161,0.0005730068,0,7,
+5146,0.020790065,0,7,
+4802,0.013462631,0,7,
+1618,0.0006623104,0,7,
+1118,0.00019876972,0,7,
+2403,0.98612404,1,1,in 1 days machine 2403.0 needs maintenance
+4331,0.007725596,0,7,
+1273,0.8130596,1,2,in 2 days machine 1273.0 needs maintenance
+9546,0.9331245,1,1,in 1 days machine 9546.0 needs maintenance
+5679,0.9195975,1,1,in 1 days machine 5679.0 needs maintenance
+6470,0.0005523544,0,7,
+5033,0.0011162126,0,7,
+9720,0.9991353,1,1,in 1 days machine 9720.0 needs maintenance
+5016,0.9982101,1,1,in 1 days machine 5016.0 needs maintenance
+5480,0.0005978981,0,7,
+8220,0.9991103,1,1,in 1 days machine 8220.0 needs maintenance
+5308,0.9940514,1,1,in 1 days machine 5308.0 needs maintenance
+5962,0.9959682,1,1,in 1 days machine 5962.0 needs maintenance
+512,0.99900454,1,1,in 1 days machine 512.0 needs maintenance
+6788,0.99061745,1,1,in 1 days machine 6788.0 needs maintenance
+3248,0.019534294,0,7,
+9401,0.0026204374,0,7,
+138,0.0001437736,0,7,
+5825,0.00067806605,0,7,
+2570,0.99256116,1,1,in 1 days machine 2570.0 needs maintenance
+6634,0.99826705,1,1,in 1 days machine 6634.0 needs maintenance
+4922,0.9669703,1,1,in 1 days machine 4922.0 needs maintenance
+4457,0.99844813,1,1,in 1 days machine 4457.0 needs maintenance
+7481,0.9776529,1,1,in 1 days machine 7481.0 needs maintenance
+8334,0.9942469,1,1,in 1 days machine 8334.0 needs maintenance
+948,0.9986694,1,1,in 1 days machine 948.0 needs maintenance
+8949,0.010333218,0,7,
+8343,0.03260605,0,7,
+8793,0.68241584,1,3,in 3 days machine 8793.0 needs maintenance
+3742,0.0048023406,0,7,
+9776,0.9876022,1,1,in 1 days machine 9776.0 needs maintenance
+7303,0.992007,1,1,in 1 days machine 7303.0 needs maintenance
+6283,0.9991999,1,1,in 1 days machine 6283.0 needs maintenance
+4571,0.9944325,1,1,in 1 days machine 4571.0 needs maintenance
+8300,0.99862945,1,1,in 1 days machine 8300.0 needs maintenance
+2334,0.996498,1,1,in 1 days machine 2334.0 needs maintenance
+3734,0.0041498835,0,7,
+868,0.99326354,1,1,in 1 days machine 868.0 needs maintenance
+2162,0.17515157,0,6,
+9073,0.98609537,1,1,in 1 days machine 9073.0 needs maintenance
+8821,0.04201629,0,7,
+2977,0.018899333,0,7,
+7270,0.99898833,1,1,in 1 days machine 7270.0 needs maintenance
+997,0.028044488,0,7,
+5750,0.9923453,1,1,in 1 days machine 5750.0 needs maintenance
+9797,0.9976145,1,1,in 1 days machine 9797.0 needs maintenance
+3268,0.0017570548,0,7,
+9927,0.99938,1,1,in 1 days machine 9927.0 needs maintenance
+2587,0.99887437,1,1,in 1 days machine 2587.0 needs maintenance
+1060,0.0033573601,0,7,
+4706,0.9849132,1,1,in 1 days machine 4706.0 needs maintenance
+4935,0.9778857,1,1,in 1 days machine 4935.0 needs maintenance
+3895,0.9490782,1,1,in 1 days machine 3895.0 needs maintenance
+5610,0.6909319,1,3,in 3 days machine 5610.0 needs maintenance
+9942,0.99996746,1,1,in 1 days machine 9942.0 needs maintenance
+5210,0.0030670275,0,7,
+836,0.00056804967,0,7,
+642,0.95718735,1,1,in 1 days machine 642.0 needs maintenance
+8149,0.9741649,1,1,in 1 days machine 8149.0 needs maintenance
+8953,0.0005828408,0,7,
+2343,0.995262,1,1,in 1 days machine 2343.0 needs maintenance
+6129,0.00016617357,0,7,
+5232,0.9913577,1,1,in 1 days machine 5232.0 needs maintenance
+2091,0.0008441323,0,7,
+1406,0.8694679,1,2,in 2 days machine 1406.0 needs maintenance
+8711,0.010656965,0,7,
+6024,0.756628,1,2,in 2 days machine 6024.0 needs maintenance
+3134,0.002494539,0,7,
+3706,0.97299093,1,1,in 1 days machine 3706.0 needs maintenance
+6117,0.9900513,1,1,in 1 days machine 6117.0 needs maintenance
+1324,0.99669325,1,1,in 1 days machine 1324.0 needs maintenance
+5942,0.99639785,1,1,in 1 days machine 5942.0 needs maintenance
+2774,0.00010486647,0,7,
+7665,0.0002664972,0,7,
+5354,0.9988399,1,1,in 1 days machine 5354.0 needs maintenance
+9536,0.9949137,1,1,in 1 days machine 9536.0 needs maintenance
+5907,0.99874,1,1,in 1 days machine 5907.0 needs maintenance
+4272,0.6793848,1,3,in 3 days machine 4272.0 needs maintenance
+970,0.9900095,1,1,in 1 days machine 970.0 needs maintenance
+3481,0.0005103951,0,7,
+4674,0.99901795,1,1,in 1 days machine 4674.0 needs maintenance
+1012,0.024340907,0,7,
+8311,0.9988102,1,1,in 1 days machine 8311.0 needs maintenance
+538,0.9992416,1,1,in 1 days machine 538.0 needs maintenance
+9767,0.00031587298,0,7,
+9551,0.24122009,0,6,
+1856,0.99332786,1,1,in 1 days machine 1856.0 needs maintenance
+6088,0.99710935,1,1,in 1 days machine 6088.0 needs maintenance
+8294,0.982443,1,1,in 1 days machine 8294.0 needs maintenance
+8883,0.96965665,1,1,in 1 days machine 8883.0 needs maintenance
+1617,0.051284842,0,7,
+9147,0.96755993,1,1,in 1 days machine 9147.0 needs maintenance
+9262,0.9988752,1,1,in 1 days machine 9262.0 needs maintenance
+3692,0.9894028,1,1,in 1 days machine 3692.0 needs maintenance
+3115,0.00048710132,0,7,
+3204,0.95350724,1,1,in 1 days machine 3204.0 needs maintenance
+7851,0.14377952,0,6,
+8029,0.0008586976,0,7,
+871,0.0057255295,0,7,
+8984,0.00128308,0,7,
+6038,0.0010247842,0,7,
+6150,0.9984212,1,1,in 1 days machine 6150.0 needs maintenance
+5277,0.9887382,1,1,in 1 days machine 5277.0 needs maintenance
+1862,0.9951212,1,1,in 1 days machine 1862.0 needs maintenance
+3142,0.9962947,1,1,in 1 days machine 3142.0 needs maintenance
+9348,0.012235437,0,7,
+6100,0.9647988,1,1,in 1 days machine 6100.0 needs maintenance
+5441,0.0005806106,0,7,
+8303,5.047197e-05,0,7,
+4165,0.00012706642,0,7,
+5977,0.9942473,1,1,in 1 days machine 5977.0 needs maintenance
+4925,0.89066887,1,2,in 2 days machine 4925.0 needs maintenance
+2097,0.00011735139,0,7,
+5380,0.0028153453,0,7,
+2061,0.0019637388,0,7,
+1372,0.96515656,1,1,in 1 days machine 1372.0 needs maintenance
+2696,0.99030834,1,1,in 1 days machine 2696.0 needs maintenance
+5542,0.00044556358,0,7,
+3545,0.017834526,0,7,
+4809,0.8537482,1,2,in 2 days machine 4809.0 needs maintenance
+5495,0.0003084836,0,7,
+4984,0.022891145,0,7,
+6833,0.9963898,1,1,in 1 days machine 6833.0 needs maintenance
+2769,0.8997306,1,2,in 2 days machine 2769.0 needs maintenance
+1428,0.9807042,1,1,in 1 days machine 1428.0 needs maintenance
+9059,0.974152,1,1,in 1 days machine 9059.0 needs maintenance
+4329,0.99594325,1,1,in 1 days machine 4329.0 needs maintenance
+6566,0.9897601,1,1,in 1 days machine 6566.0 needs maintenance
+2729,0.9939374,1,1,in 1 days machine 2729.0 needs maintenance
+7104,0.9989335,1,1,in 1 days machine 7104.0 needs maintenance
+1936,0.98782325,1,1,in 1 days machine 1936.0 needs maintenance
+4454,0.99991345,1,1,in 1 days machine 4454.0 needs maintenance
+4708,0.9919743,1,1,in 1 days machine 4708.0 needs maintenance
+8686,0.00042802235,0,7,
+7226,0.99830246,1,1,in 1 days machine 7226.0 needs maintenance
+3670,0.0007941025,0,7,
+372,0.9946307,1,1,in 1 days machine 372.0 needs maintenance
+7375,0.010990493,0,7,
+5806,0.0011064021,0,7,
+9075,0.0005332978,0,7,
+5534,0.8902167,1,2,in 2 days machine 5534.0 needs maintenance
+6291,0.0049955347,0,7,
+1460,0.00033955986,0,7,
+3269,0.28907675,0,5,
+6244,0.0010824013,0,7,
+4907,0.0667372,0,7,
+6704,0.99737763,1,1,in 1 days machine 6704.0 needs maintenance
+8666,0.0012011565,0,7,
+1479,0.8210981,1,2,in 2 days machine 1479.0 needs maintenance
+8425,0.0015584567,0,7,
+7327,0.0036766604,0,7,
+2018,0.0006293644,0,7,
+9439,0.99637896,1,1,in 1 days machine 9439.0 needs maintenance
+3062,0.99766064,1,1,in 1 days machine 3062.0 needs maintenance
+7052,0.9986971,1,1,in 1 days machine 7052.0 needs maintenance
+1761,0.0004138436,0,7,
+6350,0.00023903028,0,7,
+994,0.001740219,0,7,
+3809,0.99583685,1,1,in 1 days machine 3809.0 needs maintenance
+4877,0.0052975686,0,7,
+3493,0.9981357,1,1,in 1 days machine 3493.0 needs maintenance
+235,0.87143594,1,2,in 2 days machine 235.0 needs maintenance
+7327,0.22509289,0,6,
+1845,0.75681067,1,2,in 2 days machine 1845.0 needs maintenance
+6087,0.00036577653,0,7,
+4254,0.9975337,1,1,in 1 days machine 4254.0 needs maintenance
+2034,0.008541233,0,7,
+6098,0.0019415674,0,7,
+618,0.054352622,0,7,
+54,0.99869555,1,1,in 1 days machine 54.0 needs maintenance
+2649,0.0095782485,0,7,
+1021,0.0010374483,0,7,
+2041,0.9992428,1,1,in 1 days machine 2041.0 needs maintenance
+7905,0.99920684,1,1,in 1 days machine 7905.0 needs maintenance
+9864,0.0006903809,0,7,
+5010,0.9586546,1,1,in 1 days machine 5010.0 needs maintenance
+408,0.000622162,0,7,
+6875,0.0002810101,0,7,
+9717,0.998784,1,1,in 1 days machine 9717.0 needs maintenance
+6091,4.8120677e-05,0,7,
+8536,0.9949538,1,1,in 1 days machine 8536.0 needs maintenance
+8143,0.009725063,0,7,
+7798,0.006847282,0,7,
+2160,0.00799101,0,7,
+66,0.99771714,1,1,in 1 days machine 66.0 needs maintenance
+1949,0.99803334,1,1,in 1 days machine 1949.0 needs maintenance
+3512,0.13259532,0,6,
+7195,0.00088886084,0,7,
+4294,0.0001806794,0,7,
+999,0.0021367376,0,7,
+5884,0.9995517,1,1,in 1 days machine 5884.0 needs maintenance
+6088,0.021777418,0,7,
+541,0.0002358496,0,7,
+9137,0.94617033,1,1,in 1 days machine 9137.0 needs maintenance
+2076,0.9964915,1,1,in 1 days machine 2076.0 needs maintenance
+9297,9.103805e-05,0,7,
+3093,0.9994061,1,1,in 1 days machine 3093.0 needs maintenance
+1030,0.014462729,0,7,
+7808,0.9886204,1,1,in 1 days machine 7808.0 needs maintenance
+2585,0.97802645,1,1,in 1 days machine 2585.0 needs maintenance
+1731,0.9977336,1,1,in 1 days machine 1731.0 needs maintenance
+1846,0.026076715,0,7,
+4959,0.9954542,1,1,in 1 days machine 4959.0 needs maintenance
+2489,0.9827839,1,1,in 1 days machine 2489.0 needs maintenance
+3048,0.04517267,0,7,
+8281,0.79605365,1,2,in 2 days machine 8281.0 needs maintenance
+3414,0.00047830888,0,7,
+9411,0.024577232,0,7,
+4842,0.00013839614,0,7,
+1565,0.0005089675,0,7,
+6992,0.9900525,1,1,in 1 days machine 6992.0 needs maintenance
+2512,0.053484745,0,7,
+363,0.96183056,1,1,in 1 days machine 363.0 needs maintenance
+9949,0.0024222743,0,7,
+8078,0.9287263,1,1,in 1 days machine 8078.0 needs maintenance
+8592,0.0007049848,0,7,
+3208,0.00069983286,0,7,
+3506,0.002171033,0,7,
+2502,0.01802196,0,7,
+1051,0.00034012005,0,7,
+8205,0.9972058,1,1,in 1 days machine 8205.0 needs maintenance
+4689,0.99858594,1,1,in 1 days machine 4689.0 needs maintenance
+5544,0.9960812,1,1,in 1 days machine 5544.0 needs maintenance
+2094,0.0020945398,0,7,
+9509,0.9999378,1,1,in 1 days machine 9509.0 needs maintenance
+5552,0.0020294674,0,7,
+2839,0.99958485,1,1,in 1 days machine 2839.0 needs maintenance
+4015,0.9947878,1,1,in 1 days machine 4015.0 needs maintenance
+8822,0.9974927,1,1,in 1 days machine 8822.0 needs maintenance
+5357,0.9975223,1,1,in 1 days machine 5357.0 needs maintenance
+4399,0.0008035532,0,7,
+6701,0.9545982,1,1,in 1 days machine 6701.0 needs maintenance
+1418,0.0011777125,0,7,
+7082,0.044139784,0,7,
+5404,0.999253,1,1,in 1 days machine 5404.0 needs maintenance
+924,0.9862883,1,1,in 1 days machine 924.0 needs maintenance
+6261,0.9782573,1,1,in 1 days machine 6261.0 needs maintenance
+1632,0.9959865,1,1,in 1 days machine 1632.0 needs maintenance
+3962,0.97287244,1,1,in 1 days machine 3962.0 needs maintenance
+7326,0.99405897,1,1,in 1 days machine 7326.0 needs maintenance
+9153,0.0029959634,0,7,
+4398,0.7617781,1,2,in 2 days machine 4398.0 needs maintenance
+7378,0.9968837,1,1,in 1 days machine 7378.0 needs maintenance
+5255,0.015349528,0,7,
+6057,0.99594826,1,1,in 1 days machine 6057.0 needs maintenance
+561,0.99916613,1,1,in 1 days machine 561.0 needs maintenance
+5673,0.99733883,1,1,in 1 days machine 5673.0 needs maintenance
+3589,5.290539e-05,0,7,
+2341,0.9991924,1,1,in 1 days machine 2341.0 needs maintenance
+3331,0.0011889118,0,7,
+1740,0.92641664,1,1,in 1 days machine 1740.0 needs maintenance
+2071,0.0014740356,0,7,
+887,0.98951495,1,1,in 1 days machine 887.0 needs maintenance
+2877,0.98017144,1,1,in 1 days machine 2877.0 needs maintenance
+7132,0.0006900859,0,7,
+789,0.9776357,1,1,in 1 days machine 789.0 needs maintenance
+7249,0.0007166755,0,7,
+1945,0.0022999614,0,7,
+9594,0.00052319566,0,7,
+3643,0.00091792893,0,7,
+7878,0.9983577,1,1,in 1 days machine 7878.0 needs maintenance
+3780,0.0038576059,0,7,
+2454,0.99619186,1,1,in 1 days machine 2454.0 needs maintenance
+2755,0.8729824,1,2,in 2 days machine 2755.0 needs maintenance
+6455,0.9908655,1,1,in 1 days machine 6455.0 needs maintenance
+2243,0.99909866,1,1,in 1 days machine 2243.0 needs maintenance
+279,0.99577385,1,1,in 1 days machine 279.0 needs maintenance
+2702,0.008792617,0,7,
+1297,0.9999013,1,1,in 1 days machine 1297.0 needs maintenance
+9495,0.995908,1,1,in 1 days machine 9495.0 needs maintenance
+2876,0.99910295,1,1,in 1 days machine 2876.0 needs maintenance
+6056,0.0006392374,0,7,
+8679,0.93447787,1,1,in 1 days machine 8679.0 needs maintenance
+392,0.9973053,1,1,in 1 days machine 392.0 needs maintenance
+8049,0.0005796559,0,7,
+5215,0.9628187,1,1,in 1 days machine 5215.0 needs maintenance
+4517,0.9904011,1,1,in 1 days machine 4517.0 needs maintenance
+2100,0.0026898012,0,7,
+2968,0.022758052,0,7,
+2584,0.004040725,0,7,
+6238,0.6951795,1,3,in 3 days machine 6238.0 needs maintenance
+3065,0.9931438,1,1,in 1 days machine 3065.0 needs maintenance
+9358,0.9946768,1,1,in 1 days machine 9358.0 needs maintenance
+7824,0.0014645172,0,7,
+2949,0.99708647,1,1,in 1 days machine 2949.0 needs maintenance
+3370,0.95463556,1,1,in 1 days machine 3370.0 needs maintenance
+7908,0.008558088,0,7,
+1196,0.9739348,1,1,in 1 days machine 1196.0 needs maintenance
+1587,0.96072423,1,1,in 1 days machine 1587.0 needs maintenance
+6911,0.9996294,1,1,in 1 days machine 6911.0 needs maintenance
+8917,0.99696344,1,1,in 1 days machine 8917.0 needs maintenance
+5944,0.0004941501,0,7,
+5044,0.00091507356,0,7,
+1392,0.42788464,0,4,
+167,0.001654851,0,7,
+3526,0.00036469367,0,7,
+1274,0.9968874,1,1,in 1 days machine 1274.0 needs maintenance
+8221,0.008288709,0,7,
+5864,0.010637254,0,7,
+3840,0.0004934032,0,7,
+8424,0.0072787683,0,7,
+4396,0.9933328,1,1,in 1 days machine 4396.0 needs maintenance
+7317,0.99928856,1,1,in 1 days machine 7317.0 needs maintenance
+1288,0.00012106128,0,7,
+7968,0.9410095,1,1,in 1 days machine 7968.0 needs maintenance
+9171,0.00016831074,0,7,
+3995,0.0014470911,0,7,
+7696,0.002244434,0,7,
+2605,0.9993799,1,1,in 1 days machine 2605.0 needs maintenance
+5714,0.074681535,0,7,
+6039,0.0014198336,0,7,
+4871,0.0004437839,0,7,
+5512,0.0042404593,0,7,
+5820,0.004109873,0,7,
+4227,0.99962425,1,1,in 1 days machine 4227.0 needs maintenance
+7172,0.9973465,1,1,in 1 days machine 7172.0 needs maintenance
+5197,0.00029070248,0,7,
+9245,0.0002574506,0,7,
+931,0.013666319,0,7,
+45,0.99745744,1,1,in 1 days machine 45.0 needs maintenance
+7161,0.8797819,1,2,in 2 days machine 7161.0 needs maintenance
+395,0.000105082094,0,7,
+1774,0.9763873,1,1,in 1 days machine 1774.0 needs maintenance
+9990,0.00219584,0,7,
+4585,0.0005463106,0,7,
+2822,0.99577713,1,1,in 1 days machine 2822.0 needs maintenance
+3048,0.90627265,1,2,in 2 days machine 3048.0 needs maintenance
+6591,0.0007723943,0,7,
+7092,0.94637334,1,1,in 1 days machine 7092.0 needs maintenance
+1411,0.9945697,1,1,in 1 days machine 1411.0 needs maintenance
+4340,0.98904526,1,1,in 1 days machine 4340.0 needs maintenance
+5441,0.9975491,1,1,in 1 days machine 5441.0 needs maintenance
+8891,0.9986638,1,1,in 1 days machine 8891.0 needs maintenance
+7737,0.00020056251,0,7,
+3775,0.017588407,0,7,
+3509,0.016053224,0,7,
+8821,0.9992337,1,1,in 1 days machine 8821.0 needs maintenance
+8937,0.0010561278,0,7,
+260,0.00073505216,0,7,
+523,0.0038044706,0,7,
+717,0.081668586,0,7,
+6650,0.014998227,0,7,
+574,0.99714845,1,1,in 1 days machine 574.0 needs maintenance
+8924,0.803572,1,2,in 2 days machine 8924.0 needs maintenance
+3750,0.038038015,0,7,
+4493,0.00047398126,0,7,
+1784,0.0013759362,0,7,
+6333,0.9968215,1,1,in 1 days machine 6333.0 needs maintenance
+2298,0.9750953,1,1,in 1 days machine 2298.0 needs maintenance
+1504,0.9852123,1,1,in 1 days machine 1504.0 needs maintenance
+4975,0.99948716,1,1,in 1 days machine 4975.0 needs maintenance
+1473,0.9992835,1,1,in 1 days machine 1473.0 needs maintenance
+2340,0.0019487919,0,7,
+5795,0.9992459,1,1,in 1 days machine 5795.0 needs maintenance
+4529,0.9847535,1,1,in 1 days machine 4529.0 needs maintenance
+3531,0.99560744,1,1,in 1 days machine 3531.0 needs maintenance
+774,0.000916939,0,7,
+1543,0.98015094,1,1,in 1 days machine 1543.0 needs maintenance
+6336,0.9984654,1,1,in 1 days machine 6336.0 needs maintenance
+2982,0.001284335,0,7,
+788,0.9974474,1,1,in 1 days machine 788.0 needs maintenance
+2611,0.0013596275,0,7,
+694,0.9957228,1,1,in 1 days machine 694.0 needs maintenance
+1456,0.00034915004,0,7,
+2487,0.9951475,1,1,in 1 days machine 2487.0 needs maintenance
+2364,0.9988543,1,1,in 1 days machine 2364.0 needs maintenance
+9652,0.99368405,1,1,in 1 days machine 9652.0 needs maintenance
+873,0.023480725,0,7,
+1676,0.0001397701,0,7,
+5311,0.007244157,0,7,
+7203,0.00023470802,0,7,
+214,0.0008053431,0,7,
+9512,0.9946337,1,1,in 1 days machine 9512.0 needs maintenance
+7785,0.0007316459,0,7,
+2717,0.99810326,1,1,in 1 days machine 2717.0 needs maintenance
+1729,0.0002987085,0,7,
+5460,0.9999635,1,1,in 1 days machine 5460.0 needs maintenance
+1966,0.9944957,1,1,in 1 days machine 1966.0 needs maintenance
+1367,0.00026599382,0,7,
+1168,0.0023809015,0,7,
+6461,0.0008591064,0,7,
+8472,0.00013120334,0,7,
+4269,0.021543585,0,7,
+4546,0.094418794,0,6,
+5886,0.9992631,1,1,in 1 days machine 5886.0 needs maintenance
+5486,0.73085886,1,3,in 3 days machine 5486.0 needs maintenance
+5902,0.020479126,0,7,
+8417,0.002238706,0,7,
+1406,0.9979912,1,1,in 1 days machine 1406.0 needs maintenance
+6736,0.9913545,1,1,in 1 days machine 6736.0 needs maintenance
+2043,0.0001678242,0,7,
+4739,0.9996402,1,1,in 1 days machine 4739.0 needs maintenance
+4238,0.9948833,1,1,in 1 days machine 4238.0 needs maintenance
+4781,0.0009588466,0,7,
+4373,0.00022394548,0,7,
+6071,0.9835843,1,1,in 1 days machine 6071.0 needs maintenance
+1898,0.000584743,0,7,
+7426,0.032032028,0,7,
+5100,0.99292326,1,1,in 1 days machine 5100.0 needs maintenance
+3746,0.9980901,1,1,in 1 days machine 3746.0 needs maintenance
+8811,0.9980965,1,1,in 1 days machine 8811.0 needs maintenance
+1798,0.0009931197,0,7,
+1324,0.96563286,1,1,in 1 days machine 1324.0 needs maintenance
+2986,0.00019914705,0,7,
+2825,0.00020444432,0,7,
+528,0.9967079,1,1,in 1 days machine 528.0 needs maintenance
+456,0.9997801,1,1,in 1 days machine 456.0 needs maintenance
+6116,0.0001052841,0,7,
+3812,0.00022591035,0,7,
+6586,0.9988244,1,1,in 1 days machine 6586.0 needs maintenance
+6490,0.86003995,1,2,in 2 days machine 6490.0 needs maintenance
+1518,0.3878592,0,5,
+816,0.99540424,1,1,in 1 days machine 816.0 needs maintenance
+7798,0.9939354,1,1,in 1 days machine 7798.0 needs maintenance
+7301,0.003177239,0,7,
+2181,0.994365,1,1,in 1 days machine 2181.0 needs maintenance
+3126,0.996296,1,1,in 1 days machine 3126.0 needs maintenance
+8245,0.874286,1,2,in 2 days machine 8245.0 needs maintenance
+6409,0.996523,1,1,in 1 days machine 6409.0 needs maintenance
+2804,0.029041559,0,7,
+8545,0.9985745,1,1,in 1 days machine 8545.0 needs maintenance
+4764,0.9982179,1,1,in 1 days machine 4764.0 needs maintenance
+391,0.0012238263,0,7,
+9290,0.00088928867,0,7,
+2796,0.9997528,1,1,in 1 days machine 2796.0 needs maintenance
+6876,0.9970477,1,1,in 1 days machine 6876.0 needs maintenance
+102,0.99145377,1,1,in 1 days machine 102.0 needs maintenance
+4008,0.9987483,1,1,in 1 days machine 4008.0 needs maintenance
+8269,0.99876416,1,1,in 1 days machine 8269.0 needs maintenance
+8948,0.58836514,1,3,in 3 days machine 8948.0 needs maintenance
+6262,0.9972326,1,1,in 1 days machine 6262.0 needs maintenance
+5532,0.0017765708,0,7,
+7309,0.99888045,1,1,in 1 days machine 7309.0 needs maintenance
+6732,0.0017475762,0,7,
+3726,0.9116885,1,2,in 2 days machine 3726.0 needs maintenance
+2675,0.00042742846,0,7,
+4880,0.005192532,0,7,
+879,0.9192332,1,1,in 1 days machine 879.0 needs maintenance
+3411,0.1480135,0,6,
+9449,0.0017003006,0,7,
+590,0.00093193253,0,7,
+7470,0.0005527694,0,7,
+7882,0.0016154451,0,7,
+383,0.0013882166,0,7,
+7714,0.0006946079,0,7,
+2294,0.9904632,1,1,in 1 days machine 2294.0 needs maintenance
+1048,0.9836945,1,1,in 1 days machine 1048.0 needs maintenance
+4015,0.9987639,1,1,in 1 days machine 4015.0 needs maintenance
+6569,0.9971818,1,1,in 1 days machine 6569.0 needs maintenance
+9594,0.96410185,1,1,in 1 days machine 9594.0 needs maintenance
+9388,0.0038725464,0,7,
+8460,0.99706596,1,1,in 1 days machine 8460.0 needs maintenance
+5050,0.9990815,1,1,in 1 days machine 5050.0 needs maintenance
+4472,0.9991326,1,1,in 1 days machine 4472.0 needs maintenance
+9097,0.0020361051,0,7,
+5974,0.09718836,0,6,
+4936,0.0013804875,0,7,
+2053,2.6717178e-05,0,7,
+5695,0.99867177,1,1,in 1 days machine 5695.0 needs maintenance
+8419,0.19046868,0,6,
+2928,0.9988752,1,1,in 1 days machine 2928.0 needs maintenance
+7068,0.0037067244,0,7,
+2922,0.998538,1,1,in 1 days machine 2922.0 needs maintenance
+9430,0.99312156,1,1,in 1 days machine 9430.0 needs maintenance
+6408,0.99576426,1,1,in 1 days machine 6408.0 needs maintenance
+3281,0.0004347204,0,7,
+8911,0.99587977,1,1,in 1 days machine 8911.0 needs maintenance
+884,0.996983,1,1,in 1 days machine 884.0 needs maintenance
+8106,0.9992749,1,1,in 1 days machine 8106.0 needs maintenance
+8965,0.9948715,1,1,in 1 days machine 8965.0 needs maintenance
+1649,0.0003961822,0,7,
+7618,0.0136004845,0,7,
+328,0.00090792717,0,7,
+7277,0.9990195,1,1,in 1 days machine 7277.0 needs maintenance
+6711,0.9963381,1,1,in 1 days machine 6711.0 needs maintenance
+6751,0.0010449189,0,7,
+5434,0.0006441747,0,7,
+3794,0.9620855,1,1,in 1 days machine 3794.0 needs maintenance
+3162,0.8428005,1,2,in 2 days machine 3162.0 needs maintenance
+1522,0.0013142669,0,7,
+646,0.9393189,1,1,in 1 days machine 646.0 needs maintenance
+7070,0.9979498,1,1,in 1 days machine 7070.0 needs maintenance
+9492,0.0008448722,0,7,
+553,0.5276792,1,4,in 4 days machine 553.0 needs maintenance
+916,0.64818805,1,3,in 3 days machine 916.0 needs maintenance
+5760,0.98384064,1,1,in 1 days machine 5760.0 needs maintenance
+990,0.001461437,0,7,
+2642,0.9552688,1,1,in 1 days machine 2642.0 needs maintenance
+1691,0.0011792369,0,7,
+8527,0.9854805,1,1,in 1 days machine 8527.0 needs maintenance
+4636,0.9971986,1,1,in 1 days machine 4636.0 needs maintenance
+4173,0.719668,1,3,in 3 days machine 4173.0 needs maintenance
+4861,0.006718027,0,7,
+5421,0.0046858573,0,7,
+9221,0.0028206338,0,7,
+7730,0.6478654,1,3,in 3 days machine 7730.0 needs maintenance
+7917,0.0004594914,0,7,
+1611,0.00028447833,0,7,
+5177,0.9983758,1,1,in 1 days machine 5177.0 needs maintenance
+3702,0.09036282,0,6,
+8494,0.9761789,1,1,in 1 days machine 8494.0 needs maintenance
+4541,0.71039844,1,3,in 3 days machine 4541.0 needs maintenance
+3881,0.00084421557,0,7,
+9832,0.98907965,1,1,in 1 days machine 9832.0 needs maintenance
+4537,0.993891,1,1,in 1 days machine 4537.0 needs maintenance
+1383,0.0015022698,0,7,
+8181,0.014802706,0,7,
+8200,0.0015581257,0,7,
+3713,0.5404536,1,4,in 4 days machine 3713.0 needs maintenance
+3658,0.0056509227,0,7,
+876,0.019181527,0,7,
+3070,0.9951538,1,1,in 1 days machine 3070.0 needs maintenance
+756,0.9578979,1,1,in 1 days machine 756.0 needs maintenance
+3684,0.012062999,0,7,
+8675,0.9864542,1,1,in 1 days machine 8675.0 needs maintenance
+1759,0.99771714,1,1,in 1 days machine 1759.0 needs maintenance
+5238,0.7359014,1,3,in 3 days machine 5238.0 needs maintenance
+9106,0.95733505,1,1,in 1 days machine 9106.0 needs maintenance
+9383,0.0008893518,0,7,
+1726,0.00060977903,0,7,
+7092,0.00020793306,0,7,
+9666,0.19898558,0,6,
+8408,0.9972989,1,1,in 1 days machine 8408.0 needs maintenance
+4560,0.9979201,1,1,in 1 days machine 4560.0 needs maintenance
+1231,0.9963953,1,1,in 1 days machine 1231.0 needs maintenance
+9401,0.99966466,1,1,in 1 days machine 9401.0 needs maintenance
+8288,0.0002586934,0,7,
+9120,0.00048797412,0,7,
+5838,8.0592494e-05,0,7,
+9924,0.99992657,1,1,in 1 days machine 9924.0 needs maintenance
+2728,0.998095,1,1,in 1 days machine 2728.0 needs maintenance
+9286,0.003178124,0,7,
+4805,0.9999161,1,1,in 1 days machine 4805.0 needs maintenance
+2710,0.0076782466,0,7,
+4134,0.0052497666,0,7,
+8898,0.9696639,1,1,in 1 days machine 8898.0 needs maintenance
+9960,0.99974686,1,1,in 1 days machine 9960.0 needs maintenance
+4534,0.89904356,1,2,in 2 days machine 4534.0 needs maintenance
+3177,0.0033951164,0,7,
+8487,0.0029631837,0,7,
+1733,0.9960139,1,1,in 1 days machine 1733.0 needs maintenance
+1244,0.9938352,1,1,in 1 days machine 1244.0 needs maintenance
+9598,0.9985287,1,1,in 1 days machine 9598.0 needs maintenance
+6740,0.9967835,1,1,in 1 days machine 6740.0 needs maintenance
+8024,0.0004572368,0,7,
+6502,0.9012297,1,2,in 2 days machine 6502.0 needs maintenance
+3258,0.9789338,1,1,in 1 days machine 3258.0 needs maintenance
+1767,0.000739875,0,7,
+7852,0.9478489,1,1,in 1 days machine 7852.0 needs maintenance
+5093,0.00012516278,0,7,
+7147,3.213461e-05,0,7,
+8578,0.9965571,1,1,in 1 days machine 8578.0 needs maintenance
+2587,0.0010644718,0,7,
+8794,0.00016135337,0,7,
+1323,0.0011141235,0,7,
+8862,0.9930038,1,1,in 1 days machine 8862.0 needs maintenance
+2803,0.00031155333,0,7,
+7301,0.014223268,0,7,
+443,0.9400854,1,1,in 1 days machine 443.0 needs maintenance
+9320,0.9999318,1,1,in 1 days machine 9320.0 needs maintenance
+7667,0.9784362,1,1,in 1 days machine 7667.0 needs maintenance
+8161,0.9958572,1,1,in 1 days machine 8161.0 needs maintenance
+7739,0.98963004,1,1,in 1 days machine 7739.0 needs maintenance
+4828,0.99886453,1,1,in 1 days machine 4828.0 needs maintenance
+3363,0.99314547,1,1,in 1 days machine 3363.0 needs maintenance
+5099,0.99917847,1,1,in 1 days machine 5099.0 needs maintenance
+6506,0.00028721776,0,7,
+5558,0.61924046,1,3,in 3 days machine 5558.0 needs maintenance
+9188,0.7800379,1,2,in 2 days machine 9188.0 needs maintenance
+8372,0.9997092,1,1,in 1 days machine 8372.0 needs maintenance
+7088,0.99389946,1,1,in 1 days machine 7088.0 needs maintenance
+3245,0.5209242,1,4,in 4 days machine 3245.0 needs maintenance
+6582,0.99779934,1,1,in 1 days machine 6582.0 needs maintenance
+2023,0.71017265,1,3,in 3 days machine 2023.0 needs maintenance
+9240,0.999091,1,1,in 1 days machine 9240.0 needs maintenance
+4541,0.00055273913,0,7,
+7704,0.0015653223,0,7,
+4997,0.16433851,0,6,
+7706,0.99668795,1,1,in 1 days machine 7706.0 needs maintenance
+9163,0.9959996,1,1,in 1 days machine 9163.0 needs maintenance
+9513,0.0008382965,0,7,
+1860,0.0001182092,0,7,
+1067,0.00093380164,0,7,
+7941,0.99686253,1,1,in 1 days machine 7941.0 needs maintenance
+4992,0.9613335,1,1,in 1 days machine 4992.0 needs maintenance
+6989,0.99569595,1,1,in 1 days machine 6989.0 needs maintenance
+9039,0.99891627,1,1,in 1 days machine 9039.0 needs maintenance
+1066,0.00013402365,0,7,
+2963,0.00037613735,0,7,
+6701,0.007360152,0,7,
+5165,0.9935788,1,1,in 1 days machine 5165.0 needs maintenance
+3209,0.9984981,1,1,in 1 days machine 3209.0 needs maintenance
+9086,0.0010402729,0,7,
+9376,0.0023014052,0,7,
+4364,0.0004923576,0,7,
+8165,0.9959543,1,1,in 1 days machine 8165.0 needs maintenance
+7326,0.99408746,1,1,in 1 days machine 7326.0 needs maintenance
+2990,0.9974107,1,1,in 1 days machine 2990.0 needs maintenance
+5986,0.003106906,0,7,
+2457,0.00825588,0,7,
+4333,0.0019561648,0,7,
+6020,0.06949269,0,7,
+5733,0.9954431,1,1,in 1 days machine 5733.0 needs maintenance
+2885,0.0025919469,0,7,
+2697,0.9945745,1,1,in 1 days machine 2697.0 needs maintenance
+5948,0.048329327,0,7,
+6044,0.9993162,1,1,in 1 days machine 6044.0 needs maintenance
+7,0.036758963,0,7,
+9090,0.003009319,0,7,
+5645,0.6887896,1,3,in 3 days machine 5645.0 needs maintenance
+8181,0.0015779036,0,7,
+6169,0.00035938184,0,7,
+996,0.00075040513,0,7,
+1337,0.016522745,0,7,
+4432,0.9108009,1,2,in 2 days machine 4432.0 needs maintenance
+4003,0.009366149,0,7,
+5270,0.0041628173,0,7,
+1952,0.00010739687,0,7,
+3937,0.99988794,1,1,in 1 days machine 3937.0 needs maintenance
+8383,0.0018515608,0,7,
+9087,0.9517597,1,1,in 1 days machine 9087.0 needs maintenance
+6962,0.90879434,1,2,in 2 days machine 6962.0 needs maintenance
+3473,0.046689257,0,7,
+2157,0.00021050617,0,7,
+6143,0.9968988,1,1,in 1 days machine 6143.0 needs maintenance
+2007,0.00011568723,0,7,
+5020,0.0016574274,0,7,
+3547,0.99794894,1,1,in 1 days machine 3547.0 needs maintenance
+8500,0.99743974,1,1,in 1 days machine 8500.0 needs maintenance
+8858,0.02395263,0,7,
+4548,0.00025031704,0,7,
+2569,0.0026484318,0,7,
+475,0.00017036487,0,7,
+9675,0.013133694,0,7,
+368,0.000564069,0,7,
+8921,0.9567527,1,1,in 1 days machine 8921.0 needs maintenance
+3383,0.008669947,0,7,
+6140,0.0023622597,0,7,
+5363,0.99504244,1,1,in 1 days machine 5363.0 needs maintenance
+9917,0.0035061678,0,7,
+7537,0.007105926,0,7,
+1395,0.9973465,1,1,in 1 days machine 1395.0 needs maintenance
+7087,0.008933931,0,7,
+1402,0.010140664,0,7,
+7970,0.99771714,1,1,in 1 days machine 7970.0 needs maintenance
+9605,0.995837,1,1,in 1 days machine 9605.0 needs maintenance
+7929,0.9975199,1,1,in 1 days machine 7929.0 needs maintenance
+9049,0.00074519904,0,7,
+3049,0.00035739254,0,7,
+2759,0.9996183,1,1,in 1 days machine 2759.0 needs maintenance
+16,0.003576472,0,7,
+2648,0.9943347,1,1,in 1 days machine 2648.0 needs maintenance
+9444,0.0021937944,0,7,
+7981,0.9926042,1,1,in 1 days machine 7981.0 needs maintenance
+3398,0.003906534,0,7,
+2801,0.9973973,1,1,in 1 days machine 2801.0 needs maintenance
+1833,0.044037335,0,7,
+8313,0.9962681,1,1,in 1 days machine 8313.0 needs maintenance
+5130,0.99759597,1,1,in 1 days machine 5130.0 needs maintenance
+8371,0.0051814113,0,7,
+8204,0.0018315633,0,7,
+2199,0.9918202,1,1,in 1 days machine 2199.0 needs maintenance
+3615,0.00037500614,0,7,
+8112,0.99718326,1,1,in 1 days machine 8112.0 needs maintenance
+9837,0.9990428,1,1,in 1 days machine 9837.0 needs maintenance
+982,0.14606,0,6,
+8217,0.0002143892,0,7,
+1045,0.0025893988,0,7,
+5364,0.9931166,1,1,in 1 days machine 5364.0 needs maintenance
+5109,0.0073709525,0,7,
+3134,0.99816126,1,1,in 1 days machine 3134.0 needs maintenance
+2618,0.9985524,1,1,in 1 days machine 2618.0 needs maintenance
+7720,0.9983022,1,1,in 1 days machine 7720.0 needs maintenance
+9320,0.0075086975,0,7,
+7640,0.90437645,1,2,in 2 days machine 7640.0 needs maintenance
+1904,0.0004089224,0,7,
+3727,0.00022151056,0,7,
+7342,0.97531825,1,1,in 1 days machine 7342.0 needs maintenance
+507,0.99539423,1,1,in 1 days machine 507.0 needs maintenance
+7816,0.9950722,1,1,in 1 days machine 7816.0 needs maintenance
+1527,0.97667295,1,1,in 1 days machine 1527.0 needs maintenance
+7638,0.00090340036,0,7,
+7136,0.98031384,1,1,in 1 days machine 7136.0 needs maintenance
+9359,0.19208468,0,6,
+5316,0.99828076,1,1,in 1 days machine 5316.0 needs maintenance
+1319,0.00039522708,0,7,
+1628,0.7134806,1,3,in 3 days machine 1628.0 needs maintenance
+3671,0.00012494624,0,7,
+2024,0.9992149,1,1,in 1 days machine 2024.0 needs maintenance
+7547,0.00026741755,0,7,
+1936,0.97209483,1,1,in 1 days machine 1936.0 needs maintenance
+9769,0.0003285943,0,7,
+7587,0.99316144,1,1,in 1 days machine 7587.0 needs maintenance
+8344,0.94661725,1,1,in 1 days machine 8344.0 needs maintenance
+7115,0.00039953194,0,7,
+4154,0.0024060614,0,7,
+8381,0.9918073,1,1,in 1 days machine 8381.0 needs maintenance
+1872,0.06267299,0,7,
+3782,0.94583184,1,1,in 1 days machine 3782.0 needs maintenance
+9490,0.0019851045,0,7,
+4490,0.99588263,1,1,in 1 days machine 4490.0 needs maintenance
+7349,0.013600216,0,7,
+8671,0.9911272,1,1,in 1 days machine 8671.0 needs maintenance
+8635,0.008630631,0,7,
+420,0.9987834,1,1,in 1 days machine 420.0 needs maintenance
+9845,0.9863555,1,1,in 1 days machine 9845.0 needs maintenance
+7694,0.93808,1,1,in 1 days machine 7694.0 needs maintenance
+752,0.28204775,0,5,
+3164,0.005881626,0,7,
+1429,0.99921536,1,1,in 1 days machine 1429.0 needs maintenance
+1921,0.6041603,1,3,in 3 days machine 1921.0 needs maintenance
+960,0.9943863,1,1,in 1 days machine 960.0 needs maintenance
+3554,0.9993561,1,1,in 1 days machine 3554.0 needs maintenance
+2399,0.06691067,0,7,
+5453,0.99989295,1,1,in 1 days machine 5453.0 needs maintenance
+9976,0.9978193,1,1,in 1 days machine 9976.0 needs maintenance
+5084,0.99778384,1,1,in 1 days machine 5084.0 needs maintenance
+3710,0.00062354817,0,7,
+7497,0.96090484,1,1,in 1 days machine 7497.0 needs maintenance
+6114,0.991277,1,1,in 1 days machine 6114.0 needs maintenance
+2984,0.99637455,1,1,in 1 days machine 2984.0 needs maintenance
+7409,0.004144305,0,7,
+821,0.009749473,0,7,
+4612,0.0016041817,0,7,
+8303,0.99841464,1,1,in 1 days machine 8303.0 needs maintenance
+4820,0.9955373,1,1,in 1 days machine 4820.0 needs maintenance
+2052,0.28790256,0,5,
+8326,0.0007086536,0,7,
+8485,0.00946619,0,7,
+716,0.11820046,0,6,
+3351,0.99924505,1,1,in 1 days machine 3351.0 needs maintenance
+6004,0.99916613,1,1,in 1 days machine 6004.0 needs maintenance
+2798,0.9934009,1,1,in 1 days machine 2798.0 needs maintenance
+5547,0.99974304,1,1,in 1 days machine 5547.0 needs maintenance
+8622,0.00064417225,0,7,
+4733,0.99954176,1,1,in 1 days machine 4733.0 needs maintenance
+7634,0.0015311606,0,7,
+8609,0.99976486,1,1,in 1 days machine 8609.0 needs maintenance
+9216,0.9965581,1,1,in 1 days machine 9216.0 needs maintenance
+4615,0.0046994984,0,7,
+1832,0.0032697546,0,7,
+2822,0.0013273502,0,7,
+2251,0.028179163,0,7,
+344,0.993891,1,1,in 1 days machine 344.0 needs maintenance
+5218,0.99952614,1,1,in 1 days machine 5218.0 needs maintenance
+1884,0.9991825,1,1,in 1 days machine 1884.0 needs maintenance
+132,0.00012260162,0,7,
+7079,0.997396,1,1,in 1 days machine 7079.0 needs maintenance
+1822,0.9844797,1,1,in 1 days machine 1822.0 needs maintenance
+7465,0.002130047,0,7,
+9196,0.26485878,0,5,
+8027,0.99848133,1,1,in 1 days machine 8027.0 needs maintenance
+172,0.9900372,1,1,in 1 days machine 172.0 needs maintenance
+6036,0.99703383,1,1,in 1 days machine 6036.0 needs maintenance
+2698,0.0007451714,0,7,
+5446,0.99489176,1,1,in 1 days machine 5446.0 needs maintenance
+5916,0.8499388,1,2,in 2 days machine 5916.0 needs maintenance
+2777,0.0001621758,0,7,
+2251,0.0058732317,0,7,
+5157,0.00027306014,0,7,
+2071,0.001568849,0,7,
+9375,0.0019631614,0,7,
+4596,0.0061845793,0,7,
+1828,0.99923265,1,1,in 1 days machine 1828.0 needs maintenance
+1361,0.0004911345,0,7,
+2458,0.9945886,1,1,in 1 days machine 2458.0 needs maintenance
+4797,0.00046585943,0,7,
+5122,0.99523324,1,1,in 1 days machine 5122.0 needs maintenance
+9547,0.99723524,1,1,in 1 days machine 9547.0 needs maintenance
+1086,0.0019046231,0,7,
+2551,0.01039751,0,7,
+7076,0.41816002,0,4,
+5675,0.004694572,0,7,
+1362,0.0008805781,0,7,
+7318,0.99391186,1,1,in 1 days machine 7318.0 needs maintenance
+3697,0.99140376,1,1,in 1 days machine 3697.0 needs maintenance
+2524,0.0010669805,0,7,
+1388,0.9964923,1,1,in 1 days machine 1388.0 needs maintenance
+249,0.96022666,1,1,in 1 days machine 249.0 needs maintenance
+8850,0.0047528083,0,7,
+4558,0.9124711,1,2,in 2 days machine 4558.0 needs maintenance
+2344,0.958968,1,1,in 1 days machine 2344.0 needs maintenance
+5561,0.02973634,0,7,
+7458,0.9971865,1,1,in 1 days machine 7458.0 needs maintenance
+4008,0.030022083,0,7,
+6941,0.00032862654,0,7,
+4491,0.0003133415,0,7,
+605,0.999156,1,1,in 1 days machine 605.0 needs maintenance
+2406,0.9942035,1,1,in 1 days machine 2406.0 needs maintenance
+9779,0.83237714,1,2,in 2 days machine 9779.0 needs maintenance
+8534,0.99947673,1,1,in 1 days machine 8534.0 needs maintenance
+7130,0.00024694522,0,7,
+9973,4.6805755e-05,0,7,
+3661,0.10044237,0,6,
+3571,0.0004440234,0,7,
+9994,0.99526924,1,1,in 1 days machine 9994.0 needs maintenance
+3787,0.00043671578,0,7,
+4196,0.9927302,1,1,in 1 days machine 4196.0 needs maintenance
+1954,0.000541294,0,7,
+4381,0.0027466463,0,7,
+7575,0.00027012842,0,7,
+8096,0.9881882,1,1,in 1 days machine 8096.0 needs maintenance
+7959,0.20131932,0,6,
+9133,0.95300174,1,1,in 1 days machine 9133.0 needs maintenance
+6395,0.9993162,1,1,in 1 days machine 6395.0 needs maintenance
+3287,0.9989692,1,1,in 1 days machine 3287.0 needs maintenance
+6823,0.0024395161,0,7,
+5510,0.7558368,1,2,in 2 days machine 5510.0 needs maintenance
+2596,0.00018871017,0,7,
+2037,0.0003995468,0,7,
+7935,0.9971214,1,1,in 1 days machine 7935.0 needs maintenance
+4973,0.99946815,1,1,in 1 days machine 4973.0 needs maintenance
+2174,0.00015570685,0,7,
+4339,0.9951497,1,1,in 1 days machine 4339.0 needs maintenance
+4458,0.9252607,1,1,in 1 days machine 4458.0 needs maintenance
+510,0.9925224,1,1,in 1 days machine 510.0 needs maintenance
+1413,0.99886274,1,1,in 1 days machine 1413.0 needs maintenance
+7732,0.038846616,0,7,
+7161,0.00024882675,0,7,
+658,0.99928844,1,1,in 1 days machine 658.0 needs maintenance
+9506,0.0013910977,0,7,
+2736,0.9972351,1,1,in 1 days machine 2736.0 needs maintenance
+8793,0.0072829453,0,7,
+7966,8.547136e-05,0,7,
+6241,0.009137416,0,7,
+7225,0.0033777968,0,7,
+2493,0.0011798223,0,7,
+5392,0.99376327,1,1,in 1 days machine 5392.0 needs maintenance
+6235,0.00120827,0,7,
+7085,0.9969984,1,1,in 1 days machine 7085.0 needs maintenance
+550,0.00012106232,0,7,
+6353,0.9920402,1,1,in 1 days machine 6353.0 needs maintenance
+4389,0.00022108392,0,7,
+6353,0.01953392,0,7,
+1614,0.8407376,1,2,in 2 days machine 1614.0 needs maintenance
+5575,0.012997482,0,7,
+6868,0.99677306,1,1,in 1 days machine 6868.0 needs maintenance
+3877,0.9996131,1,1,in 1 days machine 3877.0 needs maintenance
+2519,0.256446,0,5,
+9328,0.00030591394,0,7,
+2733,0.0028827472,0,7,
+9823,0.9963163,1,1,in 1 days machine 9823.0 needs maintenance
+4463,0.0031384754,0,7,
+4407,0.9986934,1,1,in 1 days machine 4407.0 needs maintenance
+3894,0.9999807,1,1,in 1 days machine 3894.0 needs maintenance
+3980,0.988863,1,1,in 1 days machine 3980.0 needs maintenance
+6249,0.9925287,1,1,in 1 days machine 6249.0 needs maintenance
+1783,0.9924055,1,1,in 1 days machine 1783.0 needs maintenance
+7197,0.00096689106,0,7,
+7376,0.7006077,1,3,in 3 days machine 7376.0 needs maintenance
+9763,9.174562e-05,0,7,
+1461,0.99679035,1,1,in 1 days machine 1461.0 needs maintenance
+9436,0.99500614,1,1,in 1 days machine 9436.0 needs maintenance
+1498,0.9952508,1,1,in 1 days machine 1498.0 needs maintenance
+7193,0.99513394,1,1,in 1 days machine 7193.0 needs maintenance
+80,0.9741847,1,1,in 1 days machine 80.0 needs maintenance
+9605,0.99426794,1,1,in 1 days machine 9605.0 needs maintenance
+83,0.9948907,1,1,in 1 days machine 83.0 needs maintenance
+8066,0.997424,1,1,in 1 days machine 8066.0 needs maintenance
+3350,0.9076358,1,2,in 2 days machine 3350.0 needs maintenance
+965,0.007870579,0,7,
+4977,0.053090207,0,7,
+9176,0.18889832,0,6,
+5362,0.97638595,1,1,in 1 days machine 5362.0 needs maintenance
+2670,0.9672115,1,1,in 1 days machine 2670.0 needs maintenance
+6722,0.00013807202,0,7,
+4608,0.06745089,0,7,
+5953,0.0001744959,0,7,
+634,3.913405e-05,0,7,
+6620,0.94894826,1,1,in 1 days machine 6620.0 needs maintenance
+4588,0.00069344084,0,7,
+3499,0.99703205,1,1,in 1 days machine 3499.0 needs maintenance
+5016,0.9964174,1,1,in 1 days machine 5016.0 needs maintenance
+267,0.99903095,1,1,in 1 days machine 267.0 needs maintenance
+2138,0.0008811963,0,7,
+5414,0.99957365,1,1,in 1 days machine 5414.0 needs maintenance
+5507,0.98244053,1,1,in 1 days machine 5507.0 needs maintenance
+4697,0.9975707,1,1,in 1 days machine 4697.0 needs maintenance
+9926,0.9985359,1,1,in 1 days machine 9926.0 needs maintenance
+3342,0.7558368,1,2,in 2 days machine 3342.0 needs maintenance
+5158,0.00061777886,0,7,
+2996,0.8015155,1,2,in 2 days machine 2996.0 needs maintenance
+1700,0.9886234,1,1,in 1 days machine 1700.0 needs maintenance
+5426,0.99460113,1,1,in 1 days machine 5426.0 needs maintenance
+5202,0.9859443,1,1,in 1 days machine 5202.0 needs maintenance
+8858,0.9944935,1,1,in 1 days machine 8858.0 needs maintenance
+1748,0.00075126666,0,7,
+3319,0.9894565,1,1,in 1 days machine 3319.0 needs maintenance
+9663,0.9996879,1,1,in 1 days machine 9663.0 needs maintenance
+2434,0.997888,1,1,in 1 days machine 2434.0 needs maintenance
+7376,0.8625036,1,2,in 2 days machine 7376.0 needs maintenance
+2714,0.998248,1,1,in 1 days machine 2714.0 needs maintenance
+2823,0.023878302,0,7,
+2651,0.9730003,1,1,in 1 days machine 2651.0 needs maintenance
+9031,0.7885049,1,2,in 2 days machine 9031.0 needs maintenance
+7379,0.011836399,0,7,
+5796,0.9975599,1,1,in 1 days machine 5796.0 needs maintenance
+1094,0.9673752,1,1,in 1 days machine 1094.0 needs maintenance
+3861,0.0001262949,0,7,
+2816,0.006726754,0,7,
+7017,0.0002100821,0,7,
+7635,0.016766928,0,7,
+8238,0.00694667,0,7,
+5613,0.006703806,0,7,
+7702,0.00035664884,0,7,
+1956,0.00031838298,0,7,
+356,0.00220217,0,7,
+2590,0.008322639,0,7,
+7941,0.98545945,1,1,in 1 days machine 7941.0 needs maintenance
+1522,0.0031883963,0,7,
+8095,0.0070013586,0,7,
+4187,0.0013724412,0,7,
+6044,0.9567984,1,1,in 1 days machine 6044.0 needs maintenance
+515,0.99784565,1,1,in 1 days machine 515.0 needs maintenance
+6551,0.0004713053,0,7,
+3672,0.00030071955,0,7,
+2965,0.004247373,0,7,
+9801,0.9959942,1,1,in 1 days machine 9801.0 needs maintenance
+9860,0.0036002968,0,7,
+9801,0.99486226,1,1,in 1 days machine 9801.0 needs maintenance
+3833,0.15086883,0,6,
+5920,0.0015771398,0,7,
+7208,0.9938838,1,1,in 1 days machine 7208.0 needs maintenance
+8567,0.997673,1,1,in 1 days machine 8567.0 needs maintenance
+5307,0.98348665,1,1,in 1 days machine 5307.0 needs maintenance
+91,0.9940884,1,1,in 1 days machine 91.0 needs maintenance
+1610,0.006567017,0,7,
+1919,0.9951003,1,1,in 1 days machine 1919.0 needs maintenance
+4669,0.046024512,0,7,
+4316,0.00081700936,0,7,
+9838,0.9999045,1,1,in 1 days machine 9838.0 needs maintenance
+7716,0.9992907,1,1,in 1 days machine 7716.0 needs maintenance
+3811,0.9999435,1,1,in 1 days machine 3811.0 needs maintenance
+1947,0.0003796959,0,7,
+261,0.99741226,1,1,in 1 days machine 261.0 needs maintenance
+7740,0.9802632,1,1,in 1 days machine 7740.0 needs maintenance
+6490,8.713695e-05,0,7,
+4613,0.99519795,1,1,in 1 days machine 4613.0 needs maintenance
+1805,0.0019017281,0,7,
+2087,0.9853542,1,1,in 1 days machine 2087.0 needs maintenance
+4811,0.99825937,1,1,in 1 days machine 4811.0 needs maintenance
+9590,0.9911122,1,1,in 1 days machine 9590.0 needs maintenance
+3121,0.07211353,0,7,
+6635,0.00042189672,0,7,
+4,0.004838039,0,7,
+4237,0.0004789965,0,7,
+532,0.0141966175,0,7,
+2261,0.99710935,1,1,in 1 days machine 2261.0 needs maintenance
+9319,0.9970348,1,1,in 1 days machine 9319.0 needs maintenance
+7229,0.20180357,0,6,
+4446,0.99961925,1,1,in 1 days machine 4446.0 needs maintenance
+8028,0.0008944119,0,7,
+7098,0.0004984675,0,7,
+4545,0.00077893323,0,7,
+1496,0.9991393,1,1,in 1 days machine 1496.0 needs maintenance
+6850,0.994351,1,1,in 1 days machine 6850.0 needs maintenance
+3674,0.7880004,1,2,in 2 days machine 3674.0 needs maintenance
+3110,0.99915075,1,1,in 1 days machine 3110.0 needs maintenance
+5643,0.81344014,1,2,in 2 days machine 5643.0 needs maintenance
+8062,0.99769765,1,1,in 1 days machine 8062.0 needs maintenance
+7663,0.9988147,1,1,in 1 days machine 7663.0 needs maintenance
+201,0.99723274,1,1,in 1 days machine 201.0 needs maintenance
+7228,0.0034862757,0,7,
+6448,0.011791359,0,7,
+4644,0.9974546,1,1,in 1 days machine 4644.0 needs maintenance
+8603,0.04089062,0,7,
+7567,0.001475697,0,7,
+8147,0.99624,1,1,in 1 days machine 8147.0 needs maintenance
+131,0.06469156,0,7,
+2246,0.9948331,1,1,in 1 days machine 2246.0 needs maintenance
+495,0.9973031,1,1,in 1 days machine 495.0 needs maintenance
+2152,0.9959067,1,1,in 1 days machine 2152.0 needs maintenance
+1777,0.0020417639,0,7,
+2597,0.0006526778,0,7,
+6360,0.0016481346,0,7,
+7349,0.0002334753,0,7,
+1285,0.99382836,1,1,in 1 days machine 1285.0 needs maintenance
+7733,0.9694454,1,1,in 1 days machine 7733.0 needs maintenance
+9730,5.6776407e-05,0,7,
+9827,0.9924722,1,1,in 1 days machine 9827.0 needs maintenance
+808,0.99995244,1,1,in 1 days machine 808.0 needs maintenance
+2899,0.008235163,0,7,
+2883,0.99872655,1,1,in 1 days machine 2883.0 needs maintenance
+9186,0.000259908,0,7,
+5481,0.8397438,1,2,in 2 days machine 5481.0 needs maintenance
+6087,0.9996871,1,1,in 1 days machine 6087.0 needs maintenance
+8695,0.00048681517,0,7,
+1051,0.00020420218,0,7,
+422,0.025476694,0,7,
+4868,0.99550664,1,1,in 1 days machine 4868.0 needs maintenance
+1587,0.00021830907,0,7,
+813,0.9784857,1,1,in 1 days machine 813.0 needs maintenance
+555,0.99961203,1,1,in 1 days machine 555.0 needs maintenance
+1730,0.0004722047,0,7,
+1059,0.9966364,1,1,in 1 days machine 1059.0 needs maintenance
+2054,0.9989359,1,1,in 1 days machine 2054.0 needs maintenance
+8945,0.99996233,1,1,in 1 days machine 8945.0 needs maintenance
+9718,0.0004359679,0,7,
+7889,0.00869188,0,7,
+7783,0.99813265,1,1,in 1 days machine 7783.0 needs maintenance
+3448,0.002512902,0,7,
+2622,0.9991198,1,1,in 1 days machine 2622.0 needs maintenance
+8506,0.9922873,1,1,in 1 days machine 8506.0 needs maintenance
+3845,0.03135284,0,7,
+496,0.9929726,1,1,in 1 days machine 496.0 needs maintenance
+635,0.99923253,1,1,in 1 days machine 635.0 needs maintenance
+9211,0.0012348266,0,7,
+5816,0.99805343,1,1,in 1 days machine 5816.0 needs maintenance
+9609,0.99713683,1,1,in 1 days machine 9609.0 needs maintenance
+155,0.99537224,1,1,in 1 days machine 155.0 needs maintenance
+3032,0.99811685,1,1,in 1 days machine 3032.0 needs maintenance
+3910,0.005674819,0,7,
+9898,0.9930341,1,1,in 1 days machine 9898.0 needs maintenance
+793,0.99933785,1,1,in 1 days machine 793.0 needs maintenance
+4117,0.9642447,1,1,in 1 days machine 4117.0 needs maintenance
+1832,0.99903786,1,1,in 1 days machine 1832.0 needs maintenance
+5391,0.002491214,0,7,
+6486,0.5335518,1,4,in 4 days machine 6486.0 needs maintenance
+6364,0.8373485,1,2,in 2 days machine 6364.0 needs maintenance
+9580,0.010386398,0,7,
+7555,0.006312235,0,7,
+3319,0.9940416,1,1,in 1 days machine 3319.0 needs maintenance
