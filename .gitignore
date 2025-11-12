@@ -1,1 +1,84 @@
-.vscode
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files
+*.csv
+*.dat
+*.h5
+*.pkl
+*.pickle
+*.joblib
+preprocessed_data/
+raw_data/
+data/
+
+# Model artifacts
+model_artifacts/
+*.pth
+*.pt
+*.ckpt
+*.hdf5
+*.pb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# TensorFlow/Keras
+*.h5
+saved_model/
+
+# Plots and visualizations
+*.png
+*.jpg
+*.jpeg
+*.pdf
+figures/
+plots/
+
+# Temp files
+tmp/
+temp/
+*.tmp
