@@ -39,6 +39,8 @@ raw_data/
 data/
 
 # Model artifacts
+artifacts/
+artifacts_improved/
 model_artifacts/
 *.pth
 *.pt
