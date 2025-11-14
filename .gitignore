@@ -34,7 +34,6 @@ wheels/
 *.pkl
 *.pickle
 *.joblib
-preprocessed_data/
 raw_data/
 data/
 
