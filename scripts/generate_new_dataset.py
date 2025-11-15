@@ -1,7 +1,28 @@
+"""
+================================================================================
+STRATIFIED SAMPLING FOR PREDICTIVE MAINTENANCE DATASET
+================================================================================
+Purpose: Create balanced subset with stratified sampling preserving distributions
+Input: data/predictive_maintenance.csv (full dataset)
+Output: preprocessed_data/predictive_maintenance_subset_400.csv
+
+Pipeline Structure:
+1. Data Loading & Configuration
+2. Feature Engineering (Operating Buckets)
+3. Stratified Sampling (Failures & Non-Failures)
+4. Subset Assembly & Validation
+5. Quality Checks & Export
+================================================================================
+"""
+
 import pandas as pd
 import numpy as np
 from typing import Tuple
 
+
+# ============================================================================
+# SECTION 1: DATA LOADING & CONFIGURATION
+# ============================================================================
 
 def load_data(path: str) -> pd.DataFrame:
     """Load the predictive maintenance dataset and perform initial validation."""
@@ -38,6 +59,10 @@ def load_data(path: str) -> pd.DataFrame:
     
     return df
 
+
+# ============================================================================
+# SECTION 2: FEATURE ENGINEERING (OPERATING BUCKETS)
+# ============================================================================
 
 def add_operating_buckets(df: pd.DataFrame) -> pd.DataFrame:
     """Add torque_level and rpm_band buckets based on quantiles."""
@@ -80,6 +105,10 @@ def add_operating_buckets(df: pd.DataFrame) -> pd.DataFrame:
     
     return df
 
+
+# ============================================================================
+# SECTION 3: STRATIFIED SAMPLING
+# ============================================================================
 
 def sample_failure_machines(df: pd.DataFrame, n_fail_target: int, random_state: int) -> pd.DataFrame:
     """Sample failure machines stratified by Failure Type."""
@@ -206,6 +235,10 @@ def sample_non_failure_machines(df: pd.DataFrame, n_non_fail_target: int, random
     return df_non_fail_sampled
 
 
+# ============================================================================
+# SECTION 4: SUBSET ASSEMBLY & VALIDATION
+# ============================================================================
+
 def build_subset(df_fail: pd.DataFrame, df_non_fail: pd.DataFrame, total_target: int) -> pd.DataFrame:
     """Combine failure and non-failure samples into final subset."""
     df_subset = pd.concat([df_fail, df_non_fail], axis=0)
@@ -252,7 +285,7 @@ def validate_subset(df_full: pd.DataFrame, df_subset: pd.DataFrame) -> None:
         print("\n*** WARNING: Subset failure rate is outside the 10%-30% range.")
         print("*** This may indicate too much imbalance for certain use cases.")
     else:
-        print("\n✓ Subset failure rate is within acceptable range (10%-30%).")
+        print("\nSUCCESS: Subset failure rate is within acceptable range (10%-30%).")
     
     # 2. Failure Type distribution
     print("\n### 2. FAILURE TYPE DISTRIBUTION ###")
@@ -319,7 +352,7 @@ def validate_subset(df_full: pd.DataFrame, df_subset: pd.DataFrame) -> None:
         if mean_diff > 2 * full_std:
             print(f"*** WARNING: Subset mean differs by {mean_diff:.2f} (>{2*full_std:.2f}, 2*std)")
         else:
-            print(f"✓ Subset mean within acceptable range (diff={mean_diff:.2f})")
+            print(f"SUCCESS: Subset mean within acceptable range (diff={mean_diff:.2f})")
     
     # 5. Missing values and range checks
     print("\n### 5. DATA QUALITY CHECKS ###")
@@ -329,7 +362,7 @@ def validate_subset(df_full: pd.DataFrame, df_subset: pd.DataFrame) -> None:
     if missing_count > 0:
         print("*** WARNING: Subset contains missing values!")
     else:
-        print("✓ No missing values in subset.")
+        print("SUCCESS: No missing values in subset.")
     
     print("\nSensor range validation:")
     for sensor in sensors:
@@ -341,10 +374,14 @@ def validate_subset(df_full: pd.DataFrame, df_subset: pd.DataFrame) -> None:
         if subset_min < full_min or subset_max > full_max:
             print(f"*** WARNING: {sensor} subset range [{subset_min:.2f}, {subset_max:.2f}] exceeds full range [{full_min:.2f}, {full_max:.2f}]")
         else:
-            print(f"✓ {sensor} range within full dataset bounds")
+            print(f"SUCCESS: {sensor} range within full dataset bounds")
     
     print("\n" + "=" * 70)
 
+
+# ============================================================================
+# SECTION 5: QUALITY CHECKS & EXPORT
+# ============================================================================
 
 def save_subset(df: pd.DataFrame, path: str) -> None:
     """Save the subset to CSV and print final summary."""
@@ -373,21 +410,31 @@ def save_subset(df: pd.DataFrame, path: str) -> None:
     print("=" * 70)
 
 
+# ============================================================================
+# MAIN EXECUTION PIPELINE
+# ============================================================================
+
 def main():
     # Configuration
-    input_path = 'data\predictive_maintenance.csv'
-    output_path = 'predictive_maintenance_subset_400.csv'
+    input_path = 'data/predictive_maintenance.csv'
+    output_path = 'preprocessed_data/predictive_maintenance_subset_400.csv'
     n_total = 400
     target_failure_rate = 0.2
     random_state = 42
     
-    # Load data
+    # -------------------------------------------------------------------------
+    # Step 1: Load Full Dataset
+    # -------------------------------------------------------------------------
     df = load_data(input_path)
     
-    # Add operating buckets
+    # -------------------------------------------------------------------------
+    # Step 2: Add Operating Buckets
+    # -------------------------------------------------------------------------
     df = add_operating_buckets(df)
     
-    # Compute target sample sizes
+    # -------------------------------------------------------------------------
+    # Step 3: Compute Target Sample Sizes
+    # -------------------------------------------------------------------------
     n_fail_available = (df['Target'] == 1).sum()
     n_fail_target = min(int(target_failure_rate * n_total), n_fail_available)
     n_non_fail_target = n_total - n_fail_target
@@ -402,19 +449,29 @@ def main():
     print(f"Target non-failures to sample: {n_non_fail_target}")
     print()
     
-    # Sample failures
+    # -------------------------------------------------------------------------
+    # Step 4: Sample Failure Machines (Stratified by Failure Type)
+    # -------------------------------------------------------------------------
     df_fail_sampled = sample_failure_machines(df, n_fail_target, random_state)
     
-    # Sample non-failures
+    # -------------------------------------------------------------------------
+    # Step 5: Sample Non-Failure Machines (Stratified by Operating Conditions)
+    # -------------------------------------------------------------------------
     df_non_fail_sampled = sample_non_failure_machines(df, n_non_fail_target, random_state)
     
-    # Build final subset
+    # -------------------------------------------------------------------------
+    # Step 6: Build Final Subset
+    # -------------------------------------------------------------------------
     df_subset = build_subset(df_fail_sampled, df_non_fail_sampled, n_total)
     
-    # Validate subset
+    # -------------------------------------------------------------------------
+    # Step 7: Validate Subset Quality
+    # -------------------------------------------------------------------------
     validate_subset(df, df_subset)
     
-    # Save
+    # -------------------------------------------------------------------------
+    # Step 8: Save Subset to CSV
+    # -------------------------------------------------------------------------
     save_subset(df_subset, output_path)
 
 

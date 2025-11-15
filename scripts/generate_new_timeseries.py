@@ -1,3 +1,21 @@
+"""
+================================================================================
+SYNTHETIC TIME-SERIES GENERATION FOR PREDICTIVE MAINTENANCE
+================================================================================
+Purpose: Generate realistic time-series sequences from static predictive maintenance data
+Input: data/predictive_maintenance.csv (static features)
+Output: preprocessed_data/timestamped_predictive_maintenance_timeseries_NEW.csv
+
+Pipeline Structure:
+1. Data Loading & Configuration
+2. Sequence Generation Functions
+3. Sensor Signal Generation
+4. Time-Series Assembly
+5. Validation & Quality Checks
+6. Summary Statistics & Export
+================================================================================
+"""
+
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
@@ -5,6 +23,10 @@ from typing import Tuple, Dict, List
 import warnings
 warnings.filterwarnings('ignore')
 
+
+# ============================================================================
+# SECTION 1: DATA LOADING & CONFIGURATION
+# ============================================================================
 
 def load_subset_data(path: str) -> pd.DataFrame:
     """Load the 400-machine subset dataset."""
@@ -20,6 +42,10 @@ def load_subset_data(path: str) -> pd.DataFrame:
     return df
 
 
+# ============================================================================
+# SECTION 2: SEQUENCE GENERATION FUNCTIONS
+# ============================================================================
+
 def generate_sequence_lengths(n_machines: int, random_state: int = 42) -> np.ndarray:
     """Generate random sequence lengths between 60 and 120 timesteps."""
     np.random.seed(random_state)
@@ -33,6 +59,10 @@ def calculate_failure_window(seq_length: int) -> Tuple[int, int]:
     failure_start = seq_length - window_size
     return failure_start, seq_length - 1
 
+
+# ============================================================================
+# SECTION 3: SENSOR SIGNAL GENERATION
+# ============================================================================
 
 def generate_tool_wear_sequence(
     final_value: float,
@@ -95,8 +125,8 @@ def generate_rotational_speed_sequence(
     cycle_freq = np.random.uniform(0.1, 0.3)
     oscillation = final_value * 0.02 * np.sin(2 * np.pi * cycle_freq * t)
     
-    # Random noise
-    noise = np.random.normal(0, final_value * 0.01, seq_length)
+    # Random noise (increased slightly for realism)
+    noise = np.random.normal(0, final_value * 0.015, seq_length)
     
     sequence = base_value + trend + oscillation + noise
     
@@ -122,11 +152,11 @@ def generate_process_temperature_sequence(
         # Early phase: small drift
         start_temp = final_value - np.random.uniform(2.0, 4.0)
         pre_failure = np.linspace(start_temp, final_value - 1.5, pre_failure_length)
-        pre_failure += np.random.normal(0, 0.3, pre_failure_length)
+        pre_failure += np.random.normal(0, 0.4, pre_failure_length)
         
         # Failure phase: steep increase
         failure_phase = np.linspace(final_value - 1.5, final_value, failure_length)
-        failure_phase += np.random.normal(0, 0.5, failure_length)
+        failure_phase += np.random.normal(0, 0.6, failure_length)
         
         sequence = np.concatenate([pre_failure, failure_phase])
     else:
@@ -177,8 +207,8 @@ def generate_torque_sequence(
     cycle_freq = np.random.uniform(0.08, 0.15)
     oscillation = base_value * 0.08 * np.sin(2 * np.pi * cycle_freq * t)
     
-    # Noise
-    noise = np.random.normal(0, base_value * 0.03, seq_length)
+    # Noise (increased for realistic measurement variability)
+    noise = np.random.normal(0, base_value * 0.04, seq_length)
     
     sequence = base_value + oscillation + noise
     
@@ -200,20 +230,35 @@ def generate_synthetic_RUL(
     is_failing: bool,
     failure_position: int = None
 ) -> np.ndarray:
-    """Generate Remaining Useful Life (RUL) sequence."""
+    """Generate Remaining Useful Life (RUL) sequence with small realistic noise."""
     if is_failing:
         # RUL decreases to 0 at failure position
-        rul = np.arange(seq_length - 1, -1, -1)
+        rul = np.arange(seq_length - 1, -1, -1, dtype=float)
         # Adjust so RUL = 0 at failure position
         rul = rul - (seq_length - 1 - failure_position)
+        rul = np.maximum(rul, 0)
+        # Add small noise (±0.5 hours) to avoid perfect linearity
+        rul_noise = np.random.normal(0, 0.5, seq_length)
+        rul = rul + rul_noise
+        # Ensure endpoints remain correct and no negative values
+        rul[0] = max(rul[0], 0)
+        rul[-1] = 0 if failure_position == seq_length - 1 else max(rul[-1], 0)
         rul = np.maximum(rul, 0)
     else:
         # RUL decreases but never reaches 0
         max_rul = seq_length + np.random.randint(20, 50)
-        rul = np.arange(max_rul, max_rul - seq_length, -1)
+        rul = np.arange(max_rul, max_rul - seq_length, -1, dtype=float)
+        # Add small noise
+        rul_noise = np.random.normal(0, 0.5, seq_length)
+        rul = rul + rul_noise
+        rul = np.maximum(rul, 1)  # Keep healthy machines above 0
     
     return rul
 
+
+# ============================================================================
+# SECTION 4: TIME-SERIES ASSEMBLY
+# ============================================================================
 
 def generate_machine_sequence(
     machine_data: pd.Series,
@@ -316,8 +361,14 @@ def generate_all_sequences(df_subset: pd.DataFrame, random_state: int = 42) -> p
     print(f"Average sequence length: {sequence_lengths.mean():.1f}")
     print()
     
-    # Base timestamp
-    base_timestamp = datetime(2024, 1, 1, 0, 0, 0)
+    # Define 2014-2024 timespan
+    start_date = datetime(2014, 1, 1, 0, 0, 0)
+    end_date = datetime(2024, 12, 31, 23, 59, 59)
+    total_hours = int((end_date - start_date).total_seconds() / 3600)
+    
+    print(f"Distributing machines across: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
+    print(f"Total timespan: {total_hours:,} hours (~{total_hours/8760:.1f} years)")
+    print()
     
     all_sequences = []
     
@@ -327,8 +378,12 @@ def generate_all_sequences(df_subset: pd.DataFrame, random_state: int = 42) -> p
         
         seq_length = sequence_lengths[idx]
         
-        # Each machine starts at different time to avoid timestamp collision
-        start_timestamp = base_timestamp + timedelta(days=idx * 10)
+        # Calculate maximum start hour to ensure sequence fits within 2014-2024
+        max_start_hour = total_hours - seq_length
+        
+        # Random start time within valid range
+        random_start_hour = np.random.randint(0, max_start_hour + 1)
+        start_timestamp = start_date + timedelta(hours=random_start_hour)
         
         sequence_df = generate_machine_sequence(
             machine_data,
@@ -347,6 +402,10 @@ def generate_all_sequences(df_subset: pd.DataFrame, random_state: int = 42) -> p
     
     return df_timeseries
 
+
+# ============================================================================
+# SECTION 5: VALIDATION & QUALITY CHECKS
+# ============================================================================
 
 def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) -> None:
     """Comprehensive validation of generated time-series dataset."""
@@ -368,9 +427,9 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     print(f"  Median: {seq_lengths.median():.1f}")
     
     if df_timeseries['product_id'].nunique() == len(df_subset):
-        print("✓ All machines have sequences")
+        print("SUCCESS: All machines have sequences")
     else:
-        print("✗ MISMATCH: Some machines missing sequences")
+        print("ERROR: MISMATCH - Some machines missing sequences")
     
     # 2. Temporal checks
     print("\n### 2. TEMPORAL CHECKS ###")
@@ -380,9 +439,9 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
         lambda x: x.is_monotonic_increasing
     )
     if monotonic_check.all():
-        print("✓ All timestamps are monotonically increasing per machine")
+        print("SUCCESS: All timestamps are monotonically increasing per machine")
     else:
-        print(f"✗ {(~monotonic_check).sum()} machines have non-monotonic timestamps")
+        print(f"ERROR: {(~monotonic_check).sum()} machines have non-monotonic timestamps")
     
     # Check delta t = 1 hour
     def check_delta_t(group):
@@ -391,18 +450,18 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     
     delta_t_check = df_timeseries.groupby('product_id').apply(check_delta_t)
     if delta_t_check.all():
-        print("✓ All timestamp deltas are exactly 1 hour")
+        print("SUCCESS: All timestamp deltas are exactly 1 hour")
     else:
-        print(f"✗ {(~delta_t_check).sum()} machines have incorrect timestamp deltas")
+        print(f"ERROR: {(~delta_t_check).sum()} machines have incorrect timestamp deltas")
     
     # Check no duplicate timestamps per machine
     dup_timestamps = df_timeseries.groupby('product_id')['timestamp'].apply(
         lambda x: x.duplicated().any()
     )
     if not dup_timestamps.any():
-        print("✓ No duplicate timestamps within machines")
+        print("SUCCESS: No duplicate timestamps within machines")
     else:
-        print(f"✗ {dup_timestamps.sum()} machines have duplicate timestamps")
+        print(f"ERROR: {dup_timestamps.sum()} machines have duplicate timestamps")
     
     # 3. Sensor realism checks
     print("\n### 3. SENSOR REALISM CHECKS ###")
@@ -416,36 +475,36 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     print(f"Tool wear monotonic: {pct_monotonic:.1f}% of machines")
     
     if pct_monotonic >= 99:
-        print("✓ Tool wear is monotonically increasing")
+        print("SUCCESS: Tool wear is monotonically increasing")
     else:
-        print(f"⚠ {(~tool_wear_check).sum()} machines have non-monotonic tool wear")
+        print(f"WARNING: {(~tool_wear_check).sum()} machines have non-monotonic tool wear")
     
     # Process temperature range
     process_temp_min = df_timeseries['process_temperature_K'].min()
     process_temp_max = df_timeseries['process_temperature_K'].max()
     print(f"\nProcess temperature range: [{process_temp_min:.2f}, {process_temp_max:.2f}] K")
     if 304 <= process_temp_min <= 307 and 312 <= process_temp_max <= 316:
-        print("✓ Process temperature within realistic bounds")
+        print("SUCCESS: Process temperature within realistic bounds")
     else:
-        print("⚠ Process temperature may be outside expected range")
+        print("WARNING: Process temperature may be outside expected range")
     
     # RPM range
     rpm_min = df_timeseries['rotational_speed_rpm'].min()
     rpm_max = df_timeseries['rotational_speed_rpm'].max()
     print(f"\nRotational speed range: [{rpm_min:.0f}, {rpm_max:.0f}] rpm")
     if 1100 <= rpm_min <= 1200 and 2800 <= rpm_max <= 3000:
-        print("✓ Rotational speed within realistic bounds")
+        print("SUCCESS: Rotational speed within realistic bounds")
     else:
-        print("⚠ Rotational speed may be outside expected range")
+        print("WARNING: Rotational speed may be outside expected range")
     
     # Torque range
     torque_min = df_timeseries['torque_Nm'].min()
     torque_max = df_timeseries['torque_Nm'].max()
     print(f"\nTorque range: [{torque_min:.2f}, {torque_max:.2f}] Nm")
     if 3 <= torque_min <= 5 and 75 <= torque_max <= 85:
-        print("✓ Torque within realistic bounds")
+        print("SUCCESS: Torque within realistic bounds")
     else:
-        print("⚠ Torque may be outside expected range")
+        print("WARNING: Torque may be outside expected range")
     
     # 4. Failure pattern checks
     print("\n### 4. FAILURE PATTERN CHECKS ###")
@@ -461,9 +520,9 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     
     expected_failures = (df_subset['Target'] == 1).sum()
     if failing_machines == expected_failures:
-        print(f"✓ Failure count matches expected ({expected_failures})")
+        print(f"SUCCESS: Failure count matches expected ({expected_failures})")
     else:
-        print(f"✗ Failure count mismatch: expected {expected_failures}, got {failing_machines}")
+        print(f"ERROR: Failure count mismatch - expected {expected_failures}, got {failing_machines}")
     
     # Check failures occur at end
     def check_failure_at_end(group):
@@ -480,9 +539,9 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     print(f"\nFailures at end of sequence: {pct_correct_position:.1f}% of sequences")
     
     if pct_correct_position >= 95:
-        print("✓ Failures occur at end of sequences")
+        print("SUCCESS: Failures occur at end of sequences")
     else:
-        print(f"⚠ Some failures not at end of sequence")
+        print(f"WARNING: Some failures not at end of sequence")
     
     # Failure type distribution
     print("\n### 5. FAILURE TYPE DISTRIBUTION ###")
@@ -510,29 +569,33 @@ def validate_timeseries(df_timeseries: pd.DataFrame, df_subset: pd.DataFrame) ->
     print(f"RUL decreasing: {pct_decreasing:.1f}% of machines")
     
     if pct_decreasing >= 99:
-        print("✓ RUL is monotonically decreasing")
+        print("SUCCESS: RUL is monotonically decreasing")
     else:
-        print(f"⚠ {(~rul_check).sum()} machines have non-decreasing RUL")
+        print(f"WARNING: {(~rul_check).sum()} machines have non-decreasing RUL")
     
     # Check RUL = 0 only for failing machines
     machines_with_zero_rul = df_timeseries[df_timeseries['synthetic_RUL'] == 0]['product_id'].unique()
     machines_with_failures = df_timeseries[df_timeseries['is_failure'] == 1]['product_id'].unique()
     
     if set(machines_with_zero_rul) == set(machines_with_failures):
-        print("✓ RUL = 0 only for failing machines")
+        print("SUCCESS: RUL = 0 only for failing machines")
     else:
-        print(f"⚠ RUL = 0 mismatch with failing machines")
+        print(f"WARNING: RUL = 0 mismatch with failing machines")
     
     # 7. Missing values check
     print("\n### 7. DATA QUALITY ###")
     missing = df_timeseries.isnull().sum().sum()
     if missing == 0:
-        print("✓ No missing values")
+        print("SUCCESS: No missing values")
     else:
-        print(f"✗ {missing} missing values found")
+        print(f"ERROR: {missing} missing values found")
     
     print("\n" + "=" * 80)
 
+
+# ============================================================================
+# SECTION 6: SUMMARY STATISTICS & EXPORT
+# ============================================================================
 
 def create_sequence_summary(df_timeseries: pd.DataFrame) -> pd.DataFrame:
     """Create sequence-level summary (1 row per machine)."""
@@ -646,6 +709,10 @@ def print_summary_statistics(df_timeseries: pd.DataFrame, df_summary: pd.DataFra
     print("\n" + "=" * 80)
 
 
+# ============================================================================
+# MAIN EXECUTION PIPELINE
+# ============================================================================
+
 def main():
     """Main execution function."""
     print("\n")
@@ -655,21 +722,29 @@ def main():
     print()
     
     # Configuration
-    input_path = 'predictive_maintenance_subset_400.csv'
+    input_path = 'preprocessed_data\predictive_maintenance_subset_400.csv'
     output_timeseries_path = 'preprocessed_data/timestamped_predictive_maintenance_timeseries_NEW.csv'
-    output_summary_path = 'sequence_summary.csv'
+    output_summary_path = 'preprocessed_data/sequence_summary.csv'
     random_state = 42
     
-    # 1. Load subset data
+    # -------------------------------------------------------------------------
+    # Step 1: Load Static Data
+    # -------------------------------------------------------------------------
     df_subset = load_subset_data(input_path)
     
-    # 2. Generate synthetic time-series
+    # -------------------------------------------------------------------------
+    # Step 2: Generate Synthetic Time-Series
+    # -------------------------------------------------------------------------
     df_timeseries = generate_all_sequences(df_subset, random_state)
     
-    # 3. Validate generated time-series
+    # -------------------------------------------------------------------------
+    # Step 3: Validate Generated Time-Series
+    # -------------------------------------------------------------------------
     validate_timeseries(df_timeseries, df_subset)
     
-    # 4. Create sequence summary
+    # -------------------------------------------------------------------------
+    # Step 4: Create Sequence Summary
+    # -------------------------------------------------------------------------
     print("=" * 80)
     print("CREATING SEQUENCE SUMMARY")
     print("=" * 80)
@@ -677,47 +752,55 @@ def main():
     print(f"Summary created with {len(df_summary)} machines")
     print()
     
-    # 5. Print dataset preview
+    # -------------------------------------------------------------------------
+    # Step 5: Print Dataset Preview
+    # -------------------------------------------------------------------------
     print_dataset_preview(df_timeseries)
     
-    # 6. Print summary statistics
+    # -------------------------------------------------------------------------
+    # Step 6: Print Summary Statistics
+    # -------------------------------------------------------------------------
     print_summary_statistics(df_timeseries, df_summary)
     
-    # 7. Save outputs
+    # -------------------------------------------------------------------------
+    # Step 7: Save Outputs
+    # -------------------------------------------------------------------------
     print("=" * 80)
     print("SAVING OUTPUTS")
     print("=" * 80)
     
     df_timeseries.to_csv(output_timeseries_path, index=False)
-    print(f"✓ Time-series saved to: {output_timeseries_path}")
+    print(f"SUCCESS: Time-series saved to: {output_timeseries_path}")
     print(f"  Rows: {len(df_timeseries):,}")
     print(f"  Size: {len(df_timeseries) * df_timeseries.shape[1] / 1e6:.2f}M cells")
     
     df_summary.to_csv(output_summary_path, index=False)
-    print(f"✓ Summary saved to: {output_summary_path}")
+    print(f"SUCCESS: Summary saved to: {output_summary_path}")
     print(f"  Rows: {len(df_summary)}")
     
-    # 8. Final confirmation
+    # -------------------------------------------------------------------------
+    # Step 8: Final Confirmation & Readiness Report
+    # -------------------------------------------------------------------------
     print("\n" + "=" * 80)
     print("✓ DATASET GENERATION COMPLETE")
     print("=" * 80)
     
     print("\n### READINESS FOR AC-02 LSTM PIPELINE ###")
-    print("✓ Temporal sequences generated (60-120 timesteps per machine)")
-    print("✓ Monotonic timestamps with Δt = 1 hour")
-    print("✓ Physics-aware sensor degradation patterns")
-    print("✓ Failure windows positioned at sequence end (8-15%)")
-    print("✓ RUL decreases to 0 for failing machines")
-    print("✓ Failure type distribution preserved")
-    print("✓ Class balance maintained (~20% failures)")
-    print("✓ No missing values")
-    print("✓ All sensors within realistic bounds")
+    print("[PASS] Temporal sequences generated (60-120 timesteps per machine)")
+    print("[PASS] Monotonic timestamps with Δt = 1 hour")
+    print("[PASS] Physics-aware sensor degradation patterns")
+    print("[PASS] Failure windows positioned at sequence end (8-15%)")
+    print("[PASS] RUL decreases to 0 for failing machines")
+    print("[PASS] Failure type distribution preserved")
+    print("[PASS] Class balance maintained (~20% failures)")
+    print("[PASS] No missing values")
+    print("[PASS] All sensors within realistic bounds")
     
     print("\n### DATASET IS READY FOR: ###")
-    print("  • LSTM Classification (binary failure prediction)")
-    print("  • LSTM Forecasting (RUL prediction)")
-    print("  • XGBoost Classification (feature engineering from sequences)")
-    print("  • XGBoost Regression (RUL estimation)")
+    print("  - LSTM Classification (binary failure prediction)")
+    print("  - LSTM Forecasting (RUL prediction)")
+    print("  - XGBoost Classification (feature engineering from sequences)")
+    print("  - XGBoost Regression (RUL estimation)")
     
     print("\n### RECOMMENDED NEXT STEPS ###")
     print("1. Load dataset: pd.read_csv('timestamped_predictive_maintenance_timeseries_NEW.csv')")
