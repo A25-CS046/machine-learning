@@ -1,0 +1,54 @@
+[INFO] Predictive Maintenance Model Evaluation Report
+
+[INFO] Dataset Information:
+  Total Samples: 36,105
+  Unique Machines: 400
+  Sequence Length: 50
+  Train Sequences: 13,221
+  Test Sequences: 3,284
+  
+[RESULT] Classification Results:
+
+XGBoost Classifier:
+  Accuracy:  0.9875 PASS
+  Precision: 0.9333
+  Recall:    1.0000 PASS
+  F1-Score:  0.9655
+  ROC-AUC:   0.9946
+  PR-AUC:    0.9722
+
+LSTM Classifier:
+  Accuracy:  0.8752 PASS
+  Precision: 0.2475
+  Recall:    0.4667 FAIL
+  F1-Score:  0.3234
+  ROC-AUC:   0.8276
+  PR-AUC:    0.3207
+
+[RESULT] Regression Results (RUL Prediction):
+
+XGBoost Regressor:
+  RMSE: 11.7192
+  MAE:  9.5290
+  MSE:  137.3407
+  R²:   0.6293
+
+LSTM Regressor:
+  RMSE: 26.8915
+  MAE:  20.8790
+  MSE:  723.1554
+  R²:   -0.0338
+
+[INFO] AC-02 Compliance:
+  Target Accuracy: 70%
+  Target Recall:   70%
+  
+  XGBoost Classification: MEETS REQUIREMENTS
+  LSTM Classification:    DOES NOT MEET REQUIREMENTS
+
+[INFO] Important Notices:
+[WARN] This Pipeline Uses Synthetic Time-Series Data.
+[WARN] Performance Metrics Reflect Synthetic Patterns.
+[WARN] Real World Performance May Differ Significantly.
+[WARN] Sequences are Generated Per Machine (No Cross-Machine Mixing).
+[WARN] Train/Test Splits are Machine-Based (No Data Leakage).

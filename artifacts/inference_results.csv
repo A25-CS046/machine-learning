@@ -1,0 +1,15 @@
+machine_id,forecasted_days,forecasted_hours,failure_type,message
+M19393,1.8,43,Heat Dissipation Failure,Machine M19393 needs maintenance in 43 hours because of Heat Dissipation Failure
+L56839,1.8,44,Overstrain Failure,Machine L56839 needs maintenance in 44 hours because of Overstrain Failure
+L56756,1.9,45,Tool Wear Failure,Machine L56756 needs maintenance in 45 hours because of Tool Wear Failure
+L52116,1.9,46,Power Failure,Machine L52116 needs maintenance in 46 hours because of Power Failure
+L51898,2.0,47,Heat Dissipation Failure,Machine L51898 needs maintenance in 47 hours because of Heat Dissipation Failure
+M18666,1.9,47,Heat Dissipation Failure,Machine M18666 needs maintenance in 47 hours because of Heat Dissipation Failure
+M19478,2.0,47,Heat Dissipation Failure,Machine M19478 needs maintenance in 47 hours because of Heat Dissipation Failure
+L51276,1.9,47,Heat Dissipation Failure,Machine L51276 needs maintenance in 47 hours because of Heat Dissipation Failure
+L54936,2.0,48,Overstrain Failure,Machine L54936 needs maintenance in 48 hours because of Overstrain Failure
+M18727,2.0,48,Power Failure,Machine M18727 needs maintenance in 48 hours because of Power Failure
+M17026,2.0,49,Tool Wear Failure,Machine M17026 needs maintenance in 49 hours because of Tool Wear Failure
+L55870,2.1,50,Tool Wear Failure,Machine L55870 needs maintenance in 50 hours because of Tool Wear Failure
+L56198,2.1,50,Tool Wear Failure,Machine L56198 needs maintenance in 50 hours because of Tool Wear Failure
+L49413,2.8,68,Power Failure,Machine L49413 needs maintenance in 68 hours because of Power Failure
