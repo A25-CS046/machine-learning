@@ -1,0 +1,401 @@
+UDI,Product ID,Type,Air temperature [K],Process temperature [K],Rotational speed [rpm],Torque [Nm],Tool wear [min],Target,Failure Type,torque_level,rpm_band
+9435,L56614,L,298.0,308.6,1626,33.3,50,0,No Failure,low,high
+498,L47677,L,297.4,309.0,1505,39.2,209,0,No Failure,mid,mid
+3868,M18727,M,302.7,311.6,2709,9.7,2,1,Power Failure,low,high
+9345,L56524,L,298.2,308.8,1616,33.7,16,0,No Failure,low,high
+6165,H35578,H,300.9,310.7,1656,30.7,200,0,No Failure,low,high
+9855,H39268,H,298.6,309.4,1362,45.3,56,0,No Failure,high,low
+755,M15614,M,296.9,308.1,1483,44.3,219,0,No Failure,high,mid
+4917,H34330,H,303.4,312.3,1769,27.9,40,0,No Failure,low,high
+7030,L54209,L,300.6,310.6,1454,39.7,67,0,No Failure,mid,mid
+1860,L49039,L,297.8,307.4,1355,45.8,60,0,No Failure,high,low
+4329,L51508,L,301.6,310.1,1326,48.2,77,1,Heat Dissipation Failure,high,low
+263,M15122,M,298.1,308.2,1736,26.8,27,0,No Failure,low,high
+3357,L50536,L,301.6,310.8,1355,57.8,195,1,Overstrain Failure,high,low
+9577,L56756,L,299.6,310.7,1922,23.3,205,1,Tool Wear Failure,low,high
+383,L47562,L,297.5,308.5,1335,48.0,131,0,No Failure,high,low
+208,M15067,M,298.4,308.7,1421,60.7,119,1,Power Failure,high,low
+4452,L51631,L,302.5,310.3,1549,40.9,170,0,No Failure,mid,mid
+9109,M23968,M,297.5,308.6,1440,38.8,29,0,No Failure,mid,low
+2726,L49905,L,299.8,309.4,1555,34.8,122,0,No Failure,low,mid
+2502,M17361,M,299.1,308.9,1476,42.7,225,0,No Failure,mid,mid
+2672,M17531,M,299.7,309.3,1399,41.9,221,1,Tool Wear Failure,mid,low
+4152,M19011,M,301.9,310.4,1373,48.0,73,1,Heat Dissipation Failure,high,low
+238,M15097,M,298.0,308.1,1552,36.6,190,0,No Failure,mid,mid
+8005,L55184,L,300.9,312.0,1533,44.0,162,0,No Failure,mid,mid
+4286,L51465,L,301.7,309.9,1317,49.0,187,1,Heat Dissipation Failure,high,low
+8387,M23246,M,298.9,309.9,1501,37.1,70,0,No Failure,mid,mid
+4873,L52052,L,303.7,312.4,1316,59.3,137,0,No Failure,high,low
+4658,L51837,L,303.1,311.2,1628,35.2,23,0,No Failure,low,high
+2675,L49854,L,299.7,309.3,1546,37.2,4,0,No Failure,mid,mid
+4368,H33781,H,302.0,309.9,1447,42.8,185,0,No Failure,mid,low
+8149,M23008,M,299.5,310.7,1488,39.5,95,0,No Failure,mid,mid
+8714,L55893,L,297.2,308.6,1917,24.1,54,0,No Failure,low,high
+7631,L54810,L,300.5,311.6,1534,37.7,90,0,No Failure,mid,mid
+250,L47429,L,298.0,308.3,1405,56.2,218,1,Overstrain Failure,high,low
+8727,L55906,L,297.2,308.6,1562,33.0,84,0,No Failure,low,mid
+7092,L54271,L,300.6,310.2,1318,51.0,8,0,No Failure,high,low
+8320,L55499,L,298.7,309.7,1393,45.7,99,0,No Failure,high,low
+9284,M24143,M,298.3,309.0,1802,27.5,71,0,No Failure,low,high
+8488,L55667,L,298.4,309.4,1392,50.1,117,0,No Failure,high,low
+3810,L50989,L,302.2,310.8,1350,56.6,76,0,No Failure,high,low
+4485,M19344,M,302.6,310.4,1451,43.1,35,0,No Failure,mid,mid
+9831,L57010,L,298.3,309.3,1337,56.1,206,1,Overstrain Failure,high,low
+3612,L50791,L,301.7,310.9,1405,46.4,207,1,Tool Wear Failure,high,low
+4476,L51655,L,302.7,310.5,1351,41.8,10,1,Heat Dissipation Failure,mid,low
+6875,H36288,H,300.9,311.3,1295,58.9,77,0,No Failure,high,low
+9326,M24185,M,298.6,309.3,1510,40.8,177,0,No Failure,mid,mid
+1159,L48338,L,297.0,307.9,1436,47.7,191,0,No Failure,high,low
+4804,L51983,L,303.6,312.5,1710,31.4,180,0,No Failure,low,high
+4248,L51427,L,302.6,311.0,1369,60.0,93,1,Heat Dissipation Failure,high,low
+7824,L55003,L,300.0,311.3,1484,53.2,158,0,No Failure,high,mid
+6025,L53204,L,300.7,310.9,1356,65.3,66,1,Power Failure,high,low
+2273,M17132,M,299.3,308.6,1448,52.1,71,0,No Failure,high,low
+797,M15656,M,296.9,307.9,2010,18.9,86,0,No Failure,low,high
+6173,L53352,L,300.8,310.6,1577,37.9,227,1,Tool Wear Failure,mid,high
+1588,M16447,M,298.2,308.3,1448,43.3,199,0,No Failure,mid,low
+7570,L54749,L,300.2,311.0,1255,71.8,149,1,Power Failure,high,low
+9595,L56774,L,299.1,310.3,1727,28.7,43,0,No Failure,low,high
+4825,L52004,L,303.4,311.8,1499,45.0,16,0,No Failure,high,mid
+6800,M21659,M,301.1,310.7,2636,12.2,100,1,Power Failure,low,high
+3135,L50314,L,300.2,309.6,1359,51.5,66,0,No Failure,high,low
+1419,L48598,L,298.8,309.9,1320,47.4,210,0,No Failure,high,low
+827,L48006,L,296.5,307.2,1481,38.2,160,0,No Failure,mid,mid
+2981,L50160,L,300.4,309.5,1447,39.3,110,0,No Failure,mid,low
+1683,H31096,H,297.9,307.4,1604,36.1,225,1,Tool Wear Failure,mid,high
+4754,H34167,H,303.2,311.4,1607,36.6,43,0,No Failure,mid,high
+51,L47230,L,298.9,309.1,2861,4.6,143,1,Power Failure,low,high
+9976,M24835,M,298.6,308.3,1589,34.1,174,0,No Failure,low,high
+8800,L55979,L,297.3,308.4,1472,41.3,67,0,No Failure,mid,mid
+5597,M20456,M,302.7,312.0,1538,36.7,74,0,No Failure,mid,mid
+8112,M22971,M,300.4,311.8,1553,33.1,209,1,Tool Wear Failure,low,mid
+6008,M20867,M,300.7,310.6,1349,54.5,19,0,No Failure,high,low
+2347,L49526,L,299.2,308.4,1402,47.7,24,0,No Failure,high,low
+4537,L51716,L,302.4,310.2,1351,45.1,168,1,Heat Dissipation Failure,high,low
+3855,L51034,L,302.4,311.0,1338,67.6,194,1,Power Failure,high,low
+4223,M19082,M,302.0,310.6,1535,38.6,34,0,No Failure,mid,mid
+7505,L54684,L,300.4,311.8,1589,42.0,201,0,No Failure,mid,high
+5592,L52771,L,302.5,312.0,1574,33.8,63,0,No Failure,low,high
+4980,M19839,M,303.7,312.7,1612,36.3,200,0,No Failure,mid,high
+3628,L50807,L,302.2,311.5,1588,30.6,39,0,No Failure,low,high
+1470,L48649,L,298.6,309.8,1497,41.6,118,0,No Failure,mid,mid
+4371,L51550,L,302.0,309.9,1308,57.6,197,1,Heat Dissipation Failure,high,low
+4769,L51948,L,303.6,312.0,1309,52.9,86,1,Heat Dissipation Failure,high,low
+6805,L53984,L,301.0,310.6,1588,33.7,114,0,No Failure,low,high
+375,L47554,L,297.4,308.3,1431,43.0,113,0,No Failure,mid,low
+1457,L48636,L,299.0,310.3,1501,43.0,91,0,No Failure,mid,mid
+7510,L54689,L,300.6,311.9,1372,60.1,212,1,Overstrain Failure,high,low
+4338,L51517,L,301.6,309.9,1440,43.4,100,0,No Failure,mid,low
+2346,L49525,L,299.2,308.4,1475,38.7,22,0,No Failure,mid,mid
+7695,H37108,H,300.6,311.7,1500,36.7,17,0,No Failure,mid,mid
+2755,H32168,H,299.6,309.1,1630,32.3,194,0,No Failure,low,high
+7405,L54584,L,299.8,310.8,1553,32.2,161,0,No Failure,low,mid
+4654,M19513,M,303.1,311.1,1594,35.5,13,0,No Failure,low,high
+3599,L50778,L,301.7,310.5,1399,53.2,174,0,No Failure,high,low
+7179,L54358,L,300.2,310.2,1600,31.5,23,0,No Failure,low,high
+163,L47342,L,298.3,308.1,1586,35.5,0,0,No Failure,low,high
+5327,M20186,M,303.5,312.7,1420,49.1,42,0,No Failure,high,low
+707,M15566,M,297.8,309.0,1434,43.3,96,0,No Failure,mid,low
+4066,M18925,M,301.9,310.7,1511,37.6,70,0,No Failure,mid,mid
+996,L48175,L,296.3,307.3,1566,35.8,175,0,No Failure,mid,high
+1764,L48943,L,298.2,307.6,1511,31.0,209,1,Tool Wear Failure,low,mid
+9316,L56495,L,298.5,309.5,1569,41.0,153,0,No Failure,mid,high
+8686,H38099,H,297.2,308.5,1524,41.4,192,0,No Failure,mid,mid
+4407,L51586,L,302.5,310.3,1326,58.5,55,1,Heat Dissipation Failure,high,low
+3529,L50708,L,302.0,310.9,1378,53.1,212,1,Overstrain Failure,high,low
+5778,L52957,L,301.6,311.1,1408,44.4,106,0,No Failure,high,low
+4097,L51276,L,301.9,310.4,1370,51.7,153,1,Heat Dissipation Failure,high,low
+4719,L51898,L,303.3,311.6,1337,56.8,187,1,Heat Dissipation Failure,high,low
+549,L47728,L,297.4,309.3,1332,53.2,115,0,No Failure,high,low
+1885,M16744,M,298.0,307.6,1792,26.0,119,0,No Failure,low,high
+5374,M20233,M,302.9,312.3,1809,25.0,180,0,No Failure,low,high
+3264,L50443,L,301.3,310.0,1344,54.8,186,0,No Failure,high,low
+505,M15364,M,297.6,309.3,1529,41.9,3,0,No Failure,mid,mid
+416,L47595,L,297.5,308.4,1511,42.8,209,0,No Failure,mid,mid
+1100,M15959,M,296.8,307.4,1472,43.9,30,0,No Failure,mid,mid
+5845,L53024,L,301.4,311.1,1462,37.1,41,0,No Failure,mid,mid
+8027,L55206,L,300.7,311.9,1399,50.2,222,1,Overstrain Failure,high,low
+2167,M17026,M,299.6,309.2,1867,23.4,225,1,Tool Wear Failure,low,high
+7882,L55061,L,300.8,312.4,1493,39.1,79,0,No Failure,mid,mid
+1435,M16294,M,298.8,309.8,1377,49.6,27,0,No Failure,high,low
+745,L47924,L,296.7,308.1,1450,40.9,195,0,No Failure,mid,mid
+2334,L49513,L,299.2,308.5,1445,45.2,222,0,No Failure,high,low
+670,H30083,H,297.5,308.9,1471,37.7,197,0,No Failure,mid,mid
+4619,M19478,M,303.0,311.3,1335,53.6,164,1,Heat Dissipation Failure,high,low
+3923,M18782,M,302.6,311.4,1757,29.5,151,0,No Failure,low,high
+4703,L51882,L,303.6,311.8,1222,66.8,148,1,Heat Dissipation Failure,high,low
+6843,L54022,L,301.2,311.2,1635,29.6,211,0,No Failure,low,high
+4939,M19798,M,303.5,312.4,1606,30.1,98,0,No Failure,low,high
+3716,M18575,M,302.4,311.4,1475,45.2,46,0,No Failure,high,mid
+3754,L50933,L,302.2,311.0,1463,46.8,150,0,No Failure,high,mid
+5037,L52216,L,304.0,313.2,1615,37.8,127,0,No Failure,mid,high
+7284,M22143,M,300.0,310.2,1443,58.7,68,0,No Failure,high,low
+7535,L54714,L,300.0,311.2,1418,47.3,60,0,No Failure,high,low
+7461,L54640,L,300.0,311.5,1445,41.6,81,0,No Failure,mid,low
+8671,L55850,L,297.5,308.9,1581,30.4,155,0,No Failure,low,high
+6979,L54158,L,300.7,311.1,1427,50.3,137,0,No Failure,high,low
+3217,L50396,L,300.5,309.5,1653,27.6,62,0,No Failure,low,high
+8173,L55352,L,299.9,311.4,1596,28.9,160,0,No Failure,low,high
+7107,L54286,L,300.8,310.5,1482,39.0,47,0,No Failure,mid,mid
+6233,L53412,L,301.3,311.0,1576,30.4,151,0,No Failure,low,high
+5657,M20516,M,302.3,311.5,1316,47.2,4,0,No Failure,high,low
+4072,L51251,L,301.9,310.6,1331,68.6,85,1,Power Failure,high,low
+6052,L53231,L,300.9,311.0,1382,51.2,136,0,No Failure,high,low
+7469,L54648,L,300.3,311.6,1560,37.7,107,0,No Failure,mid,mid
+6484,L53663,L,300.7,309.9,1412,45.3,155,0,No Failure,high,low
+7694,L54873,L,300.6,311.6,1964,21.4,15,0,No Failure,low,high
+8471,L55650,L,298.7,309.9,1464,38.0,74,0,No Failure,mid,mid
+9015,M23874,M,297.2,308.1,1340,61.3,207,1,Overstrain Failure,high,low
+1172,H30585,H,297.0,308.1,1517,41.4,222,0,No Failure,mid,mid
+6664,L53843,L,301.3,310.4,1504,47.2,193,0,No Failure,high,mid
+531,M15390,M,297.6,309.5,1709,32.2,65,0,No Failure,low,high
+4183,L51362,L,302.4,310.7,1362,54.8,155,1,Heat Dissipation Failure,high,low
+8552,M23411,M,298.2,309.1,1457,49.0,77,0,No Failure,high,mid
+5813,L52992,L,301.4,311.1,1495,36.3,193,0,No Failure,mid,mid
+4798,L51977,L,303.5,312.5,1380,46.1,166,0,No Failure,high,low
+4566,H33979,H,302.7,310.8,1275,55.0,25,1,Heat Dissipation Failure,high,low
+6793,L53972,L,301.2,310.6,1811,24.0,84,0,No Failure,low,high
+21,H29434,H,298.9,309.3,1375,42.7,58,0,No Failure,mid,low
+137,H29550,H,298.7,308.5,1420,45.7,143,0,No Failure,high,low
+5659,M20518,M,302.2,311.4,1372,55.1,9,0,No Failure,high,low
+6590,M21449,M,301.6,310.6,1553,38.9,0,0,No Failure,mid,mid
+7353,M22212,M,299.7,310.2,1440,42.8,30,0,No Failure,mid,low
+6159,L53338,L,301.1,311.0,1677,29.1,188,0,No Failure,low,high
+9947,L57126,L,298.3,307.9,1502,42.0,103,0,No Failure,mid,mid
+4060,L51239,L,301.9,310.8,1465,44.3,57,0,No Failure,high,mid
+3410,M18269,M,301.2,310.4,1697,30.0,120,0,No Failure,low,high
+139,H29552,H,298.8,308.6,1449,49.4,150,0,No Failure,high,mid
+5675,M20534,M,302.2,311.7,1393,42.5,53,0,No Failure,mid,low
+668,L47847,L,297.5,308.9,1459,48.5,193,0,No Failure,high,mid
+9469,L56648,L,298.6,309.4,1375,55.4,145,0,No Failure,high,low
+2863,L50042,L,300.6,309.5,1867,23.0,242,0,No Failure,low,high
+1263,H30676,H,297.8,309.2,1648,33.0,29,0,No Failure,low,high
+8691,L55870,L,297.1,308.5,1323,44.4,207,1,Tool Wear Failure,high,low
+5969,L53148,L,300.4,310.8,1348,56.0,146,0,No Failure,high,low
+8095,H37508,H,300.2,311.6,1662,28.8,162,0,No Failure,low,high
+6229,L53408,L,301.2,310.9,1413,50.1,141,0,No Failure,high,low
+9059,M23918,M,297.2,308.3,1326,57.2,100,0,No Failure,high,low
+4315,H33728,H,301.4,310.1,1623,32.3,39,0,No Failure,low,high
+3694,L50873,L,302.1,311.3,1521,31.5,202,0,No Failure,low,mid
+1086,L48265,L,297.0,307.8,1385,56.4,202,1,Overstrain Failure,high,low
+4511,L51690,L,302.4,310.2,1346,62.4,106,1,Heat Dissipation Failure,high,low
+7998,M22857,M,301.0,312.2,2710,9.7,143,1,Power Failure,low,high
+1120,L48299,L,296.5,307.5,1340,59.1,89,0,No Failure,high,low
+880,L48059,L,295.8,306.3,1337,54.6,87,0,No Failure,high,low
+5512,L52691,L,302.8,312.1,1958,20.3,56,0,No Failure,low,high
+7757,L54936,L,300.5,311.8,1368,57.9,191,1,Overstrain Failure,high,low
+1645,L48824,L,298.0,307.8,1622,33.3,121,0,No Failure,low,high
+8470,M23329,M,298.6,309.7,1280,64.1,71,0,No Failure,high,low
+8372,L55551,L,298.7,309.7,1881,21.7,29,0,No Failure,low,high
+5101,M19960,M,304.2,313.5,1437,47.2,102,0,No Failure,high,low
+2288,L49467,L,299.4,308.6,1746,26.8,107,0,No Failure,low,high
+3984,L51163,L,302.2,311.3,1389,46.9,106,0,No Failure,high,low
+5348,L52527,L,303.3,312.7,1262,63.8,100,0,No Failure,high,low
+1232,M16091,M,297.2,308.5,1604,40.7,158,0,No Failure,mid,high
+8168,H37581,H,299.7,311.1,1353,47.1,143,0,No Failure,high,low
+794,M15653,M,296.8,307.9,1683,31.8,76,0,No Failure,low,high
+8892,M23751,M,297.7,308.9,1681,28.3,116,0,No Failure,low,high
+5608,M20467,M,302.9,312.2,1745,25.5,98,0,No Failure,low,high
+6330,M21189,M,300.7,310.0,1641,34.6,178,0,No Failure,low,high
+3376,M18235,M,301.4,310.6,1459,46.9,27,0,No Failure,high,mid
+3355,L50534,L,301.6,310.9,1559,40.2,191,0,No Failure,mid,mid
+4411,L51590,L,302.5,310.2,1586,32.2,64,0,No Failure,low,high
+3487,L50666,L,301.9,310.8,1650,29.8,94,0,No Failure,low,high
+8025,L55204,L,300.9,312.0,1493,38.7,217,0,No Failure,mid,mid
+9677,L56856,L,299.0,310.1,1886,21.2,13,0,No Failure,low,high
+8483,L55662,L,298.4,309.5,1520,38.1,106,0,No Failure,mid,mid
+2393,L49572,L,299.2,308.5,1340,50.0,144,0,No Failure,high,low
+4937,L52116,L,303.5,312.4,1284,70.6,94,1,Power Failure,high,low
+4422,L51601,L,302.6,310.2,1325,62.4,92,1,Heat Dissipation Failure,high,low
+5416,M20275,M,302.6,312.4,1410,50.3,33,0,No Failure,high,low
+6676,L53855,L,301.5,310.6,1579,28.0,220,0,No Failure,low,high
+5151,L52330,L,304.3,313.5,1590,29.8,17,0,No Failure,low,high
+8625,H38038,H,297.5,308.4,1490,39.7,34,0,No Failure,mid,mid
+5337,L52516,L,303.2,312.4,1663,33.7,71,0,No Failure,low,high
+8849,M23708,M,297.5,308.9,1436,44.8,2,0,No Failure,high,low
+9196,L56375,L,297.9,309.0,1532,37.6,47,0,No Failure,mid,mid
+6681,L53860,L,301.5,310.8,1417,49.7,5,0,No Failure,high,low
+6998,M21857,M,300.6,310.7,1566,38.2,187,0,No Failure,mid,high
+8078,L55257,L,300.3,311.8,1547,39.7,121,0,No Failure,mid,mid
+3811,M18670,M,302.2,310.8,1562,38.1,78,0,No Failure,mid,mid
+4990,L52169,L,303.9,313.2,1499,37.4,7,0,No Failure,mid,mid
+340,M15199,M,297.5,308.2,1713,32.2,17,0,No Failure,low,high
+8428,L55607,L,299.1,310.4,1505,46.1,176,0,No Failure,high,mid
+4946,L52125,L,303.6,312.7,1418,44.1,118,0,No Failure,mid,low
+3403,L50582,L,301.4,310.6,1347,53.3,104,0,No Failure,high,low
+9951,L57130,L,298.1,307.8,1413,54.1,113,0,No Failure,high,low
+4708,L51887,L,303.5,311.8,1944,23.5,159,0,No Failure,low,high
+4231,L51410,L,302.2,310.8,1673,32.9,52,0,No Failure,low,high
+8137,M22996,M,299.6,310.9,1474,39.7,64,0,No Failure,mid,mid
+3807,M18666,M,302.3,310.9,1360,44.0,67,1,Heat Dissipation Failure,mid,low
+5392,L52571,L,302.7,312.2,1572,34.4,228,0,No Failure,low,high
+7628,L54807,L,300.5,311.7,1445,44.8,83,0,No Failure,high,low
+230,L47409,L,298.3,308.5,1538,32.2,173,0,No Failure,low,mid
+8119,L55298,L,300.3,311.8,1548,33.0,16,0,No Failure,low,mid
+4165,L51344,L,302.2,310.6,1346,47.5,109,1,Heat Dissipation Failure,high,low
+5212,L52391,L,303.7,312.5,1433,53.6,185,0,No Failure,high,low
+3740,M18599,M,302.2,311.2,1663,29.6,115,0,No Failure,low,high
+1165,L48344,L,297.1,308.1,1754,30.3,206,0,No Failure,low,high
+3660,M18519,M,302.2,311.5,1734,25.0,116,0,No Failure,low,high
+3209,M18068,M,300.2,309.1,1406,42.2,40,0,No Failure,mid,low
+2424,M17283,M,298.9,308.2,2022,20.0,23,0,No Failure,low,high
+8863,M23722,M,298.0,309.2,1558,41.7,35,0,No Failure,mid,mid
+9720,L56899,L,298.9,309.9,1309,56.2,119,0,No Failure,high,low
+9019,L56198,L,297.3,308.1,1615,35.4,217,1,Tool Wear Failure,low,high
+9922,M24781,M,298.5,308.7,1347,48.5,33,0,No Failure,high,low
+6679,M21538,M,301.5,310.7,1336,65.6,0,1,Power Failure,high,low
+8820,H38233,H,297.4,308.7,1349,48.9,120,0,No Failure,high,low
+6400,M21259,M,300.1,309.6,1501,38.0,157,0,No Failure,mid,mid
+471,H29884,H,297.3,308.8,1499,44.2,134,0,No Failure,mid,mid
+846,L48025,L,296.3,307.3,1439,41.5,208,0,No Failure,mid,low
+9598,L56777,L,298.9,310.1,1510,38.0,52,0,No Failure,mid,mid
+458,L47637,L,297.4,308.6,1276,53.6,103,0,No Failure,high,low
+8774,L55953,L,297.5,308.6,1585,37.6,2,0,No Failure,mid,high
+8569,L55748,L,297.9,308.6,1691,29.6,116,0,No Failure,low,high
+5412,L52591,L,302.8,312.6,1462,39.4,22,0,No Failure,mid,mid
+2234,L49413,L,299.5,308.7,2549,13.0,179,1,Power Failure,low,high
+6199,M21058,M,301.0,310.9,1554,32.7,59,0,No Failure,low,mid
+5489,L52668,L,302.7,312.2,1450,52.1,213,1,Overstrain Failure,high,mid
+8423,H37836,H,298.9,310.3,1243,63.0,163,0,No Failure,high,low
+4264,L51443,L,302.6,311.0,1620,36.2,139,0,No Failure,mid,high
+2114,L49293,L,299.5,309.1,1863,22.5,79,0,No Failure,low,high
+214,L47393,L,298.4,308.7,1386,44.9,135,0,No Failure,high,low
+4534,M19393,M,302.4,310.3,1375,52.5,161,1,Heat Dissipation Failure,high,low
+848,L48027,L,296.4,307.4,2833,5.6,213,1,Power Failure,low,high
+1497,L48676,L,298.0,308.7,1268,69.4,189,1,Power Failure,high,low
+9397,L56576,L,297.8,308.3,1498,47.3,160,0,No Failure,high,mid
+1766,L48945,L,298.2,307.6,1368,51.8,5,0,No Failure,high,low
+1198,M16057,M,296.9,307.9,1441,47.6,60,0,No Failure,high,low
+1699,L48878,L,297.9,307.6,1481,38.0,40,0,No Failure,mid,mid
+8163,L55342,L,299.6,311.0,1574,35.0,133,0,No Failure,low,high
+4421,H33834,H,302.6,310.2,1873,21.3,87,0,No Failure,low,high
+161,L47340,L,298.4,308.2,1282,60.7,216,1,Overstrain Failure,high,low
+4227,L51406,L,302.1,310.8,1596,37.1,43,0,No Failure,mid,high
+7507,L54686,L,300.5,311.9,1511,41.8,205,0,No Failure,mid,mid
+3503,M18362,M,301.8,310.9,1346,44.6,142,0,No Failure,high,low
+7271,L54450,L,300.2,310.4,1808,25.8,35,0,No Failure,low,high
+904,L48083,L,295.7,306.2,2270,14.6,149,1,Power Failure,low,high
+2353,M17212,M,299.3,308.5,1422,45.4,37,0,No Failure,high,low
+1049,L48228,L,296.5,307.6,1607,33.5,104,0,No Failure,low,high
+1964,L49143,L,297.7,307.5,1379,43.3,111,0,No Failure,mid,low
+8965,M23824,M,297.2,307.9,1456,44.9,85,0,No Failure,high,mid
+4324,L51503,L,301.8,310.3,1341,50.5,64,1,Heat Dissipation Failure,high,low
+7710,L54889,L,300.5,311.4,1445,41.5,66,0,No Failure,mid,low
+5660,M20519,M,302.3,311.5,1674,30.0,12,0,No Failure,low,high
+9339,H38752,H,298.5,309.0,1531,30.8,212,0,No Failure,low,mid
+5408,L52587,L,302.7,312.4,1954,24.8,13,0,No Failure,low,high
+1035,M15894,M,296.3,307.4,1958,19.1,67,0,No Failure,low,high
+8231,L55410,L,299.1,310.5,1736,26.9,74,0,No Failure,low,high
+1754,L48933,L,298.2,307.5,1470,51.3,180,0,No Failure,high,mid
+299,H29712,H,297.9,308.5,2129,18.7,126,0,No Failure,low,high
+4900,L52079,L,303.6,312.3,2168,17.7,219,0,No Failure,low,high
+2495,L49674,L,299.1,308.8,1329,53.6,207,1,Overstrain Failure,high,low
+1124,H30537,H,296.6,307.7,1386,62.3,100,1,Power Failure,high,low
+2016,L49195,L,298.5,308.2,1301,66.3,42,1,Power Failure,high,low
+8467,L55646,L,298.7,309.8,1469,38.4,62,0,No Failure,mid,mid
+2850,L50029,L,300.4,309.3,1766,28.2,207,0,No Failure,low,high
+4136,M18995,M,301.7,310.3,1787,26.7,33,0,No Failure,low,high
+6249,L53428,L,300.8,310.1,1405,61.2,189,1,Power Failure,high,low
+5324,M20183,M,303.4,312.7,1399,48.4,34,0,No Failure,high,low
+5871,L53050,L,301.5,311.1,2055,16.8,105,0,No Failure,low,high
+5569,L52748,L,302.5,312.1,1534,38.6,3,0,No Failure,mid,mid
+5696,L52875,L,302.4,311.8,1451,42.0,110,0,No Failure,mid,mid
+4355,L51534,L,302.0,309.8,1456,58.1,145,0,No Failure,high,mid
+7233,M22092,M,299.9,309.9,1639,42.1,159,0,No Failure,mid,high
+9770,L56949,L,298.6,309.6,1386,48.6,25,0,No Failure,high,low
+9660,L56839,L,298.9,309.8,1287,61.9,216,1,Overstrain Failure,high,low
+4506,L51685,L,302.4,310.1,1426,46.8,95,0,No Failure,high,low
+7195,L54374,L,300.1,310.1,1380,52.6,59,0,No Failure,high,low
+4088,L51267,L,301.9,310.4,1376,54.9,126,1,Heat Dissipation Failure,high,low
+1834,L49013,L,297.8,307.3,1327,61.0,186,1,Overstrain Failure,high,low
+6792,L53971,L,301.2,310.7,1551,41.2,82,0,No Failure,mid,mid
+3237,M18096,M,300.8,309.4,1342,62.4,113,1,Heat Dissipation Failure,high,low
+5877,L53056,L,301.5,311.1,1426,52.1,121,0,No Failure,high,low
+4293,M19152,M,301.8,310.1,2372,13.9,205,1,Power Failure,low,high
+4197,M19056,M,302.5,311.0,1563,35.6,190,0,No Failure,low,mid
+676,M15535,M,297.8,309.1,1424,45.5,2,0,No Failure,high,low
+8711,L55890,L,297.1,308.5,1712,32.1,48,0,No Failure,low,high
+2805,L49984,L,300.1,309.5,1450,40.1,100,0,No Failure,mid,mid
+4932,M19791,M,303.3,312.1,1693,30.0,80,0,No Failure,low,high
+4211,L51390,L,302.1,310.8,1565,35.3,6,0,No Failure,low,mid
+9692,L56871,L,299.0,310.0,1582,31.9,51,0,No Failure,low,high
+4725,L51904,L,303.4,311.9,1771,31.6,202,0,No Failure,low,high
+6755,L53934,L,301.8,311.1,1495,36.9,197,0,No Failure,mid,mid
+7263,M22122,M,300.4,310.6,1545,35.6,16,0,No Failure,low,mid
+9011,L56190,L,297.2,307.9,1441,40.0,195,0,No Failure,mid,low
+3624,M18483,M,302.0,311.3,1530,36.4,27,0,No Failure,mid,mid
+567,M15426,M,297.6,309.7,1541,33.7,165,0,No Failure,low,mid
+2704,M17563,M,299.8,309.2,1372,58.2,65,0,No Failure,high,low
+2606,L49785,L,299.4,309.2,1552,37.4,37,0,No Failure,mid,mid
+1892,L49071,L,297.7,307.4,1764,29.0,139,0,No Failure,low,high
+1863,L49042,L,297.9,307.7,1517,44.4,67,0,No Failure,high,mid
+1285,L48464,L,298.4,309.5,2153,15.3,98,1,Power Failure,low,high
+4041,L51220,L,302.0,310.8,1767,27.4,11,0,No Failure,low,high
+3120,L50299,L,300.1,309.4,1858,23.6,26,0,No Failure,low,high
+3098,M17957,M,299.9,309.2,1353,49.8,182,0,No Failure,high,low
+1015,L48194,L,296.2,307.2,1445,41.8,20,0,No Failure,mid,low
+9399,H38812,H,297.7,308.2,1526,40.1,165,0,No Failure,mid,mid
+1168,L48347,L,297.0,308.1,1362,52.5,213,1,Overstrain Failure,high,low
+4502,L51681,L,302.5,310.2,1307,54.0,86,1,Heat Dissipation Failure,high,low
+7537,L54716,L,300.1,311.3,2579,12.5,64,1,Power Failure,low,high
+683,H30096,H,297.8,309.0,1410,48.8,23,0,No Failure,high,low
+2173,L49352,L,299.5,309.2,1816,23.0,15,0,No Failure,low,high
+3944,L51123,L,302.3,311.4,1333,66.7,205,1,Power Failure,high,low
+7557,L54736,L,300.3,311.4,1471,37.0,114,0,No Failure,mid,mid
+9102,H38515,H,297.3,308.2,1653,31.4,9,0,No Failure,low,high
+9889,M24748,M,298.8,309.6,1575,34.4,149,0,No Failure,low,high
+4025,M18884,M,302.1,311.0,1351,60.3,207,1,Overstrain Failure,high,low
+3260,M18119,M,301.2,310.0,1625,31.6,173,0,No Failure,low,high
+3231,L50410,L,300.6,309.4,1556,36.0,98,0,No Failure,mid,mid
+7340,L54519,L,299.8,310.4,1579,36.4,0,0,No Failure,mid,high
+4738,M19597,M,303.2,311.5,1336,58.2,2,1,Heat Dissipation Failure,high,low
+7265,M22124,M,300.4,310.6,1448,44.9,21,0,No Failure,high,low
+3674,H33087,H,302.3,311.7,1449,44.5,152,0,No Failure,high,mid
+7352,L54531,L,299.7,310.2,1458,43.4,28,0,No Failure,mid,mid
+3817,L50996,L,302.1,310.6,1459,47.6,93,0,No Failure,high,mid
+3968,M18827,M,302.3,311.4,1479,45.6,59,0,No Failure,high,mid
+1440,M16299,M,298.8,309.8,1534,37.0,47,0,No Failure,mid,mid
+4294,L51473,L,301.8,310.0,1393,44.9,208,0,No Failure,high,low
+2029,M16888,M,298.7,308.3,1349,46.6,74,0,No Failure,high,low
+2770,M17629,M,300.0,309.6,1477,38.1,13,0,No Failure,mid,mid
+8357,M23216,M,298.6,309.6,1344,59.4,200,0,No Failure,high,low
+8125,L55304,L,300.2,311.4,1568,41.0,32,0,No Failure,mid,high
+1162,L48341,L,297.0,307.8,1316,61.2,200,1,Overstrain Failure,high,low
+3936,M18795,M,302.6,311.6,1227,68.2,187,1,Overstrain Failure,high,low
+3476,L50655,L,301.8,310.7,1644,33.4,68,0,No Failure,low,high
+1894,L49073,L,297.8,307.5,1631,29.9,144,0,No Failure,low,high
+3978,M18837,M,302.2,311.3,1510,36.6,91,0,No Failure,mid,mid
+2517,L49696,L,298.8,308.5,1736,29.0,31,0,No Failure,low,high
+4340,L51519,L,301.7,309.9,1524,46.6,104,0,No Failure,high,mid
+6256,L53435,L,301.0,310.5,1379,57.3,204,1,Overstrain Failure,high,low
+7281,L54460,L,299.9,310.2,1288,69.6,62,1,Power Failure,high,low
+5301,M20160,M,303.8,313.2,1710,26.5,190,0,No Failure,low,high
+4731,L51910,L,303.3,311.7,1508,35.5,217,0,No Failure,low,mid
+1433,L48612,L,298.8,309.8,1437,42.8,23,0,No Failure,mid,low
+4120,L51299,L,302.1,310.7,1325,45.1,208,1,Heat Dissipation Failure,high,low
+3513,M18372,M,301.8,311.0,1393,49.5,168,0,No Failure,high,low
+9799,L56978,L,298.5,309.3,1471,44.7,119,0,No Failure,high,mid
+2685,L49864,L,299.8,309.4,1460,37.4,25,0,No Failure,mid,mid
+9545,L56724,L,299.6,311.0,1708,31.0,122,0,No Failure,low,high
+6410,L53589,L,300.3,310.0,1560,40.8,182,0,No Failure,mid,mid
+6946,M21805,M,300.8,311.4,1852,22.2,53,0,No Failure,low,high
+3152,L50331,L,300.5,309.8,1428,43.8,119,0,No Failure,mid,low
+6863,M21722,M,301.1,311.2,1384,49.4,48,0,No Failure,high,low
+307,L47486,L,297.8,308.4,1374,47.1,150,0,No Failure,high,low
+557,L47736,L,297.5,309.4,1357,50.1,137,0,No Failure,high,low
+5932,L53111,L,300.3,310.4,1336,54.4,52,0,No Failure,high,low
+5293,M20152,M,303.9,313.3,1567,35.0,168,0,No Failure,low,high
+2953,H32366,H,300.7,309.5,1667,30.5,29,0,No Failure,low,high
+4603,M19462,M,303.0,311.0,1409,41.7,120,0,No Failure,mid,low
+6788,H36201,H,301.1,310.6,1388,58.5,68,0,No Failure,high,low
+5582,M20441,M,302.5,312.1,1454,47.6,37,0,No Failure,high,mid
+8606,L55785,L,297.5,308.4,1633,33.3,213,0,No Failure,low,high
+495,L47674,L,297.6,309.4,1326,49.8,199,0,No Failure,high,low
+3708,M18567,M,302.1,311.3,1497,38.4,28,0,No Failure,mid,mid
+4271,L51450,L,302.6,310.9,1331,52.0,154,1,Heat Dissipation Failure,high,low
+2938,L50117,L,300.7,309.6,1810,26.0,195,0,No Failure,low,high
+6257,L53436,L,301.0,310.6,1493,37.8,206,1,Tool Wear Failure,mid,mid
+2611,H32024,H,299.4,309.1,1547,40.9,50,0,No Failure,mid,mid
+9139,L56318,L,297.6,308.6,1522,37.0,106,0,No Failure,mid,mid
+3328,M18187,M,301.5,310.6,2432,14.2,126,0,No Failure,low,high
+4261,H33674,H,302.7,311.1,1418,43.4,130,0,No Failure,mid,low
