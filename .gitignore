@@ -1,1 +1,26 @@
-.vscode
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+env/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Logs
+*.log
+logs/
+
+# Environment Variables
+.env
+.env.local
+
+# Temp files
+tmp/
+temp/
+*.tmp
