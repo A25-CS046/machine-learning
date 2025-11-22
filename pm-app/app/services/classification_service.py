@@ -10,12 +10,10 @@ from app.services.models_loader import get_models_loader
 
 logger = logging.getLogger(__name__)
 
-
 FEATURE_COLUMNS = [
     'air_temperature_K', 'process_temperature_K', 'rotational_speed_rpm',
     'torque_Nm', 'tool_wear_min'
 ]
-
 
 def aggregate_features_from_telemetry(telemetry_rows: list[Telemetry], encoder: Any) -> np.ndarray:
     """
@@ -25,6 +23,8 @@ def aggregate_features_from_telemetry(telemetry_rows: list[Telemetry], encoder: 
     if not telemetry_rows:
         raise ValueError("No telemetry data available for feature aggregation")
     
+    # This function accesses ORM attributes (t.air_temperature_K, etc.)
+    # It MUST be called while the DB session is still active.
     df = pd.DataFrame([{
         'air_temperature_K': t.air_temperature_K,
         'process_temperature_K': t.process_temperature_K,
@@ -125,14 +125,20 @@ def predict_failure(
                 raise ValueError(f"No telemetry found for product_id={product_id}, unit_id={unit_id}")
             
             telemetry_rows = list(reversed(telemetry_rows))
-        
-        feature_vector = aggregate_features_from_telemetry(telemetry_rows, encoder)
+            
+            # FIX: Access attributes (telemetry_rows) inside the session block
+            # This prevents "DetachedInstanceError" because objects are still bound to the session
+            feature_vector = aggregate_features_from_telemetry(telemetry_rows, encoder)
+            
+            # Capture row count for logging before we exit session
+            rows_count = len(telemetry_rows)
+
         inputs_used = {
             'source': 'telemetry',
             'product_id': product_id,
             'unit_id': unit_id,
             'timestamp_before': timestamp_before.isoformat(),
-            'rows_used': len(telemetry_rows)
+            'rows_used': rows_count
         }
     else:
         feature_list = []
@@ -151,7 +157,8 @@ def predict_failure(
     
     try:
         feature_vector_scaled = scaler.transform(feature_vector)
-    except:
+    except Exception as e:
+        logger.warning(f"Scaling failed, using raw features: {e}")
         feature_vector_scaled = feature_vector
     
     prediction = model.predict(feature_vector_scaled)[0]
