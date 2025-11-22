@@ -11,7 +11,6 @@ from app.services.classification_service import aggregate_features_from_telemetr
 
 logger = logging.getLogger(__name__)
 
-
 def predict_rul(
     model_name: str,
     product_id: str,
@@ -38,6 +37,11 @@ def predict_rul(
     
     timestamp_before_str = timestamp_before.isoformat()
     
+    # Initialize variables to ensure they exist after the session closes
+    feature_vector = None
+    last_timestamp_str = None
+    rows_count = 0
+
     with get_db() as session:
         from sqlalchemy import text
         
@@ -58,9 +62,18 @@ def predict_rul(
             raise ValueError(f"No RUL telemetry found for product_id={product_id}, unit_id={unit_id}")
         
         telemetry_rows = list(reversed(telemetry_rows))
+        
+        # FIX: Perform all logic that reads from telemetry_rows INSIDE the session
+        # 1. Generate the feature vector (reads air_temp, speed, etc.)
+        feature_vector = aggregate_features_from_telemetry(telemetry_rows, encoder)
+        
+        # 2. Extract the last timestamp string (reads .timestamp)
+        last_timestamp_str = telemetry_rows[-1].timestamp
+        
+        # 3. Store count for reporting
+        rows_count = len(telemetry_rows)
     
-    feature_vector = aggregate_features_from_telemetry(telemetry_rows, encoder)
-    
+    # Session is now closed, but we have extracted all necessary data
     try:
         feature_vector_scaled = scaler.transform(feature_vector)
     except:
@@ -68,7 +81,6 @@ def predict_rul(
     
     current_rul = model.predict(feature_vector_scaled)[0]
     
-    last_timestamp_str = telemetry_rows[-1].timestamp
     try:
         last_timestamp = datetime.fromisoformat(last_timestamp_str.replace('Z', '+00:00'))
         if last_timestamp.tzinfo is None:
@@ -97,5 +109,5 @@ def predict_rul(
         'model_name': model_name,
         'model_version': artifact.version,
         'baseline_timestamp': last_timestamp.isoformat(),
-        'telemetry_rows_used': len(telemetry_rows)
+        'telemetry_rows_used': rows_count
     }
