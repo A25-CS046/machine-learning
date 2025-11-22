@@ -75,6 +75,24 @@ class ModelsLoader:
         logger.info(f"Model loaded and cached: {uri}")
         return model
     
+    def _build_model_path(self, model_name: str, version: str, metadata: dict | None = None) -> str:
+        """
+        Build model file path using convention {model_name}_{version}.joblib.
+        Checks metadata for explicit path override.
+        """
+        if metadata and 'path' in metadata:
+            return metadata['path']
+        
+        model_filename = f"{model_name}_{version}.joblib"
+        
+        if self._config.model_storage.backend == 'local':
+            full_path = os.path.join(self._config.model_storage.local_path, model_filename)
+            return f"file://{full_path}"
+        elif self._config.model_storage.backend == 'gcs':
+            return f"gs://{self._config.model_storage.gcs_bucket}/{model_filename}"
+        else:
+            raise ValueError(f"Unknown storage backend: {self._config.model_storage.backend}")
+    
     def get_latest_model_artifact(self, model_name: str) -> ModelArtifact:
         with get_db() as session:
             artifact = session.query(ModelArtifact).filter(
@@ -84,11 +102,25 @@ class ModelsLoader:
             if not artifact:
                 raise ValueError(f"No model artifact found for: {model_name}")
             
+            # Eagerly load all attributes before session closes
+            _ = artifact.id
+            _ = artifact.model_name
+            _ = artifact.version
+            _ = artifact.model_metadata
+            _ = artifact.promoted_at
+            
+            # Expunge from session so it can be used outside the context
+            session.expunge(artifact)
             return artifact
     
     def get_model(self, model_name: str) -> tuple[Any, ModelArtifact]:
         artifact = self.get_latest_model_artifact(model_name)
-        model = self.load_model_from_uri(artifact.path)
+        model_path = self._build_model_path(
+            artifact.model_name,
+            artifact.version,
+            artifact.model_metadata
+        )
+        model = self.load_model_from_uri(model_path)
         return model, artifact
     
     def get_classification_model(self, model_name: str = 'xgb_classifier') -> tuple[Any, ModelArtifact]:

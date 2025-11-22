@@ -33,9 +33,8 @@ def list_models():
             result = [{
                 'model_name': m.model_name,
                 'version': m.version,
-                'path': m.path,
+                'path': m.model_metadata.get('path') if m.model_metadata else None,
                 'metadata': m.model_metadata,
-                'metrics': m.metrics,
                 'promoted_at': m.promoted_at.isoformat() if m.promoted_at else None
             } for m in models]
         

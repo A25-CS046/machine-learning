@@ -21,14 +21,27 @@ def test_db():
         db_url,
         connect_args={'check_same_thread': False}
     )
+    
+    # Drop all existing tables and recreate fresh
+    Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
     
     reset_db(engine)
     
     yield engine
     
+    # Properly dispose of all connections before deleting file
+    engine.dispose()
     os.close(fd)
-    os.unlink(db_path)
+    
+    # Small delay to ensure file handles are released
+    import time
+    time.sleep(0.1)
+    
+    try:
+        os.unlink(db_path)
+    except PermissionError:
+        pass  # File will be cleaned up by OS eventually
 
 
 @pytest.fixture(scope='function')
@@ -55,6 +68,13 @@ def db_session(test_db):
     
     session.rollback()
     session.close()
+    
+    # Clean up all tables after each test
+    for table in reversed(Base.metadata.sorted_tables):
+        session = Session()
+        session.execute(table.delete())
+        session.commit()
+        session.close()
 
 
 @pytest.fixture(scope='function')
@@ -66,7 +86,7 @@ def sample_telemetry(db_session):
         record = Telemetry(
             product_id='PROD_001',
             unit_id='UNIT_001',
-            timestamp_ts=datetime(2024, 1, 1, i, 0, 0, tzinfo=timezone.utc),
+            timestamp=datetime(2024, 1, 1, i, 0, 0, tzinfo=timezone.utc).isoformat(),
             step_index=i,
             engine_type='L',
             air_temperature_K=298.0 + i,
@@ -91,11 +111,22 @@ def sample_model_artifact(db_session):
     artifact = ModelArtifact(
         model_name='test_model',
         version='20240101_120000',
-        path='file:///tmp/test_model.joblib',
-        model_metadata={'test': True},
-        metrics={'accuracy': 0.95},
+        model_metadata={
+            'path': 'file:///tmp/test_model_20240101_120000.joblib',
+            'metrics': {'accuracy': 0.95},
+            'test': True
+        },
         promoted_at=datetime(2024, 1, 1, 12, 0, 0, tzinfo=timezone.utc)
     )
     db_session.add(artifact)
     db_session.commit()
+    
+    # Force load all attributes before returning to avoid lazy loading issues
+    _ = artifact.id
+    _ = artifact.model_name
+    _ = artifact.version
+    _ = artifact.model_metadata
+    _ = artifact.promoted_at
+    
+    db_session.refresh(artifact)  # Refresh to get the auto-generated id
     return artifact

@@ -1,18 +1,24 @@
 from datetime import datetime, timezone
 from sqlalchemy import Column, BigInteger, Integer, String, Float, Text, DateTime, Index, func
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.dialects.postgresql import JSONB, BIGINT
+from sqlalchemy.types import JSON
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+
+# Use JSONB for PostgreSQL, JSON for SQLite
+JSONType = JSON().with_variant(JSONB(), 'postgresql')
+
+# Use INTEGER for SQLite (autoincrement), BIGINT for PostgreSQL
+BigIntegerType = Integer().with_variant(BIGINT(), 'postgresql')
 
 
 class Telemetry(Base):
     """
     CREATE TABLE telemetry (
-        id BIGSERIAL PRIMARY KEY,
-        product_id TEXT NOT NULL,
-        unit_id TEXT NOT NULL,
-        timestamp_ts TIMESTAMPTZ NOT NULL,
+        product_id TEXT,
+        unit_id TEXT,
+        timestamp TEXT,
         step_index INTEGER,
         engine_type TEXT,
         air_temperature_K DOUBLE PRECISION,
@@ -22,19 +28,19 @@ class Telemetry(Base):
         tool_wear_min DOUBLE PRECISION,
         is_failure INTEGER,
         failure_type TEXT,
-        synthetic_RUL DOUBLE PRECISION
+        synthetic_RUL DOUBLE PRECISION,
+        PRIMARY KEY (product_id, unit_id, timestamp)
     );
     """
     __tablename__ = 'telemetry'
     __table_args__ = (
-        Index('telemetry_unit_time_idx', 'product_id', 'unit_id', 'timestamp_ts', postgresql_ops={'timestamp_ts': 'DESC'}),
+        Index('telemetry_unit_idx', 'unit_id'),
         Index('telemetry_failure_idx', 'is_failure'),
     )
 
-    id = Column(BigInteger, primary_key=True)
-    product_id = Column(Text, nullable=False)
-    unit_id = Column(Text, nullable=False)
-    timestamp_ts = Column(DateTime(timezone=True), nullable=False)
+    product_id = Column(Text, primary_key=True)
+    unit_id = Column(Text, primary_key=True)
+    timestamp = Column(Text, primary_key=True)
     step_index = Column(Integer)
     engine_type = Column(Text)
     air_temperature_K = Column(Float)
@@ -68,9 +74,7 @@ class ModelArtifact(Base):
         id BIGSERIAL PRIMARY KEY,
         model_name TEXT NOT NULL,
         version TEXT NOT NULL,
-        path TEXT NOT NULL,
         metadata JSONB,
-        metrics JSONB,
         promoted_at TIMESTAMPTZ DEFAULT NOW()
     );
     """
@@ -79,12 +83,10 @@ class ModelArtifact(Base):
         Index('model_artifact_idx', 'model_name', 'promoted_at'),
     )
 
-    id = Column(BigInteger, primary_key=True)
+    id = Column(BigIntegerType, primary_key=True, autoincrement=True)
     model_name = Column(Text, nullable=False)
     version = Column(Text, nullable=False)
-    path = Column(Text, nullable=False)
-    model_metadata = Column('metadata', JSONB)
-    metrics = Column(JSONB)
+    model_metadata = Column('metadata', JSONType)
     promoted_at = Column(DateTime(timezone=True), server_default=func.now())
 
 
@@ -111,7 +113,7 @@ class MaintenanceSchedule(Base):
         Index('maintenance_schedule_unit_idx', 'product_id', 'unit_id', 'recommended_start'),
     )
 
-    id = Column(BigInteger, primary_key=True)
+    id = Column(BigIntegerType, primary_key=True, autoincrement=True)
     schedule_id = Column(Text, nullable=False)
     product_id = Column(Text, nullable=False)
     unit_id = Column(Text, nullable=False)
@@ -120,7 +122,7 @@ class MaintenanceSchedule(Base):
     reason = Column(Text, nullable=False)
     risk_score = Column(Float)
     model_version = Column(Text)
-    actions = Column(JSONB)
-    constraints_applied = Column(JSONB)
+    actions = Column(JSONType)
+    constraints_applied = Column(JSONType)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     status = Column(Text, default='PENDING')

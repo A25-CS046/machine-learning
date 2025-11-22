@@ -1,155 +1,395 @@
-# AEGIS Predictive Maintenance Backend v2
+# Predictive Maintenance System
 
-Production-ready Flask backend for predictive maintenance with integrated Gemini 2.5 Pro copilot.
+End-to-end machine learning pipeline and inference backend for equipment failure prediction, remaining useful life (RUL) forecasting, and maintenance schedule optimization.
 
-## Architecture Overview
+## Project Overview
+
+This system provides:
+
+- **Data preprocessing**: Dataset reconstruction, stratified sampling, time-series generation
+- **Model training**: XGBoost classification and regression with hyperparameter optimization
+- **Inference backend**: Flask REST API with PostgreSQL/SQLite database support
+- **AI copilot**: Gemini 2.5 Pro integration for natural language maintenance queries
+- **Scheduling**: Constraint-based maintenance optimization with multi-unit support
+
+## Repository Structure
 
 ```
-pm-app/
-├── app/
-│   ├── __init__.py          # Flask app factory
-│   ├── config.py            # Environment-based configuration
-│   ├── db.py                # SQLAlchemy database management
-│   ├── models.py            # Database models (Telemetry, ModelArtifact, etc.)
-│   ├── routes/              # API endpoints
-│   │   ├── classification.py   # POST /predict/classification
-│   │   ├── forecast.py         # POST /predict/forecast
-│   │   ├── optimizer.py        # POST /optimizer/schedule
-│   │   ├── models_mgmt.py      # GET /models, POST /retrain/run
-│   │   ├── maintenance.py      # GET /maintenance/schedule
-│   │   ├── health.py           # GET /health
-│   │   └── copilot_tools.py    # POST /copilot/chat
-│   └── services/            # Business logic layer
-│       ├── models_loader.py         # Model caching (file:// + gs://)
-│       ├── classification_service.py # XGBoost failure prediction
-│       ├── forecast_service.py      # RUL forecasting
-│       ├── optimizer_service.py     # Maintenance scheduling
-│       ├── retrain_service.py       # Incremental retraining
-│       └── copilot_service.py       # Gemini 2.5 Pro integration
-├── tests/
-│   ├── conftest.py                  # Pytest fixtures
-│   ├── test_classification_api.py
-│   ├── test_forecast_api.py
-│   └── test_optimizer_api.py
-├── Dockerfile                # Multi-stage Docker build
-├── docker-compose.yml        # App + PostgreSQL services
-├── requirements.txt          # Python dependencies
-├── run.py                    # Development server entry point
-└── .env.example              # Environment variable template
+machine-learning/
+├── data/                              # Raw datasets
+│   ├── predictive_maintenance.csv     # Original static dataset
+│   ├── marine_engine_data.csv
+│   └── equipment_anomaly_data.csv
+├── preprocessed/                      # Processed datasets
+│   ├── predictive_maintenance_subset_400_machines.csv
+│   └── predictive_maintenance_timeseries.csv
+├── artifacts/                         # Trained model files
+│   ├── xgb_classifier.joblib          # Failure classification (XGBoost)
+│   ├── xgb_regressor.joblib           # RUL prediction (XGBoost)
+│   ├── lstm_classifier.keras          # Alternative LSTM classifier
+│   ├── lstm_regressor.keras           # Alternative LSTM regressor
+│   ├── scaler.joblib                  # Feature standardization
+│   ├── encoder_engine_type.joblib     # Categorical encoder
+│   └── *.csv                          # Model metadata and metrics
+├── scripts/                           # Preprocessing utilities
+│   ├── dataset_reconstruction.py      # Stratified sampling and subset creation
+│   └── generate_timeseries.py         # Time-series sequence generation
+├── sql/                               # Database schema
+│   └── schema.sql                     # PostgreSQL/SQLite schema definition
+├── pm-app/                            # Flask inference backend
+│   ├── app/
+│   │   ├── __init__.py                # Application factory
+│   │   ├── config.py                  # Configuration loader
+│   │   ├── db.py                      # Database session management
+│   │   ├── models.py                  # SQLAlchemy ORM models
+│   │   ├── routes/                    # API endpoints
+│   │   │   ├── classification.py      # POST /predict/classification
+│   │   │   ├── forecast.py            # POST /predict/forecast
+│   │   │   ├── optimizer.py           # POST /optimizer/schedule
+│   │   │   ├── models_mgmt.py         # GET /models, POST /retrain/run
+│   │   │   ├── maintenance.py         # GET /maintenance/schedule
+│   │   │   ├── health.py              # GET /health
+│   │   │   └── copilot_tools.py       # POST /copilot/chat
+│   │   └── services/                  # Business logic
+│   │       ├── models_loader.py       # Model caching and loading
+│   │       ├── classification_service.py
+│   │       ├── forecast_service.py
+│   │       ├── optimizer_service.py
+│   │       ├── retrain_service.py     # Incremental retraining
+│   │       └── copilot_service.py     # Gemini integration
+│   ├── scripts/                       # Database utilities
+│   │   ├── init_db.py                 # Initialize database schema
+│   │   └── migrate_to_legacy_schema.py # Schema migration tool
+│   ├── tests/                         # Pytest test suite
+│   │   ├── conftest.py                # Test fixtures and setup
+│   │   ├── test_classification_api.py
+│   │   ├── test_forecast_api.py
+│   │   └── test_optimizer_api.py
+│   ├── Dockerfile                     # Multi-stage container build
+│   ├── docker-compose.yml             # PostgreSQL + app orchestration
+│   ├── requirements.txt               # Backend dependencies
+│   ├── run.py                         # Development server entrypoint
+│   └── .env.example                   # Environment variable template
+├── predictive-maintenance-pipeline.ipynb  # Training notebook
+├── eda-experiments.ipynb              # Exploratory data analysis
+├── requirements.txt                   # Root project dependencies
+└── README.md                          # This file
 ```
 
-## Key Design Features
+## Prerequisites
 
-### 1. Clean Architecture
-- **Routes**: HTTP request/response handling, validation
-- **Services**: Business logic, model inference, database operations
-- **Models**: SQLAlchemy ORM with JSONB support for PostgreSQL
+- **Python**: 3.10 or higher
+- **pip**: 23.0 or higher
+- **Docker** (optional): 24.0 or higher for containerized deployment
+- **PostgreSQL** (optional): 15.0 or higher for production database
 
-### 2. Standardized JSON Responses
-All endpoints return:
-```json
-{
-  "data": { ... },
-  "error": null
-}
-```
-or on error:
-```json
-{
-  "data": null,
-  "error": "Error message"
-}
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone <repository-url>
+cd machine-learning
 ```
 
-### 3. Timezone-Aware Timestamps
-- All `TIMESTAMPTZ` columns use UTC
-- Timestamp parsing accepts ISO 8601 with fallback to UTC
-- Server-side defaults via `func.now()`
+### 2. Create Virtual Environment
 
-### 4. PostgreSQL/SQLite Compatibility
-- JSONB for PostgreSQL, JSON fallback for SQLite
-- Connection pooling for PostgreSQL
-- StaticPool for SQLite tests
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+```
 
-### 5. URI-Based Model Storage
-- `file://` for local filesystem
-- `gs://` for Google Cloud Storage (future)
-- Abstraction layer in `models_loader.py`
+### 3. Install Dependencies
 
-## Quick Start
+Root project (training pipeline):
+```bash
+pip install -r requirements.txt
+```
 
-### Local Development
-
-1. Install dependencies:
+Backend application:
 ```bash
 cd pm-app
 pip install -r requirements.txt
 ```
 
-2. Configure environment:
+## Environment Configuration
+
+### Backend Environment Variables
+
+Copy the example configuration:
 ```bash
+cd pm-app
 cp .env.example .env
-# Edit .env with your settings
 ```
 
-3. Run development server:
+Edit `.env` with your settings:
+
+```bash
+# Database
+DATABASE_URL=sqlite:///pm_app.db
+# For PostgreSQL: DATABASE_URL=postgresql://user:password@localhost:5432/pm_database
+
+# Model Storage
+MODEL_STORAGE_BACKEND=local
+MODEL_STORAGE_PATH=../artifacts
+
+# Gemini AI
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL_NAME=gemini-2.0-flash-exp
+
+# Flask
+FLASK_ENV=development
+SECRET_KEY=dev-secret-key-change-in-production
+LOG_LEVEL=INFO
+CORS_ORIGINS=http://localhost:3000
+```
+
+### Required Environment Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `DATABASE_URL` | No | `sqlite:///pm_app.db` | Database connection string |
+| `MODEL_STORAGE_PATH` | No | `../artifacts` | Path to trained models |
+| `GEMINI_API_KEY` | Yes* | - | Google AI API key (*required for copilot) |
+| `SECRET_KEY` | Yes** | - | Flask session secret (**required for production) |
+
+## Running the Backend (pm-app)
+
+### Local Development
+
+1. Initialize database:
+```bash
+cd pm-app
+python scripts/init_db.py
+```
+
+2. Start Flask server:
 ```bash
 python run.py
 ```
 
 Server runs on `http://localhost:5000`
 
+3. Verify health:
+```bash
+curl http://localhost:5000/health
+```
+
 ### Docker Deployment
 
-1. Set environment variables:
+1. Set required environment variables:
 ```bash
-export GEMINI_API_KEY="your_key_here"
+export GEMINI_API_KEY="your_key"
 export SECRET_KEY="production_secret"
 ```
 
 2. Start services:
 ```bash
+cd pm-app
 docker-compose up -d
 ```
 
-3. Check health:
+3. Check logs:
 ```bash
-curl http://localhost:5000/health
+docker-compose logs -f app
 ```
 
-### Database Setup
-
-For PostgreSQL:
+4. Stop services:
 ```bash
-psql -U pm_user -d pm_database -f ../sql/schema.sql
+docker-compose down
 ```
 
-For SQLite (tests):
+### Docker with PostgreSQL
+
+The `docker-compose.yml` includes PostgreSQL service:
+
+- **Database**: `pm_database`
+- **User**: `pm_user`
+- **Password**: `pm_password`
+- **Port**: `5432`
+
+Schema is automatically initialized via `sql/schema.sql` on first startup.
+
+## Running Machine Learning Scripts
+
+### 1. Dataset Reconstruction
+
+**Purpose**: Create stratified subset with balanced failure/non-failure samples.
+
+**Input**: `data/predictive_maintenance.csv`  
+**Output**: `preprocessed/predictive_maintenance_subset_400_machines.csv`
+
 ```bash
-sqlite3 pm_app.db < ../sql/schema.sql
+python scripts/dataset_reconstruction.py
 ```
+
+**Process**:
+- Loads full dataset (10,000 samples)
+- Stratifies by failure type and engine type
+- Samples 400 machines with distribution preservation
+- Validates subset quality
+
+### 2. Time-Series Generation
+
+**Purpose**: Convert static samples to realistic time-series sequences.
+
+**Input**: `preprocessed/predictive_maintenance_subset_400_machines.csv`  
+**Output**: `preprocessed/predictive_maintenance_timeseries.csv`
+
+```bash
+python scripts/generate_timeseries.py
+```
+
+**Process**:
+- Generates temporal sequences for each machine
+- Adds sensor drift, jitter, and degradation patterns
+- Maintains physical constraints (temperature, RPM bounds)
+- Creates synthetic RUL decay curves
+- Outputs timestamped sequences with ISO 8601 format
+
+**Configuration**: Edit constants in script header:
+```python
+SENSOR_BOUNDS = {
+    'air_temperature_K': (296.0, 304.0),
+    'process_temperature_K': (305.0, 314.0),
+    'rotational_speed_rpm': (1200, 2500),
+    'torque_Nm': (10.0, 70.0),
+    'tool_wear_min': (0.0, 250.0)
+}
+```
+
+### 3. Model Training Pipeline
+
+**Purpose**: Train XGBoost and LSTM models with hyperparameter optimization.
+
+**Input**: `preprocessed/predictive_maintenance_timeseries.csv`  
+**Output**: Trained models in `artifacts/`
+
+Run Jupyter notebook:
+```bash
+jupyter notebook predictive-maintenance-pipeline.ipynb
+```
+
+**Training steps**:
+1. Load time-series data
+2. Feature engineering (lagged features, rolling windows)
+3. Train/test split (80/20)
+4. Hyperparameter tuning with Optuna (50 trials)
+5. Train XGBoost classifier and regressor
+6. Train LSTM models (optional)
+7. Export models to `artifacts/`
+8. Generate performance metrics
+
+**Expected outputs**:
+```
+artifacts/
+├── xgb_classifier.joblib          # Accuracy: ~98.75%
+├── xgb_regressor.joblib           # RMSE: ~8.2 steps
+├── scaler.joblib                  # StandardScaler
+├── encoder_engine_type.joblib     # LabelEncoder
+├── feature_importance_*.csv       # Feature rankings
+└── metrics_report.txt             # Performance summary
+```
+
+## Database Management
+
+### Initialize Database
+
+Create tables from schema:
+```bash
+cd pm-app
+python scripts/init_db.py
+```
+
+With custom database URL:
+```bash
+python scripts/init_db.py --database-url postgresql://user:pass@host/db
+```
+
+Drop existing tables before creating:
+```bash
+python scripts/init_db.py --drop-existing
+```
+
+### Schema Migration
+
+Migrate existing data to legacy schema format:
+```bash
+cd pm-app
+python scripts/migrate_to_legacy_schema.py
+```
+
+Preview changes without applying:
+```bash
+python scripts/migrate_to_legacy_schema.py --dry-run
+```
+
+With custom database URL:
+```bash
+python scripts/migrate_to_legacy_schema.py --database-url postgresql://user:pass@host/db
+```
+
+**Migration details**:
+- Moves `path` and `metrics` columns into `metadata` JSONB field
+- Supports both PostgreSQL and SQLite
+- Creates backup before migration
+- Validates data integrity
 
 ## API Endpoints
 
 ### Health Check
+
 ```bash
 GET /health
 ```
 
-### Failure Prediction
+Response:
+```json
+{
+  "status": "healthy",
+  "database": "connected",
+  "models_loaded": ["xgb_classifier", "xgb_regressor"]
+}
+```
+
+### Failure Classification
+
+Predict equipment failure probability.
+
 ```bash
 POST /predict/classification
+Content-Type: application/json
+
 {
   "model_name": "xgb_classifier",
   "product_id": "PROD_001",
   "unit_id": "UNIT_001",
-  "timestamp_before": "2024-01-15T10:00:00Z"  # optional
+  "timestamp_before": "2024-01-15T10:00:00Z"
+}
+```
+
+Response:
+```json
+{
+  "data": {
+    "failure_probability": 0.87,
+    "predicted_class": 1,
+    "confidence": 0.92,
+    "features_used": {...}
+  },
+  "error": null
 }
 ```
 
 ### RUL Forecasting
+
+Predict remaining useful life in time steps.
+
 ```bash
 POST /predict/forecast
+Content-Type: application/json
+
 {
   "model_name": "xgb_regressor",
   "product_id": "PROD_001",
@@ -158,9 +398,26 @@ POST /predict/forecast
 }
 ```
 
-### Maintenance Optimization
+Response:
+```json
+{
+  "data": {
+    "predicted_rul": 45.2,
+    "unit": "steps",
+    "confidence_interval": [40.1, 50.3]
+  },
+  "error": null
+}
+```
+
+### Maintenance Scheduling
+
+Generate optimized maintenance schedule.
+
 ```bash
 POST /optimizer/schedule
+Content-Type: application/json
+
 {
   "unit_list": [
     {"product_id": "PROD_001", "unit_id": "UNIT_001"},
@@ -173,11 +430,46 @@ POST /optimizer/schedule
 }
 ```
 
+Response:
+```json
+{
+  "data": {
+    "schedule": [
+      {
+        "unit_id": "UNIT_001",
+        "recommended_start": "2024-01-16T08:00:00Z",
+        "recommended_end": "2024-01-16T12:00:00Z",
+        "reason": "High failure risk: 0.87",
+        "priority": 1
+      }
+    ],
+    "summary": {
+      "total_units": 2,
+      "scheduled": 1,
+      "deferred": 1
+    }
+  },
+  "error": null
+}
+```
+
 ### Model Management
+
+List loaded models:
 ```bash
 GET /models
+```
+
+Reload models from disk:
+```bash
 POST /models/reload
+```
+
+Trigger retraining:
+```bash
 POST /retrain/run
+Content-Type: application/json
+
 {
   "model_type": "classification",
   "incremental": true
@@ -185,143 +477,395 @@ POST /retrain/run
 ```
 
 ### Copilot Chat
+
+Natural language maintenance queries.
+
 ```bash
 POST /copilot/chat
+Content-Type: application/json
+
 {
   "messages": [
     {"role": "user", "content": "What's the failure risk for UNIT_001?"}
   ],
-  "context": {"product_id": "PROD_001"}
+  "context": {
+    "product_id": "PROD_001"
+  }
 }
 ```
 
-## Gemini 2.5 Pro Integration
-
-### Tool Definitions
-The copilot exposes three tools to Gemini:
-1. `predict_failure` - Equipment failure probability
-2. `predict_rul` - Remaining useful life forecast
-3. `optimize_schedule` - Maintenance schedule generation
-
-### Tool Calling Flow
-```
-User → POST /copilot/chat
-  ↓
-Gemini 2.5 Pro (with tool definitions)
-  ↓ (returns tool calls)
-Backend executes tools (predict_failure, etc.)
-  ↓ (tool results)
-Gemini 2.5 Pro (with tool results)
-  ↓ (final response)
-User ← Natural language answer + tool data
+Response:
+```json
+{
+  "data": {
+    "response": "UNIT_001 has an 87% failure probability...",
+    "tool_calls": [
+      {
+        "tool": "predict_failure",
+        "result": {...}
+      }
+    ]
+  },
+  "error": null
+}
 ```
 
-### System Prompt
-The copilot enforces:
-- No hallucinated predictions (always use tools)
-- Ask for missing parameters
-- Explain prediction confidence
-- Recommend manual inspection on errors
-
-### Configuration
-```bash
-# Required for copilot functionality
-GEMINI_API_KEY=your_google_ai_api_key
-GEMINI_MODEL_NAME=gemini-2.0-flash-exp
-```
+**Supported queries**:
+- "What's the failure risk for UNIT_001?"
+- "How much RUL does UNIT_002 have?"
+- "Generate maintenance schedule for next week"
+- "Which units need immediate attention?"
 
 ## Testing
 
-Run all tests:
+### Run All Tests
+
 ```bash
-pytest tests/
+cd pm-app
+pytest tests/ -v
 ```
 
-Run specific test:
+### Run Specific Test Suite
+
 ```bash
 pytest tests/test_classification_api.py -v
+pytest tests/test_forecast_api.py -v
+pytest tests/test_optimizer_api.py -v
 ```
 
-## Configuration Reference
+### Run with Coverage
 
-### Environment Variables
+```bash
+pytest tests/ --cov=app --cov-report=html
+```
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATABASE_URL` | `sqlite:///pm_app.db` | Database connection string |
-| `MODEL_STORAGE_BACKEND` | `local` | `local` or `gcs` |
-| `MODEL_STORAGE_PATH` | `./artifacts` | Local model storage path |
-| `GCS_MODEL_BUCKET` | - | GCS bucket name (if backend=gcs) |
-| `GEMINI_API_KEY` | - | Google AI API key |
-| `GEMINI_MODEL_NAME` | `gemini-2.0-flash-exp` | Gemini model version |
-| `FLASK_ENV` | `development` | `development` or `production` |
-| `LOG_LEVEL` | `INFO` | `DEBUG`, `INFO`, `WARNING`, `ERROR` |
-| `LOG_FORMAT` | `text` | `text` or `json` |
-| `CORS_ORIGINS` | `http://localhost:3000,...` | Comma-separated origins |
+View coverage report:
+```bash
+open htmlcov/index.html  # macOS/Linux
+start htmlcov/index.html # Windows
+```
+
+### Test Database
+
+Tests use ephemeral SQLite database with automatic cleanup. No manual database setup required.
+
+**Test fixtures** (`tests/conftest.py`):
+- `test_db`: Temporary database engine
+- `db_session`: Isolated database session per test
+- `app`: Flask test application
+- `client`: Flask test client
+- `sample_telemetry`: Mock telemetry data
+- `sample_model_artifact`: Mock model metadata
 
 ## Model Artifacts
 
-Expected artifacts in `MODEL_STORAGE_PATH`:
+### Storage Layout
+
 ```
 artifacts/
-├── xgb_classifier.joblib       # Failure classification model
-├── xgb_regressor.joblib        # RUL prediction model
-├── scaler.joblib               # StandardScaler for features
-└── encoder_engine_type.joblib  # LabelEncoder for engine_type
+├── xgb_classifier.joblib          # Binary classification model
+├── xgb_regressor.joblib           # RUL regression model
+├── lstm_classifier.keras          # Alternative LSTM classifier
+├── lstm_regressor.keras           # Alternative LSTM regressor
+├── scaler.joblib                  # StandardScaler (fit on training data)
+├── encoder_engine_type.joblib     # LabelEncoder for categorical features
+├── feature_importance_classifier.csv
+├── feature_importance_regressor.csv
+├── metrics_report.txt
+└── inference_results.csv
 ```
 
-Models are registered in `model_artifact` table with:
-- `path`: URI (e.g., `file:///app/artifacts/xgb_classifier_20250101_120000.joblib`)
-- `version`: Timestamp-based versioning
-- `metadata`: Training parameters
-- `metrics`: Performance metrics (accuracy, RMSE, etc.)
+### Model Registry
 
-## Production Considerations
+Models are registered in `model_artifact` table:
 
-### Performance
-- Connection pooling configured for PostgreSQL
-- Model lazy loading with in-memory cache
-- Gunicorn with 4 workers, 120s timeout
+```sql
+INSERT INTO model_artifact (model_name, version, metadata, promoted_at)
+VALUES (
+  'xgb_classifier',
+  '20240115_120000',
+  '{"path": "file:///app/artifacts/xgb_classifier.joblib", 
+    "metrics": {"accuracy": 0.9875, "f1_score": 0.9821},
+    "hyperparameters": {"n_estimators": 150, "max_depth": 8}}',
+  NOW()
+);
+```
 
-### Security
-- API key authentication (add middleware)
-- CORS configured for specific origins
-- SECRET_KEY for Flask session security
+### Model Loading
 
-### Monitoring
-- Health endpoint checks DB + models
-- Structured JSON logging available
-- Prometheus metrics (TODO)
+Backend loads models via convention-based paths:
 
-### Scalability
-- Stateless design (horizontal scaling)
-- Redis for distributed model cache (TODO)
-- Background job queue for retraining (TODO)
+1. Check `metadata.path` in `model_artifact` table
+2. Fallback to `{model_name}_{version}.joblib`
+3. Support `file://` and `gs://` URI schemes
+4. Cache loaded models in memory
 
-## Known Limitations
+## Dataset Workflow
 
-1. **LSTM models disabled**: XGBoost outperforms LSTM (98.75% vs 87.52% accuracy)
-2. **Synchronous tool calls**: Copilot waits for tool execution (no async)
-3. **No authentication**: Add API key or JWT middleware
-4. **No rate limiting**: Add flask-limiter for production
-5. **GCS not fully tested**: GCS storage implemented but not validated
+### 1. Load Raw Data
 
-## Future Enhancements
+```python
+import pandas as pd
+df = pd.read_csv('data/predictive_maintenance.csv')
+```
 
-- [ ] Add API key authentication
-- [ ] Implement rate limiting
-- [ ] Add Prometheus metrics
-- [ ] Use Redis for distributed model cache
-- [ ] Async copilot tool execution
-- [ ] LSTM model improvements
-- [ ] Real-time telemetry ingestion via WebSocket
-- [ ] Alembic migrations for schema evolution
+### 2. Create Stratified Subset
+
+```bash
+python scripts/dataset_reconstruction.py
+```
+
+Output: `preprocessed/predictive_maintenance_subset_400_machines.csv`
+
+### 3. Generate Time-Series
+
+```bash
+python scripts/generate_timeseries.py
+```
+
+Output: `preprocessed/predictive_maintenance_timeseries.csv`
+
+### 4. Train Models
+
+```bash
+jupyter notebook predictive-maintenance-pipeline.ipynb
+```
+
+Run all cells to train and export models.
+
+### 5. Load Data into Database
+
+```python
+import pandas as pd
+from sqlalchemy import create_engine
+
+df = pd.read_csv('preprocessed/predictive_maintenance_timeseries.csv')
+engine = create_engine('postgresql://user:pass@host/db')
+df.to_sql('telemetry', engine, if_exists='append', index=False)
+```
+
+### 6. Verify Ingestion
+
+```bash
+curl -X POST http://localhost:5000/predict/classification \
+  -H "Content-Type: application/json" \
+  -d '{"model_name": "xgb_classifier", "product_id": "PROD_001", "unit_id": "UNIT_001"}'
+```
+
+## Deployment Notes
+
+### Docker Production
+
+Build production image:
+```bash
+cd pm-app
+docker build -t pm-app:latest --target production .
+```
+
+Run with mounted artifacts:
+```bash
+docker run -d \
+  -p 5000:5000 \
+  -v $(pwd)/../artifacts:/app/artifacts:ro \
+  -e DATABASE_URL=postgresql://user:pass@host/db \
+  -e GEMINI_API_KEY=your_key \
+  -e SECRET_KEY=production_secret \
+  pm-app:latest
+```
+
+### Environment Best Practices
+
+- **Development**: Use SQLite with `DATABASE_URL=sqlite:///pm_app.db`
+- **Staging**: Use PostgreSQL with connection pooling
+- **Production**: Use PostgreSQL with separate credentials, TLS connections
+
+### Model Artifacts in Docker
+
+Mount artifacts as read-only volume:
+```yaml
+volumes:
+  - ./artifacts:/app/artifacts:ro
+```
+
+Or copy into image during build:
+```dockerfile
+COPY ../artifacts /app/artifacts
+```
+
+### Database Migrations
+
+For schema changes:
+1. Update `app/models.py`
+2. Create migration script in `pm-app/scripts/`
+3. Test migration on staging database
+4. Apply to production with downtime window
+
+## Troubleshooting
+
+### Missing Dependencies
+
+**Error**: `ModuleNotFoundError: No module named 'flask'`
+
+**Solution**:
+```bash
+cd pm-app
+pip install -r requirements.txt
+```
+
+### Missing Model Artifacts
+
+**Error**: `FileNotFoundError: Model file not found: artifacts/xgb_classifier.joblib`
+
+**Solution**:
+1. Train models: `jupyter notebook predictive-maintenance-pipeline.ipynb`
+2. Verify artifacts exist: `ls artifacts/xgb_*.joblib`
+3. Check `MODEL_STORAGE_PATH` in `.env`
+
+### Database Connection Issues
+
+**Error**: `sqlalchemy.exc.OperationalError: could not connect to server`
+
+**Solution**:
+
+For PostgreSQL:
+```bash
+# Check PostgreSQL is running
+pg_isready -h localhost -p 5432
+
+# Verify credentials
+psql -U pm_user -d pm_database -h localhost
+```
+
+For SQLite:
+```bash
+# Verify file permissions
+ls -l pm_app.db
+
+# Recreate database
+rm pm_app.db
+python scripts/init_db.py
+```
+
+### Script Execution Errors
+
+**Error**: `FileNotFoundError: data/predictive_maintenance.csv`
+
+**Solution**:
+```bash
+# Verify data files exist
+ls data/*.csv
+
+# Download missing datasets from source
+```
+
+**Error**: `ValueError: Timestamp format not recognized`
+
+**Solution**:
+
+Ensure timestamps are ISO 8601 format:
+```python
+# Correct format
+"2024-01-15T10:00:00Z"
+"2024-01-15T10:00:00+00:00"
+
+# Fix in pandas
+df['timestamp'] = pd.to_datetime(df['timestamp']).dt.strftime('%Y-%m-%dT%H:%M:%S%z')
+```
+
+### Docker Issues
+
+**Error**: `port 5000 already in use`
+
+**Solution**:
+```bash
+# Find process using port
+lsof -i :5000  # macOS/Linux
+netstat -ano | findstr :5000  # Windows
+
+# Kill process or change port in docker-compose.yml
+```
+
+**Error**: `ERROR: Cannot connect to the Docker daemon`
+
+**Solution**:
+```bash
+# Start Docker service
+sudo systemctl start docker  # Linux
+# Or start Docker Desktop application
+```
+
+### Test Failures
+
+**Error**: `AssertionError: assert 500 == 200`
+
+**Solution**:
+```bash
+# Run tests with verbose output
+pytest tests/test_classification_api.py -vv -s
+
+# Check test logs for error details
+# Verify test database is clean
+rm -f test_*.db
+```
+
+### Gemini API Issues
+
+**Error**: `401 Unauthorized: Invalid API key`
+
+**Solution**:
+```bash
+# Verify API key is set
+echo $GEMINI_API_KEY
+
+# Set in .env file
+echo "GEMINI_API_KEY=your_key_here" >> pm-app/.env
+```
+
+**Error**: `429 Too Many Requests: Rate limit exceeded`
+
+**Solution**:
+- Reduce request frequency
+- Implement exponential backoff
+- Upgrade Gemini API quota
+
+## Performance Tuning
+
+### Database Optimization
+
+```sql
+-- Add indexes for common queries
+CREATE INDEX idx_telemetry_lookup ON telemetry(product_id, unit_id, timestamp);
+CREATE INDEX idx_model_artifact_latest ON model_artifact(model_name, promoted_at DESC);
+
+-- Vacuum and analyze
+VACUUM ANALYZE telemetry;
+```
+
+### Model Caching
+
+Models are cached in memory on first load. To preload:
+```python
+from app.services.models_loader import get_models_loader
+loader = get_models_loader()
+loader.get_classification_model('xgb_classifier')
+loader.get_forecast_model('xgb_regressor')
+```
+
+### Connection Pooling
+
+Configure in `.env`:
+```bash
+DB_POOL_SIZE=10
+DB_MAX_OVERFLOW=20
+DB_POOL_TIMEOUT=30
+```
 
 ## License
 
 MIT
 
-## Contact
+## Project Information
 
-Project: AEGIS Predictive Maintenance Copilot
-Team: A25-CS046
+**Project**: AEGIS Predictive Maintenance Copilot  
+**Team**: A25-CS046  
+**Use Case**: AC-02

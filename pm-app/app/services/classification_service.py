@@ -32,6 +32,7 @@ def aggregate_features_from_telemetry(telemetry_rows: list[Telemetry], encoder: 
         'torque_Nm': t.torque_Nm,
         'tool_wear_min': t.tool_wear_min,
         'engine_type': t.engine_type,
+        'timestamp': t.timestamp,
     } for t in telemetry_rows])
     
     feature_dict = {}
@@ -103,14 +104,22 @@ def predict_failure(
         if timestamp_before is None:
             timestamp_before = datetime.now(timezone.utc)
         
+        timestamp_before_str = timestamp_before.isoformat()
+        
         with get_db() as session:
-            telemetry_rows = session.query(Telemetry).filter(
+            from sqlalchemy import text
+            
+            query = session.query(Telemetry).filter(
                 and_(
                     Telemetry.product_id == product_id,
                     Telemetry.unit_id == unit_id,
-                    Telemetry.timestamp_ts <= timestamp_before
+                    text("timestamp::timestamptz <= :ts_before")
                 )
-            ).order_by(Telemetry.timestamp_ts.desc()).limit(50).all()
+            ).params(ts_before=timestamp_before_str).order_by(
+                text("timestamp::timestamptz DESC")
+            ).limit(50)
+            
+            telemetry_rows = query.all()
             
             if not telemetry_rows:
                 raise ValueError(f"No telemetry found for product_id={product_id}, unit_id={unit_id}")

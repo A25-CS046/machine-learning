@@ -1,5 +1,6 @@
 import logging
 from flask import Blueprint, jsonify
+from sqlalchemy import text
 from app.db import get_engine
 from app.services.models_loader import get_models_loader
 
@@ -20,7 +21,7 @@ def health_check():
         
         try:
             with engine.connect() as conn:
-                conn.execute("SELECT 1")
+                conn.exec_driver_sql("SELECT 1")
             db_status = 'ok'
         except Exception as e:
             logger.error(f"Database check failed: {e}")

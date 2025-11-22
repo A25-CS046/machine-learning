@@ -42,22 +42,21 @@ def retrain_model(
             session.commit()
         
         last_retrain_ts = pointer.last_retrain_ts
-        last_retrain_id = pointer.last_retrain_id
+        last_retrain_ts_str = last_retrain_ts.isoformat()
+        
+        from sqlalchemy import text
         
         if incremental:
             query = session.query(Telemetry).filter(
-                and_(
-                    Telemetry.timestamp_ts > last_retrain_ts,
-                    Telemetry.id > last_retrain_id
-                )
-            )
+                text("timestamp::timestamptz > :last_ts")
+            ).params(last_ts=last_retrain_ts_str)
         else:
             query = session.query(Telemetry)
         
         if model_type == 'forecast':
             query = query.filter(Telemetry.synthetic_RUL.isnot(None))
         
-        query = query.order_by(Telemetry.timestamp_ts)
+        query = query.order_by(text("timestamp::timestamptz"))
         
         if sample_limit:
             query = query.limit(sample_limit)
@@ -155,19 +154,27 @@ def retrain_model(
         artifact = ModelArtifact(
             model_name=model_name,
             version=version,
-            path=model_uri,
             model_metadata={
+                'path': model_uri,
+                'metrics': metrics,
                 'model_type': model_type,
                 'incremental': incremental,
                 'training_samples': len(y)
-            },
-            metrics=metrics
+            }
         )
         session.add(artifact)
         
         last_row = telemetry_data[-1]
-        pointer.last_retrain_ts = last_row.timestamp_ts
-        pointer.last_retrain_id = last_row.id
+        last_timestamp_str = last_row.timestamp
+        try:
+            last_timestamp_dt = datetime.fromisoformat(last_timestamp_str.replace('Z', '+00:00'))
+            if last_timestamp_dt.tzinfo is None:
+                last_timestamp_dt = last_timestamp_dt.replace(tzinfo=timezone.utc)
+        except (ValueError, AttributeError):
+            last_timestamp_dt = datetime.now(timezone.utc)
+        
+        pointer.last_retrain_ts = last_timestamp_dt
+        pointer.last_retrain_id = 0
         
         session.commit()
         

@@ -65,6 +65,9 @@ def predict_classification():
     except ValueError as e:
         logger.warning(f"Classification request failed: {e}")
         return jsonify({'data': None, 'error': str(e)}), 404
+    except FileNotFoundError as e:
+        logger.warning(f"Model file not found: {e}")
+        return jsonify({'data': None, 'error': str(e)}), 404
     except Exception as e:
         logger.error(f"Classification error: {e}", exc_info=True)
         return jsonify({'data': None, 'error': 'Internal server error'}), 500

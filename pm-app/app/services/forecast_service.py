@@ -36,15 +36,23 @@ def predict_rul(
     if timestamp_before is None:
         timestamp_before = datetime.now(timezone.utc)
     
+    timestamp_before_str = timestamp_before.isoformat()
+    
     with get_db() as session:
-        telemetry_rows = session.query(Telemetry).filter(
+        from sqlalchemy import text
+        
+        query = session.query(Telemetry).filter(
             and_(
                 Telemetry.product_id == product_id,
                 Telemetry.unit_id == unit_id,
-                Telemetry.timestamp_ts <= timestamp_before,
+                text("timestamp::timestamptz <= :ts_before"),
                 Telemetry.synthetic_RUL.isnot(None)
             )
-        ).order_by(Telemetry.timestamp_ts.desc()).limit(50).all()
+        ).params(ts_before=timestamp_before_str).order_by(
+            text("timestamp::timestamptz DESC")
+        ).limit(50)
+        
+        telemetry_rows = query.all()
         
         if not telemetry_rows:
             raise ValueError(f"No RUL telemetry found for product_id={product_id}, unit_id={unit_id}")
@@ -60,9 +68,13 @@ def predict_rul(
     
     current_rul = model.predict(feature_vector_scaled)[0]
     
-    last_timestamp = telemetry_rows[-1].timestamp_ts
-    if last_timestamp.tzinfo is None:
-        last_timestamp = last_timestamp.replace(tzinfo=timezone.utc)
+    last_timestamp_str = telemetry_rows[-1].timestamp
+    try:
+        last_timestamp = datetime.fromisoformat(last_timestamp_str.replace('Z', '+00:00'))
+        if last_timestamp.tzinfo is None:
+            last_timestamp = last_timestamp.replace(tzinfo=timezone.utc)
+    except (ValueError, AttributeError):
+        last_timestamp = datetime.now(timezone.utc)
     
     forecast_steps = []
     for step in range(1, horizon_steps + 1):

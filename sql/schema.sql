@@ -1,4 +1,4 @@
--- This schema is kept in sync with app/models.py (v2 architecture).
+-- This schema is kept in sync with app/models.py (legacy architecture).
 
 DROP TABLE IF EXISTS maintenance_schedule CASCADE;
 DROP TABLE IF EXISTS model_artifact CASCADE;
@@ -6,10 +6,9 @@ DROP TABLE IF EXISTS retrain_pointer CASCADE;
 DROP TABLE IF EXISTS telemetry CASCADE;
 
 CREATE TABLE telemetry (
-  id BIGSERIAL PRIMARY KEY,
-  product_id TEXT NOT NULL,
-  unit_id TEXT NOT NULL,
-  timestamp_ts TIMESTAMPTZ NOT NULL,
+  product_id TEXT,
+  unit_id TEXT,
+  timestamp TEXT,
   step_index INTEGER,
   engine_type TEXT,
   air_temperature_K DOUBLE PRECISION,
@@ -19,13 +18,12 @@ CREATE TABLE telemetry (
   tool_wear_min DOUBLE PRECISION,
   is_failure INTEGER,
   failure_type TEXT,
-  synthetic_RUL DOUBLE PRECISION
+  synthetic_RUL DOUBLE PRECISION,
+  PRIMARY KEY (product_id, unit_id, timestamp)
 );
 
-CREATE INDEX IF NOT EXISTS telemetry_unit_time_idx 
-  ON telemetry (product_id, unit_id, timestamp_ts DESC);
-CREATE INDEX IF NOT EXISTS telemetry_failure_idx 
-  ON telemetry (is_failure);
+CREATE INDEX IF NOT EXISTS telemetry_unit_idx ON telemetry(unit_id);
+CREATE INDEX IF NOT EXISTS telemetry_failure_idx ON telemetry(is_failure);
 
 CREATE TABLE retrain_pointer (
   model_name TEXT PRIMARY KEY,
@@ -37,9 +35,7 @@ CREATE TABLE model_artifact (
   id BIGSERIAL PRIMARY KEY,
   model_name TEXT NOT NULL,
   version TEXT NOT NULL,
-  path TEXT NOT NULL,
   metadata JSONB,
-  metrics JSONB,
   promoted_at TIMESTAMPTZ DEFAULT NOW()
 );
 
