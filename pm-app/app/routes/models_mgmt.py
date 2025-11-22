@@ -1,6 +1,6 @@
 import logging
 from flask import Blueprint, request, jsonify
-from sqlalchemy import desc
+from sqlalchemy import func
 from app.db import get_db
 from app.models import ModelArtifact
 from app.services.models_loader import get_models_loader
@@ -20,14 +20,17 @@ def list_models():
     """
     try:
         with get_db() as session:
+            # Fix: Use func.max() instead of desc() to find the latest date
             subquery = session.query(
                 ModelArtifact.model_name,
-                desc(ModelArtifact.promoted_at).label('max_promoted_at')
+                func.max(ModelArtifact.promoted_at).label('max_promoted_at')
             ).group_by(ModelArtifact.model_name).subquery()
             
+            # Fix: Join on BOTH name and the max timestamp to retrieve the full row
             models = session.query(ModelArtifact).join(
                 subquery,
-                (ModelArtifact.model_name == subquery.c.model_name)
+                (ModelArtifact.model_name == subquery.c.model_name) & 
+                (ModelArtifact.promoted_at == subquery.c.max_promoted_at)
             ).order_by(ModelArtifact.model_name).all()
             
             result = [{
