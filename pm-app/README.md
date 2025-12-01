@@ -56,7 +56,9 @@ machine-learning/
 │   │       ├── forecast_service.py
 │   │       ├── optimizer_service.py
 │   │       ├── retrain_service.py     # Incremental retraining
-│   │       └── copilot_service.py     # Gemini integration
+│   │       ├── copilot_service.py     # Gemini direct API client
+│   │       ├── langchain_agent_service.py  # LangChain agent orchestration
+│   │       └── agent_tools.py         # LangChain tool definitions
 │   ├── scripts/                       # Database utilities
 │   │   ├── init_db.py                 # Initialize database schema
 │   │   └── migrate_to_legacy_schema.py # Schema migration tool
@@ -136,7 +138,7 @@ MODEL_STORAGE_PATH=../artifacts
 
 # Gemini AI
 GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL_NAME=gemini-2.0-flash-exp
+GEMINI_MODEL_NAME=gemini-2.5-pro-exp
 
 # Flask
 FLASK_ENV=development
@@ -152,6 +154,7 @@ CORS_ORIGINS=http://localhost:3000
 | `DATABASE_URL` | No | `sqlite:///pm_app.db` | Database connection string |
 | `MODEL_STORAGE_PATH` | No | `../artifacts` | Path to trained models |
 | `GEMINI_API_KEY` | Yes* | - | Google AI API key (*required for copilot) |
+| `GEMINI_MODEL_NAME` | No | `gemini-2.0-flash-exp` | Gemini model variant |
 | `SECRET_KEY` | Yes** | - | Flask session secret (**required for production) |
 
 ## Running the Backend (pm-app)
@@ -310,6 +313,18 @@ python scripts/init_db.py --database-url postgresql://user:pass@host/db
 Drop existing tables before creating:
 ```bash
 python scripts/init_db.py --drop-existing
+```
+
+### Add Conversation History Table
+
+Create the `conversation_history` table for LangChain copilot memory:
+```bash
+python scripts/add_conversation_history_table.py
+```
+
+Force recreate if table exists:
+```bash
+python scripts/add_conversation_history_table.py --force
 ```
 
 ### Schema Migration
@@ -478,19 +493,19 @@ Content-Type: application/json
 
 ### Copilot Chat
 
-Natural language maintenance queries.
+Natural language maintenance queries powered by LangChain agent with Gemini LLM.
 
 ```bash
 POST /copilot/chat
 Content-Type: application/json
+X-Session-ID: user_123  # Optional header for session tracking
 
 {
   "messages": [
-    {"role": "user", "content": "What's the failure risk for UNIT_001?"}
+    {"role": "user", "content": "What's the failure risk for unit L56614/9435?"}
   ],
-  "context": {
-    "product_id": "PROD_001"
-  }
+  "session_id": "user_123",
+  "context": {"product_id": "L56614"}
 }
 ```
 
@@ -498,11 +513,15 @@ Response:
 ```json
 {
   "data": {
-    "response": "UNIT_001 has an 87% failure probability...",
-    "tool_calls": [
+    "reply": "Unit L56614/9435 has a 4.45% failure probability with high confidence. Equipment operating normally.",
+    "session_id": "user_123",
+    "execution_time_seconds": 2.34,
+    "timestamp": "2025-12-02T00:40:08.618Z",
+    "intermediate_steps": [
       {
         "tool": "predict_failure",
-        "result": {...}
+        "tool_input": {"product_id": "L56614", "unit_id": "9435"},
+        "output": "{success: true, failure_probability: 0.0445}"
       }
     ]
   },
@@ -510,11 +529,47 @@ Response:
 }
 ```
 
-**Supported queries**:
-- "What's the failure risk for UNIT_001?"
-- "How much RUL does UNIT_002 have?"
-- "Generate maintenance schedule for next week"
+**Clear session history:**
+```bash
+DELETE /copilot/session/{session_id}
+```
+
+**Supported queries:**
+- "What's the failure risk for L56614/9435?"
+- "Check unit M29501/1234"
+- "How much RUL does unit H30221/5678 have?"
+- "Schedule maintenance for units L56614, M29501, H30221"
 - "Which units need immediate attention?"
+
+### Copilot Architecture
+
+```
+POST /copilot/chat
+       │
+       ▼
+┌─────────────────────┐
+│  LangChain Agent    │
+│  (AgentExecutor)    │
+└─────────┬───────────┘
+          │
+    ┌─────┴─────┐
+    ▼           ▼
+┌───────┐  ┌──────────────┐
+│Gemini │  │ Tool Layer   │
+│ LLM   │  │ predict_     │
+│       │  │ failure/rul  │
+│       │  │ optimize_    │
+│       │  │ schedule     │
+└───┬───┘  └──────┬───────┘
+    └──────┬──────┘
+           ▼
+    JSON Response
+```
+
+**Key files:**
+- `langchain_agent_service.py` - Agent orchestration with PostgreSQL-backed memory
+- `agent_tools.py` - LangChain tools with Pydantic input validation
+- `copilot_service.py` - Direct Gemini API client (legacy)
 
 ## Testing
 

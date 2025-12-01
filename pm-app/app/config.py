@@ -21,7 +21,7 @@ class ModelStorageConfig:
 @dataclass
 class GeminiConfig:
     api_key: str | None = field(default_factory=lambda: os.getenv('GEMINI_API_KEY'))
-    model_name: str = field(default_factory=lambda: os.getenv('GEMINI_MODEL_NAME', 'gemini-2.0-flash-exp'))
+    model_name: str = field(default_factory=lambda: os.getenv('GEMINI_MODEL_NAME', 'gemini-2.5-pro-exp'))
     api_url: str = field(default_factory=lambda: os.getenv('GEMINI_API_URL', 'https://generativelanguage.googleapis.com/v1beta'))
     timeout: int = field(default_factory=lambda: int(os.getenv('GEMINI_TIMEOUT', '60')))
 

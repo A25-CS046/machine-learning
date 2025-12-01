@@ -1,3 +1,10 @@
+"""
+Gemini API client for direct copilot interactions.
+
+Provides low-level access to Gemini API with tool definitions.
+For production, use langchain_agent_service.py instead.
+"""
+
 import logging
 import json
 from typing import Any
@@ -8,105 +15,61 @@ logger = logging.getLogger(__name__)
 
 
 GEMINI_SYSTEM_PROMPT = """You are an AI assistant for the AEGIS Predictive Maintenance system.
+Help users understand equipment health, predict failures, and optimize maintenance.
 
-Your role is to help users understand equipment health, predict failures, and optimize maintenance schedules.
+Rules:
+1. Use provided tools for predictions. Never estimate values.
+2. Ask for missing parameters before tool calls.
+3. Provide actionable maintenance recommendations.
 
-CRITICAL RULES:
-1. ALWAYS use the provided tools for predictions and calculations. NEVER make up or estimate numerical values.
-2. If a tool call fails or returns an error, explain the error to the user and suggest manual inspection.
-3. When asked about failure risk or RUL, ALWAYS call the appropriate prediction tool.
-4. Ask for missing parameters (product_id, unit_id) before making tool calls.
-5. Provide actionable maintenance recommendations based on tool results.
-6. If confidence is low or data is insufficient, recommend manual verification.
-
-Available tools:
-- predict_failure: Get failure probability and failure type for a specific unit
-- predict_rul: Get remaining useful life forecast for a specific unit
-- optimize_schedule: Generate optimal maintenance schedule for multiple units
-
-Always provide clear, concise explanations of prediction results and their implications for maintenance planning."""
+Tools: predict_failure, predict_rul, optimize_schedule"""
 
 
 GEMINI_TOOL_DEFINITIONS = [
     {
         "name": "predict_failure",
-        "description": "Predict equipment failure probability and failure type for a given unit. Returns failure probability (0-1), predicted failure type if failure is likely, and confidence metrics.",
+        "description": "Predict failure probability and type for a unit. Returns probability (0-1) and failure type.",
         "parameters": {
             "type": "object",
             "properties": {
-                "product_id": {
-                    "type": "string",
-                    "description": "The product identifier for the equipment"
-                },
-                "unit_id": {
-                    "type": "string",
-                    "description": "The specific unit identifier within the product line"
-                },
-                "horizon_hours": {
-                    "type": "integer",
-                    "description": "Prediction horizon in hours (default: 24)",
-                    "default": 24
-                }
+                "product_id": {"type": "string", "description": "Product identifier"},
+                "unit_id": {"type": "string", "description": "Unit identifier"},
+                "horizon_hours": {"type": "integer", "description": "Prediction horizon (default: 24)", "default": 24}
             },
             "required": ["product_id", "unit_id"]
         }
     },
     {
         "name": "predict_rul",
-        "description": "Predict remaining useful life (RUL) in hours for equipment. Returns current RUL estimate and forecast for upcoming timesteps.",
+        "description": "Predict remaining useful life in hours. Returns current RUL and forecast.",
         "parameters": {
             "type": "object",
             "properties": {
-                "product_id": {
-                    "type": "string",
-                    "description": "The product identifier for the equipment"
-                },
-                "unit_id": {
-                    "type": "string",
-                    "description": "The specific unit identifier within the product line"
-                },
-                "horizon_steps": {
-                    "type": "integer",
-                    "description": "Number of future timesteps to forecast (default: 10)",
-                    "default": 10
-                }
+                "product_id": {"type": "string", "description": "Product identifier"},
+                "unit_id": {"type": "string", "description": "Unit identifier"},
+                "horizon_steps": {"type": "integer", "description": "Forecast steps (default: 10)", "default": 10}
             },
             "required": ["product_id", "unit_id"]
         }
     },
     {
         "name": "optimize_schedule",
-        "description": "Generate an optimized maintenance schedule for multiple units based on failure risk and RUL thresholds. Returns prioritized maintenance recommendations with time windows.",
+        "description": "Generate optimized maintenance schedule for multiple units.",
         "parameters": {
             "type": "object",
             "properties": {
                 "unit_list": {
                     "type": "array",
-                    "description": "List of units to schedule maintenance for",
+                    "description": "Units to schedule",
                     "items": {
                         "type": "object",
-                        "properties": {
-                            "product_id": {"type": "string"},
-                            "unit_id": {"type": "string"}
-                        },
+                        "properties": {"product_id": {"type": "string"}, "unit_id": {"type": "string"}},
                         "required": ["product_id", "unit_id"]
                     }
                 },
-                "risk_threshold": {
-                    "type": "number",
-                    "description": "Failure probability threshold for scheduling (0-1, default: 0.7)",
-                    "default": 0.7
-                },
-                "rul_threshold": {
-                    "type": "number",
-                    "description": "RUL threshold in hours for scheduling (default: 24.0)",
-                    "default": 24.0
-                },
-                "horizon_days": {
-                    "type": "integer",
-                    "description": "Planning horizon in days (default: 7)",
-                    "default": 7
-                }
+                "risk_threshold": {"type": "number", "description": "Failure threshold (default: 0.7)", "default": 0.7},
+                "rul_threshold": {"type": "number", "description": "RUL threshold hours (default: 24)", "default": 24.0},
+                "horizon_days": {"type": "integer", "description": "Planning horizon (default: 7)", "default": 7}
             },
             "required": ["unit_list"]
         }
@@ -115,12 +78,12 @@ GEMINI_TOOL_DEFINITIONS = [
 
 
 class GeminiCopilotClient:
+    """Direct Gemini API client with tool calling support."""
+    
     def __init__(self):
         self.config = load_config()
-        
         if not self.config.gemini.api_key:
-            logger.warning("GEMINI_API_KEY not configured. Copilot will not function.")
-        
+            logger.warning("GEMINI_API_KEY not configured")
         self.api_key = self.config.gemini.api_key
         self.model_name = self.config.gemini.model_name
         self.api_url = self.config.gemini.api_url
@@ -152,16 +115,7 @@ class GeminiCopilotClient:
         return payload
     
     def chat(self, messages: list[dict], enable_tools: bool = True) -> dict:
-        """
-        Send chat request to Gemini API.
-        
-        Args:
-            messages: List of {role: str, content: str} message dicts
-            enable_tools: Whether to enable tool calling
-        
-        Returns:
-            Dictionary with Gemini response
-        """
+        """Send chat request to Gemini API with optional tool calling."""
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not configured")
         

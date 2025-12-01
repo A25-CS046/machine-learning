@@ -126,3 +126,20 @@ class MaintenanceSchedule(Base):
     constraints_applied = Column(JSONType)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     status = Column(Text, default='PENDING')
+
+
+class ConversationHistory(Base):
+    """
+    LangChain conversation memory storage.
+    
+    This table is used by LangChain's PostgresChatMessageHistory.
+    Schema follows LangChain's expected format with 'message' column.
+    """
+    __tablename__ = 'conversation_history'
+    __table_args__ = (
+        Index('ix_conversation_history_session_id', 'session_id'),
+    )
+    
+    id = Column(BigIntegerType, primary_key=True, autoincrement=True)
+    session_id = Column(Text, nullable=False)
+    message = Column(JSONType, nullable=False)  # LangChain stores complete message as JSONB

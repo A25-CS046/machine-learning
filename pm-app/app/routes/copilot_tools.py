@@ -1,27 +1,19 @@
+"""Copilot API endpoints for conversational maintenance queries."""
+
 import logging
 from flask import Blueprint, request, jsonify
-from app.services.copilot_service import get_gemini_client
+from app.services.langchain_agent_service import get_agent_service
 from app.services.classification_service import predict_failure
 from app.services.forecast_service import predict_rul
 from app.services.optimizer_service import optimize_maintenance_schedule
 
 logger = logging.getLogger(__name__)
-
 copilot_bp = Blueprint('copilot', __name__)
 
 
 @copilot_bp.route('/copilot/tools/predict_failure', methods=['POST'])
 def tool_predict_failure():
-    """
-    POST /copilot/tools/predict_failure
-    
-    Simplified tool endpoint for LLM copilot integration.
-    
-    Body:
-        product_id (str): Product ID
-        unit_id (str): Unit ID
-        horizon_hours (int, optional): Prediction horizon (default: 24)
-    """
+    """Predict failure probability. Body: {product_id, unit_id, horizon_hours?}"""
     try:
         data = request.get_json()
         
@@ -64,16 +56,7 @@ def tool_predict_failure():
 
 @copilot_bp.route('/copilot/tools/predict_rul', methods=['POST'])
 def tool_predict_rul():
-    """
-    POST /copilot/tools/predict_rul
-    
-    Simplified tool endpoint for RUL prediction.
-    
-    Body:
-        product_id (str): Product ID
-        unit_id (str): Unit ID
-        horizon_steps (int, optional): Forecast steps (default: 10)
-    """
+    """Predict remaining useful life. Body: {product_id, unit_id, horizon_steps?}"""
     try:
         data = request.get_json()
         
@@ -118,17 +101,7 @@ def tool_predict_rul():
 
 @copilot_bp.route('/copilot/tools/optimize_schedule', methods=['POST'])
 def tool_optimize_schedule():
-    """
-    POST /copilot/tools/optimize_schedule
-    
-    Simplified tool endpoint for maintenance optimization.
-    
-    Body:
-        unit_list (list): List of {product_id, unit_id} dicts
-        risk_threshold (float, optional): Default 0.7
-        rul_threshold (float, optional): Default 24.0
-        horizon_days (int, optional): Default 7
-    """
+    """Generate optimized maintenance schedule. Body: {unit_list, risk_threshold?, rul_threshold?, horizon_days?}"""
     try:
         data = request.get_json()
         
@@ -169,15 +142,7 @@ def tool_optimize_schedule():
 
 @copilot_bp.route('/copilot/chat', methods=['POST'])
 def copilot_chat():
-    """
-    POST /copilot/chat
-    
-    Main copilot conversational endpoint with Gemini 2.5 Pro integration.
-    
-    Body:
-        messages (list): Conversation history [{role: str, content: str}, ...]
-        context (dict, optional): Additional context (product_id, unit_id, etc.)
-    """
+    """Main copilot endpoint. Body: {messages: [{role, content}], session_id?, context?}"""
     try:
         data = request.get_json()
         
@@ -186,6 +151,7 @@ def copilot_chat():
         
         messages = data.get('messages', [])
         context = data.get('context', {})
+        session_id = data.get('session_id') or request.headers.get('X-Session-ID', 'default')
         
         if not messages:
             return jsonify({
@@ -193,71 +159,76 @@ def copilot_chat():
                 'error': 'messages list is required'
             }), 400
         
-        client = get_gemini_client()
+        # Extract last user message
+        user_message = None
+        for msg in reversed(messages):
+            if msg.get('role') == 'user':
+                user_message = msg.get('content')
+                break
         
-        gemini_response = client.chat(messages, enable_tools=True)
+        if not user_message:
+            return jsonify({
+                'data': None,
+                'error': 'No user message found in messages list'
+            }), 400
         
-        tool_calls = client.extract_tool_calls(gemini_response)
-        tool_results = []
+        # Get agent service and invoke
+        agent_service = get_agent_service()
+        result = agent_service.invoke_agent(
+            session_id=session_id,
+            user_message=user_message,
+            context=context
+        )
         
-        for tool_call in tool_calls:
-            tool_name = tool_call['name']
-            tool_args = tool_call['arguments']
+        if result['success']:
+            # Format successful response
+            response_data = {
+                'reply': result['reply'],
+                'session_id': result['session_id'],
+                'execution_time_seconds': result['execution_time_seconds'],
+                'timestamp': result['timestamp'],
+                'intermediate_steps': [
+                    {
+                        'tool': step[0].tool if hasattr(step[0], 'tool') else 'unknown',
+                        'tool_input': step[0].tool_input if hasattr(step[0], 'tool_input') else {},
+                        'output': str(step[1])[:500]  # Truncate long outputs
+                    }
+                    for step in result.get('intermediate_steps', [])
+                ]
+            }
             
-            logger.info(f"Executing tool: {tool_name} with args: {tool_args}")
-            
-            try:
-                if tool_name == 'predict_failure':
-                    tool_result = predict_failure(
-                        model_name='xgb_classifier',
-                        product_id=tool_args['product_id'],
-                        unit_id=tool_args['unit_id']
-                    )
-                elif tool_name == 'predict_rul':
-                    tool_result = predict_rul(
-                        model_name='xgb_regressor',
-                        product_id=tool_args['product_id'],
-                        unit_id=tool_args['unit_id'],
-                        horizon_steps=tool_args.get('horizon_steps', 10)
-                    )
-                elif tool_name == 'optimize_schedule':
-                    tool_result = optimize_maintenance_schedule(
-                        unit_list=tool_args['unit_list'],
-                        risk_threshold=tool_args.get('risk_threshold', 0.7),
-                        rul_threshold=tool_args.get('rul_threshold', 24.0),
-                        horizon_days=tool_args.get('horizon_days', 7)
-                    )
-                else:
-                    tool_result = {'error': f'Unknown tool: {tool_name}'}
-                
-                tool_results.append({
-                    'tool_name': tool_name,
-                    'success': True,
-                    'result': tool_result
-                })
-            
-            except Exception as e:
-                logger.error(f"Tool execution failed: {tool_name} - {e}")
-                tool_results.append({
-                    'tool_name': tool_name,
-                    'success': False,
-                    'error': str(e)
-                })
+            return jsonify({'data': response_data, 'error': None}), 200
+        else:
+            # Format error response
+            return jsonify({
+                'data': None,
+                'error': result.get('error', 'Agent execution failed'),
+                'error_type': result.get('error_type', 'unknown')
+            }), 500
         
-        text_reply = client.extract_text_response(gemini_response)
-        
-        result = {
-            'reply': text_reply or "I've processed your request using the available tools.",
-            'tool_calls': tool_calls,
-            'tool_results': tool_results,
-            'raw_model_response': gemini_response
-        }
-        
-        return jsonify({'data': result, 'error': None}), 200
-        
-    except RuntimeError as e:
-        logger.error(f"Gemini API error: {e}")
-        return jsonify({'data': None, 'error': str(e)}), 503
     except Exception as e:
         logger.error(f"Copilot chat error: {e}", exc_info=True)
         return jsonify({'data': None, 'error': 'Internal server error'}), 500
+
+
+@copilot_bp.route('/copilot/session/<session_id>', methods=['DELETE'])
+def clear_session(session_id: str):
+    """Clear conversation history for a session."""
+    try:
+        agent_service = get_agent_service()
+        success = agent_service.clear_session(session_id)
+        
+        if success:
+            return jsonify({
+                'data': {'session_id': session_id, 'cleared': True},
+                'error': None
+            }), 200
+        else:
+            return jsonify({
+                'data': None,
+                'error': 'Failed to clear session'
+            }), 500
+    
+    except Exception as e:
+        logger.error(f"Clear session error: {e}", exc_info=True)
+        return jsonify({'data': None, 'error': str(e)}), 500
