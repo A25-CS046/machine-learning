@@ -94,7 +94,6 @@ def predict_failure(
     
     try:
         model, artifact = loader.get_classification_model(model_name)
-        scaler = loader.get_scaler()
         encoder = loader.get_encoder()
     except ValueError as e:
         logger.error(f"Model loading failed: {e}")
@@ -155,14 +154,12 @@ def predict_failure(
         feature_vector = np.array(feature_list).reshape(1, -1)
         inputs_used = {'source': 'explicit_features', 'features': features}
     
-    try:
-        feature_vector_scaled = scaler.transform(feature_vector)
-    except Exception as e:
-        logger.warning(f"Scaling failed, using raw features: {e}")
-        feature_vector_scaled = feature_vector
+    # NOTE: XGBoost models were trained on unscaled aggregated features.
+    # The scaler.joblib is for LSTM (5 raw features), not XGBoost (31 aggregated features).
+    # We skip scaling to match the original training methodology.
     
-    prediction = model.predict(feature_vector_scaled)[0]
-    probabilities = model.predict_proba(feature_vector_scaled)[0]
+    prediction = model.predict(feature_vector)[0]
+    probabilities = model.predict_proba(feature_vector)[0]
     
     failure_prob = float(probabilities[1])
     predicted_failure = int(prediction)

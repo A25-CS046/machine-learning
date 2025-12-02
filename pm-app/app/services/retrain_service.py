@@ -76,11 +76,10 @@ def retrain_model(
             units[key].append(row)
         
         try:
-            scaler = joblib.load(os.path.join(config.model_storage.local_path, 'scaler.joblib'))
             encoder = joblib.load(os.path.join(config.model_storage.local_path, 'encoder_engine_type.joblib'))
         except FileNotFoundError as e:
             logger.error(f"Preprocessing artifacts not found: {e}")
-            raise ValueError("Scaler or encoder not found. Cannot retrain.")
+            raise ValueError("Encoder not found. Cannot retrain.")
         
         X_list = []
         y_list = []
@@ -104,7 +103,9 @@ def retrain_model(
         
         logger.info(f"Training dataset: {X.shape[0]} samples, {X.shape[1]} features")
         
-        X_scaled = scaler.transform(X)
+        # NOTE: XGBoost models were originally trained on unscaled aggregated features.
+        # The scaler.joblib is for LSTM sequences (5 raw features), not for XGBoost (31 aggregated features).
+        # Therefore, we skip scaling for XGBoost retraining to match original training methodology.
         
         if model_type == 'classification':
             model = xgb.XGBClassifier(
@@ -121,7 +122,7 @@ def retrain_model(
                 random_state=42
             )
         
-        model.fit(X_scaled, y)
+        model.fit(X, y)
         
         version = datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')
         
@@ -135,7 +136,7 @@ def retrain_model(
         
         if model_type == 'classification':
             from sklearn.metrics import accuracy_score, recall_score
-            y_pred = model.predict(X_scaled)
+            y_pred = model.predict(X)
             metrics = {
                 'accuracy': float(accuracy_score(y, y_pred)),
                 'recall': float(recall_score(y, y_pred, zero_division=0)),
@@ -143,7 +144,7 @@ def retrain_model(
             }
         else:
             from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-            y_pred = model.predict(X_scaled)
+            y_pred = model.predict(X)
             metrics = {
                 'mae': float(mean_absolute_error(y, y_pred)),
                 'rmse': float(np.sqrt(mean_squared_error(y, y_pred))),

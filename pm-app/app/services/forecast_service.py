@@ -26,7 +26,6 @@ def predict_rul(
     
     try:
         model, artifact = loader.get_forecast_model(model_name)
-        scaler = loader.get_scaler()
         encoder = loader.get_encoder()
     except ValueError as e:
         logger.error(f"Model loading failed: {e}")
@@ -74,12 +73,11 @@ def predict_rul(
         rows_count = len(telemetry_rows)
     
     # Session is now closed, but we have extracted all necessary data
-    try:
-        feature_vector_scaled = scaler.transform(feature_vector)
-    except:
-        feature_vector_scaled = feature_vector
+    # NOTE: XGBoost models were trained on unscaled aggregated features.
+    # The scaler.joblib is for LSTM (5 raw features), not XGBoost (31 aggregated features).
+    # We skip scaling to match the original training methodology.
     
-    current_rul = model.predict(feature_vector_scaled)[0]
+    current_rul = model.predict(feature_vector)[0]
     
     try:
         last_timestamp = datetime.fromisoformat(last_timestamp_str.replace('Z', '+00:00'))
