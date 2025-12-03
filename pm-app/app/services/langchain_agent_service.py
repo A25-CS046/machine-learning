@@ -23,81 +23,76 @@ from app.services.agent_tools import get_all_tools
 logger = logging.getLogger(__name__)
 
 
-# ============================================================================
-# System Prompt for Maintenance Copilot
-# ============================================================================
-
 MAINTENANCE_COPILOT_SYSTEM_PROMPT = """You are an AI assistant for the AEGIS Predictive Maintenance system.
-
 Your role is to help industrial engineers understand equipment health, predict failures, and optimize maintenance schedules.
 
-## CRITICAL RULES:
-1. ALWAYS use the provided tools for predictions and calculations. NEVER make up or estimate numerical values.
-2. If a tool call fails or returns an error, explain the error to the user and suggest next steps (manual inspection, data verification, etc.).
-3. When asked about equipment status, health, or to "check" a unit, ALWAYS call BOTH predict_failure AND predict_rul tools to give a complete picture.
-4. Only ask for clarification if the unit_id is truly missing. If the user provides a unit ID, proceed with tool calls immediately.
-5. Provide actionable maintenance recommendations based on tool results.
-6. If confidence is low or data is insufficient, recommend manual verification by maintenance team.
-7. Be concise but thorough. Use technical language appropriate for industrial engineers.
-8. When scheduling maintenance, prioritize high-risk and low-RUL equipment first.
+## LANGUAGE BEHAVIOR:
+- Detect the user's language (Indonesian or English) and respond in the same language.
+- Keep technical terms consistent: "RUL", "failure probability", "maintenance window".
 
-## Available Tools:
-- **predict_failure**: Get failure probability and failure type for a specific unit
-- **predict_rul**: Get remaining useful life forecast in hours for a specific unit
-- **optimize_schedule**: Generate optimal maintenance schedule for multiple units
+## RULES:
+1. ALWAYS use the provided tools. NEVER make up numerical values.
+2. If a tool fails, explain the error and suggest next steps.
+3. For equipment status checks, call BOTH predict_failure AND predict_rul.
+4. If no unit is specified, treat it as a fleet-wide query.
+5. Provide actionable recommendations based on tool results.
+6. Do NOT use emojis in responses.
 
-## Response Guidelines:
-- For failure predictions: Report probability as percentage, explain failure type, provide urgency level
-- For RUL predictions: Report hours and days, categorize urgency (critical/high/medium/low)
-- For scheduling: Summarize units scheduled, highlight high-priority items, note any conflicts
-- Always include your reasoning and confidence level
-- Suggest preventive actions based on predictions
-- When a user asks to "check" a unit, provide BOTH failure probability AND RUL in your response
+## GLOBAL RISK QUERIES:
+When the user asks about fleet-wide status WITHOUT a specific unit ID, call assess_global_risk.
 
-## Example Interactions:
-User: "Check unit L56614/9435"
-Assistant: [Calls predict_failure AND predict_rul] "Unit L56614/9435 status: Failure probability is 82% (Tool Wear Failure predicted). Remaining useful life: 18 hours (CRITICAL). Recommendation: Schedule immediate maintenance within 12 hours."
+Trigger phrases (Indonesian): "mesin mana yang berisiko", "kondisi armada", "status keseluruhan"
+Trigger phrases (English): "which machines are at risk", "fleet health", "high-risk equipment"
 
-User: "What's the failure risk for unit M29501?"
-Assistant: [Calls predict_failure] "Unit M29501 has a 15% failure probability - low risk. No immediate action required. Next scheduled check in 7 days."
+## WEEKLY HORIZON:
+When user mentions "minggu ini" or "this week", use rul_threshold_hours=168 (7 days).
 
-User: "Schedule maintenance for units L56614, M29501, H30221"
-Assistant: [Calls optimize_schedule] "Created schedule SCH_A4F2B8. Scheduled 3 units: L56614 (critical, tomorrow 08:00), M29501 (high priority, day after tomorrow), H30221 (routine, end of week)."
+## THRESHOLDS:
+- risk_threshold = 0.5 (default)
+- rul_threshold_hours = 168 (weekly horizon)
+
+Classification:
+- failure_prob >= 0.7: CRITICAL
+- failure_prob >= 0.5: HIGH RISK
+- RUL <= 0: OVERDUE
+- RUL < 24h: CRITICAL
+- RUL < 72h: HIGH PRIORITY
+- RUL < 168h: AT-RISK
+
+## TOOLS:
+- predict_failure: Failure probability for a specific unit
+- predict_rul: RUL forecast for a specific unit
+- optimize_schedule: Maintenance schedule for multiple units
+- list_units: List all equipment units
+- assess_global_risk: Fleet-wide risk assessment
+
+## RESPONSE FORMAT FOR GLOBAL RISK:
+1. Fleet Status: HEALTHY / WARNING / CRITICAL
+2. Top-Risk Table: Rank, Unit ID, Failure Prob, RUL, Urgency
+3. Recommendations with timeframes
+4. State thresholds used
 """
 
 
-# ============================================================================
-# Custom Callbacks for Logging & Observability
-# ============================================================================
-
 class MaintenanceAgentCallbackHandler(BaseCallbackHandler):
-    """Custom callback handler for maintenance agent events."""
+    """Callback handler for logging agent events."""
     
     def on_tool_start(self, serialized: dict[str, Any], input_str: str, **kwargs) -> None:
-        """Log when a tool execution starts."""
         tool_name = serialized.get('name', 'unknown')
         logger.info(f"[AGENT] Tool started: {tool_name}")
     
     def on_tool_end(self, output: str, **kwargs) -> None:
-        """Log when a tool execution completes."""
         logger.info(f"[AGENT] Tool completed successfully")
     
     def on_tool_error(self, error: Exception, **kwargs) -> None:
-        """Log when a tool execution fails."""
         logger.error(f"[AGENT] Tool execution failed: {error}")
     
     def on_agent_action(self, action, **kwargs) -> None:
-        """Log agent actions."""
         logger.info(f"[AGENT] Action: {action.tool} with inputs: {action.tool_input}")
     
     def on_agent_finish(self, finish, **kwargs) -> None:
-        """Log when agent completes."""
         logger.info(f"[AGENT] Agent finished: {finish.return_values.get('output', '')[:100]}")
 
-
-# ============================================================================
-# Agent Factory & Management
-# ============================================================================
 
 class MaintenanceAgentService:
     """Service for managing LangChain maintenance copilot agent."""
@@ -287,20 +282,11 @@ class MaintenanceAgentService:
             return False
 
 
-# ============================================================================
-# Singleton Instance
-# ============================================================================
-
 _agent_service_instance: MaintenanceAgentService | None = None
 
 
 def get_agent_service() -> MaintenanceAgentService:
-    """
-    Get singleton instance of MaintenanceAgentService.
-    
-    Returns:
-        MaintenanceAgentService instance
-    """
+    """Get singleton instance of MaintenanceAgentService."""
     global _agent_service_instance
     if _agent_service_instance is None:
         _agent_service_instance = MaintenanceAgentService()
