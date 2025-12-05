@@ -27,3 +27,6 @@ langchain-core==0.3.18
 langsmith==0.1.147
 pydantic==2.10.3
 pydantic-settings==2.6.1
+
+# Gemini SDK for speech-to-text
+google-generativeai>=0.8.0

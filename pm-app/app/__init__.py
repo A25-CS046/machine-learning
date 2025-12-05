@@ -55,6 +55,7 @@ def create_app() -> Flask:
     from app.routes.models_mgmt import models_mgmt_bp
     from app.routes.maintenance import maintenance_bp
     from app.routes.copilot_tools import copilot_bp
+    from app.routes.copilot_voice import voice_bp
     
     app.register_blueprint(health_bp)
     app.register_blueprint(classification_bp)
@@ -63,6 +64,7 @@ def create_app() -> Flask:
     app.register_blueprint(models_mgmt_bp)
     app.register_blueprint(maintenance_bp)
     app.register_blueprint(copilot_bp)
+    app.register_blueprint(voice_bp)
     
     @app.errorhandler(404)
     def not_found(error):

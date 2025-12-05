@@ -139,6 +139,8 @@ MODEL_STORAGE_PATH=../artifacts
 # Gemini AI
 GEMINI_API_KEY=your_gemini_api_key_here
 GEMINI_MODEL_NAME=gemini-2.5-pro-exp
+GEMINI_STT_MODEL=gemini-2.5-flash
+MAX_AUDIO_MB=10
 
 # Flask
 FLASK_ENV=development
@@ -154,7 +156,9 @@ CORS_ORIGINS=http://localhost:3000
 | `DATABASE_URL` | No | `sqlite:///pm_app.db` | Database connection string |
 | `MODEL_STORAGE_PATH` | No | `../artifacts` | Path to trained models |
 | `GEMINI_API_KEY` | Yes* | - | Google AI API key (*required for copilot) |
-| `GEMINI_MODEL_NAME` | No | `gemini-2.0-flash-exp` | Gemini model variant |
+| `GEMINI_MODEL_NAME` | No | `gemini-2.5-pro-exp` | Gemini model for agent LLM |
+| `GEMINI_STT_MODEL` | No | `gemini-2.5-flash` | Gemini model for Speech-to-Text |
+| `MAX_AUDIO_MB` | No | `10` | Maximum audio file size in MB |
 | `SECRET_KEY` | Yes** | - | Flask session secret (**required for production) |
 
 ## Running the Backend (pm-app)
@@ -378,8 +382,8 @@ Content-Type: application/json
 
 {
   "model_name": "xgb_classifier",
-  "product_id": "PROD_001",
-  "unit_id": "UNIT_001",
+  "product_id": "L56614",
+  "unit_id": "9435",
   "timestamp_before": "2024-01-15T10:00:00Z"
 }
 ```
@@ -408,7 +412,7 @@ Content-Type: application/json
 {
   "model_name": "xgb_regressor",
   "product_id": "PROD_001",
-  "unit_id": "UNIT_001",
+  "unit_id": "9435",
   "horizon_steps": 10
 }
 ```
@@ -451,7 +455,7 @@ Response:
   "data": {
     "schedule": [
       {
-        "unit_id": "UNIT_001",
+        "unit_id": "9435",
         "recommended_start": "2024-01-16T08:00:00Z",
         "recommended_end": "2024-01-16T12:00:00Z",
         "reason": "High failure risk: 0.87",
@@ -540,35 +544,126 @@ DELETE /copilot/session/{session_id}
 - "How much RUL does unit H30221/5678 have?"
 - "Schedule maintenance for units L56614, M29501, H30221"
 - "Which units need immediate attention?"
+- "Show all units status" (triggers global risk assessment)
 
-### Copilot Architecture
+### Copilot Voice Input
 
+Natural language voice queries via Speech-to-Text powered by Gemini.
+
+```bash
+POST /copilot/voice
+Content-Type: multipart/form-data
+
+audio: <binary audio file>
+session_id: user_123  # Optional
+language: id          # Optional (default: id for Indonesian)
 ```
-POST /copilot/chat
-       │
-       ▼
-┌─────────────────────┐
-│  LangChain Agent    │
-│  (AgentExecutor)    │
-└─────────┬───────────┘
-          │
-    ┌─────┴─────┐
-    ▼           ▼
-┌───────┐  ┌──────────────┐
-│Gemini │  │ Tool Layer   │
-│ LLM   │  │ predict_     │
-│       │  │ failure/rul  │
-│       │  │ optimize_    │
-│       │  │ schedule     │
-└───┬───┘  └──────┬───────┘
-    └──────┬──────┘
-           ▼
-    JSON Response
+
+**Supported audio formats:**
+- `audio/webm`
+- `audio/wav`, `audio/x-wav`
+- `audio/mp3`, `audio/mpeg`
+- `audio/ogg`
+
+**File size limit:** 10MB (configurable via `MAX_AUDIO_MB`)
+
+Response:
+```json
+{
+  "data": {
+    "transcription": "Berapa risiko kegagalan unit L56614/9435?",
+    "reply": "Unit L56614/9435 memiliki probabilitas kegagalan 4.45% dengan kepercayaan tinggi.",
+    "session_id": "user_123",
+    "execution_time_seconds": 3.21,
+    "timestamp": "2025-12-02T01:15:00.000Z",
+    "intermediate_steps": [...]
+  },
+  "error": null
+}
+```
+
+**Error responses:**
+- 400: Missing audio file, unsupported format, or file too large
+- 500: Transcription or agent processing error
+
+### Maintenance Schedule Records
+
+Retrieve persisted maintenance schedules from database.
+
+```bash
+GET /maintenance/schedule?product_id=L56614&status=pending
+```
+
+**Query parameters:**
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `product_id` | string | Filter by product ID |
+| `unit_id` | string | Filter by unit ID |
+| `status` | string | Filter by status (pending, completed, cancelled) |
+| `start_date` | string | ISO date for scheduled_start >= |
+| `end_date` | string | ISO date for scheduled_start <= |
+
+Response:
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "product_id": "L56614",
+      "unit_id": "9435",
+      "scheduled_start": "2025-01-20T08:00:00Z",
+      "scheduled_end": "2025-01-20T12:00:00Z",
+      "status": "pending",
+      "reason": "High failure risk: 0.87",
+      "priority": 1,
+      "assigned_team": "Team A",
+      "created_at": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "error": null
+}
+```
+
+### Model Retraining
+
+Trigger model retraining with optional incremental learning.
+
+```bash
+POST /retrain/run
+Content-Type: application/json
+
+{
+  "model_type": "classification",
+  "incremental": true,
+  "sample_limit": 5000
+}
+```
+
+**Body parameters:**
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `model_type` | string | classification | Type: classification or regression |
+| `incremental` | boolean | false | Continue from existing model weights |
+| `sample_limit` | integer | null | Limit training samples |
+
+Response:
+```json
+{
+  "data": {
+    "model_type": "classification",
+    "status": "started",
+    "timestamp": "2025-01-15T10:00:00Z",
+    "message": "Retraining started for classification"
+  },
+  "error": null
+}
 ```
 
 **Key files:**
 - `langchain_agent_service.py` - Agent orchestration with PostgreSQL-backed memory
 - `agent_tools.py` - LangChain tools with Pydantic input validation
+- `transcription_service.py` - Gemini STT for voice input
+- `copilot_voice.py` - Voice endpoint with audio validation
 - `copilot_service.py` - Direct Gemini API client (legacy)
 
 ## Testing
@@ -704,7 +799,7 @@ df.to_sql('telemetry', engine, if_exists='append', index=False)
 ```bash
 curl -X POST http://localhost:5000/predict/classification \
   -H "Content-Type: application/json" \
-  -d '{"model_name": "xgb_classifier", "product_id": "PROD_001", "unit_id": "UNIT_001"}'
+  -d '{"model_name": "xgb_classifier", "product_id": "PROD_001", "unit_id": "9435"}'
 ```
 
 ## Deployment Notes
