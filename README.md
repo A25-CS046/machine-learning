@@ -4,8 +4,9 @@
 ![Build](https://img.shields.io/badge/Build-Passing-green)
 
 <div align="center">
-    <h3>AEGIS (AI Engine for Grounded Inspection System) Mahcine Learning Pipeline</h3>
-    <h4>A25-CS046 Capstone Project - Predictive Maintenance Copilot</h4>
+  <img width="1584" height="396" alt="aegis-banner" src="https://github.com/user-attachments/assets/05cafb17-789c-4738-b699-96387a28b800" />
+  <h3>AEGIS (AI Engine for Grounded Inspection System)</h3>
+  <h4>A25-CS046 Capstone Project - Predictive Maintenance Copilot</h4>
 </div>
 
 ### Project Overview
@@ -214,3 +215,4 @@ Dependencies Note:
 
 ### Author
 Github Organization: [AEGIS - A25-CS046 Capstone Team](https://github.com/A25-CS046)
+
