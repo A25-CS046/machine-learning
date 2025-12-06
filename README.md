@@ -190,8 +190,9 @@ Testing & Quality Assurance
 - Pytest: Framework for unit testing API endpoints and ML pipeline logic.
 - Pytest-cov: Ensures high code coverage across the application.
 
-Dependencies Note:
-- For a complete list of libraries and exact versions used in this environment, please refer to `requirements.txt`.
+### Copilot Server Installation
+- For copilot features, API and complete installation guide please refer to [Predictive Maintenance Copilot Server](https://github.com/A25-CS046/machine-learning/blob/main/pm-app/README.md) documentation
+- For a complete list of libraries and exact versions used in this projects, please refer to `requirements.txt` in the root folder and in the `pm-app/`.
 
 ### Contributor
 <div align=center>
@@ -215,4 +216,3 @@ Dependencies Note:
 
 ### Author
 Github Organization: [AEGIS - A25-CS046 Capstone Team](https://github.com/A25-CS046)
-
